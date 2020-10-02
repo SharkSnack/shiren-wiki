@@ -149,8 +149,7 @@ table td {
 
 table th {
   font-size: 0.85em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .statue_location_table th,
@@ -341,7 +340,7 @@ td.stat_table_center {
 }
 
 .table_location th {
-  background-color: #e2e2e2;
+  background-color: #f3f3f3;
 }
 
 .table_location th,
