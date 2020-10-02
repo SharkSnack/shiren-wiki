@@ -52,7 +52,7 @@ dt {
 }
 
 .sidebar-menu {
-  color: #444;
+  color: black;
   min-width: 182px;
   max-width: 182px;
   line-height: 100%;
@@ -66,8 +66,8 @@ dt {
   padding-left: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
-  border-radius: 3px;
-  color: #444;
+  border-radius: 1px;
+  color: black;
   background-color: #dfddf3;
 }
 
@@ -102,7 +102,7 @@ dt {
     "header header"
     "sidebar content";
   background-color: #fff;
-  color: #444;
+  color: black;
 }
 
 .sidebar-links-404 {

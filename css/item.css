@@ -2,7 +2,7 @@ h2 {
   padding-left: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #ebe9ff;
 }
 
@@ -45,7 +45,7 @@ li {
 .item_desc {
   padding: 10px;
   background-color: #f5faff;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .detail {
@@ -69,7 +69,7 @@ li {
 .detail-section1 img {
   background-color: #444;
   padding: 2px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .detail-table {
@@ -123,27 +123,27 @@ table {
 }
 
 table caption {
-  color: #444;
+  color: black;
   background-color: #ebe9ff;
   font-size: 1.5em;
   margin: 0.5em 0 0.75em;
 }
 
 table tr {
-  background-color: #f8f8f8;
+  background-color: #fff;
   border: 1px solid #ddd;
   padding: 0.35em;
 }
 
 table th {
-  background-color: lightgray;
+  background-color: #f3f3f3;
 }
 
 table th,
 table td {
   padding: 0.625em;
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid #999;
   font-size: 90%;
 }
 
