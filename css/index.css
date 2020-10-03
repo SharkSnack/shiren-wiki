@@ -109,6 +109,10 @@ dt {
   color: lightgray;
 }
 
+.sidebar-links-404:visited {
+  color: lightgray;
+}
+
 @media screen and (max-width: 600px) {
   body {
     margin: 0;
