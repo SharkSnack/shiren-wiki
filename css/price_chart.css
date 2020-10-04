@@ -30,10 +30,6 @@ h4 {
   margin: 0;
 }
 
-.price_table_div {
-  display: flex;
-}
-
 .item_category_links a {
   text-decoration: none;
   padding-right: 10px;
@@ -105,4 +101,12 @@ p {
 .category_subrow {
   background-color: #cfafe2;
   text-align: center;
+}
+
+.explanation {
+  padding: 0 1em;
+}
+
+.last_table_div {
+  padding-bottom: 3em;
 }
