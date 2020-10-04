@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Price Chart - Asuka Kenzan Wiki</title>
+    <title>Price Chart - Shiren 5 Wiki</title>
     <link rel="icon" href="/asuka/favicon.ico">
     <meta charset="utf-8">
     <script
@@ -16,451 +16,327 @@
     <div class="wrapper">
       <header id="header" class="box header">
         <div>
-          <a href="/asuka/html/index.html"><img src="../../image/site/koppa.png" width="36" height="37" class="header-image"></a><h1><a href="/asuka/html/index.html">Asuka Kenzan Wiki</a> / Price Chart</h1>
+          <a href="/asuka/html/index.html"><img src="../../image/site/koppa.png" width="36" height="37" class="header-image"></a><h1><a href="/asuka/html/index.html">Shiren 5</a> / Price Chart</h1>
         </div>
       </header>
       <nav id="sidebar" class="box sidebar"></nav>
       <main id="content" class="box content">
         <div>
           <h2 class="page_heading">Price Chart</h2>
-          <p>Blessed items = x1.1, Cursed items = x0.9</p>
           <div id="item_category_links" class="item_category_links">
             <ul>
-              <li><a href="#scrolls_bracelets_grasses">Scrolls・Bracelets・Grasses</a></li>
+              <li><a href="#price_calculation">Price Calculation</a></li>
+              <li><a href="#scrolls_bracelets_grasses">Scrolls / Grasses / Bracelets / Talismans</a></li>
               <li><a href="#staves">Staves</a></li>
               <li><a href="#pots">Pots</a></li>
-              <li><a href="#weapons">Weapons</a></li>
-              <li><a href="#shields">Shields</a></li>
+              <li><a href="#weapons">Lv1 Weapons</a></li>
+              <li><a href="#shields">Lv1 Shields</a></li>
             </ul>
           </div>
           <div>
-            <h3 id="scrolls_bracelets_grasses">Scrolls・Bracelets・Grasses</h3>
+            <h3 id="price_calculation">Price Calculation</h3>
+          </div>
+          <div>
+            <h3 id="scrolls_bracelets_grasses">Scrolls / Grasses / Bracelets / Talismans</h3>
             <div class="price_table_div">
               <table id="price_scroll" class="price_table">
-                <td colspan="4"><img src="">Scroll</td>
                 <tr>
-                  <th>Name</th>
-                  <th>Seal</th>
-                  <th>Buy</th>
-                  <th>Sell</th>
+                  <th colspan="3" class="category">Scroll</th>
+                  <th colspan="3" class="category">Grass</th>
+                  <th colspan="3" class="category">Bracelet</th>
+                  <th colspan="3" class="category">Talisman</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#trap_scroll">Trap Scroll<br>ワナの巻物</a></td>
-                  <td>-</td>
+                  <td class="category_subrow">Name</td>
+                  <td class="category_subrow">Buy</td>
+                  <td class="category_subrow">Sell</td>
+                  <td class="category_subrow">Name</td>
+                  <td class="category_subrow">Buy</td>
+                  <td class="category_subrow">Sell</td>
+                  <td class="category_subrow">Name</td>
+                  <td class="category_subrow">Buy</td>
+                  <td class="category_subrow">Sell</td>
+                  <td class="category_subrow">Name</td>
+                  <td class="category_subrow">Buy</td>
+                  <td class="category_subrow">Sell</td>
+                </tr>
+                <tr>
+                  <th>Wet Scroll</th>
+                  <td rowspan="2">10</td>
+                  <td rowspan="2">3</td>
+                  <th>Weeds</th>
+                  <td>10</td>
+                  <td>3</td>
+                  <th>Strength Bracelet</th>
+                  <td rowspan="4">2000</td>
+                  <td rowspan="4">700</td>
+                  <th>Shadow Bind Tal.</th>
+                  <td rowspan="13">600</td>
+                  <td rowspan="13">210</td>
+                </tr>
+                <tr>
+                  <th>Piece of Paper</th>
+                  <th>Herb</th>
+                  <td rowspan="2">50</td>
+                  <td rowspan="2">17</td>
+                  <th>Can. Arm Bracelet</th>
+                  <th>Cnf. Talisman</th>
+                </tr>
+                <tr>
+                  <th>Escape Scroll</th>
+                  <td rowspan="6">100</td>
+                  <td rowspan="6">35</td>
+                  <th>Fine Grass</th>
+                  <th>Inacc. Bracelet</th>
+                  <th>Seal Talisman</th>
+                </tr>
+                <tr>
+                  <th>Navigation Scroll</th>
+                  <th>Otogiriso</th>
+                  <td rowspan="4">100</td>
+                  <td rowspan="4">35</td>
+                  <th>Bunch Bracelet</th>
+                  <th>Fear Talisman</th>
+                </tr>
+                <tr>
+                  <th>Oil Scroll</th>
+                  <th>Antidote Grass</th>
+                  <th>Cleansing Bracelet</th>
+                  <td rowspan="10">3000</td>
+                  <td rowspan="10">1050</td>
+                  <th>Berserker Tal.</th>
+                </tr>
+                <tr>
+                  <th>Light Scroll</th>
+                  <th>Poison Grass</th>
+                  <th>Anti-Cnf. Bracelet</th>
+                  <th>Inacc. Talisman</th>
+                </tr>
+                <tr>
+                  <th>Recommend. Letter</th>
+                  <th>Warp Grass</th>
+                  <th>Alert Bracelet</th>
+                  <th>Sleep Talisman</th>
+                </tr>
+                <tr>
+                  <th>Commend. Letter</th>
+                  <th>Heal Grass</th>
                   <td>200</td>
-                  <td>100</td>
+                  <td>70</td>
+                  <th>Anti-Crs. Bracelet</th>
+                  <th>Slumber Talisman</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#identify_scroll">Identify Scroll<br>識別の巻物</a></td>
-                  <td>識</td>
-                  <td rowspan="5">500</td>
-                  <td rowspan="5">250</td>
+                  <th>Identify Scroll</th>
+                  <td>200</td>
+                  <td>70</td>
+                  <th>Power Up Grass</th>
+                  <td rowspan="9">300</td>
+                  <td rowspan="9">105</td>
+                  <th>Staunch Bracelet</th>
+                  <th>Slow Talisman</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#light_scroll">Light Scroll<br>あかりの巻物</a></td>
-                  <td>-</td>
+                  <th>Gathering Scroll</th>
+                  <td rowspan="3">300</td>
+                  <td rowspan="3">105</td>
+                  <th>Upgrade Seed</th>
+                  <th>Critical Bracelet</th>
+                  <th>Swift Talisman</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#water_scroll">Water Scroll<br>水びたしの巻物</a></td>
-                  <td>-</td>
+                  <th>Collection Scroll</th>
+                  <th>Perception Grass</th>
+                  <th>Mojo Bracelet</th>
+                  <th>Enraged Talisman</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#burn_scroll">Burn Scroll<br>火種の巻物</a></td>
-                  <td>-</td>
+                  <th>Squid Sushi Scroll</th>
+                  <th>Swift Grass</th>
+                  <th>Monster Summoner</th>
+                  <th>Furious Talisman</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#retreat_scroll">Retreat Scroll<br>引き上げの巻物</a></td>
-                  <td>帰</td>
+                  <th>Exorcism Scroll</th>
+                  <td rowspan="15">500</td>
+                  <td rowspan="15">175</td>
+                  <th>Stomach Expander</th>
+                  <th>Doze Bracelet</th>
+                  <th>Glorious Talisman</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#purify_scroll">Purify Scroll<br>おはらいの巻物</a></td>
-                  <td>祓</td>
-                  <td rowspan="8">1000</td>
-                  <td rowspan="8">500</td>
+                  <th>Fate Scroll</th>
+                  <th>Stomach Shrinker</th>
+                  <th>Trap Bracelet</th>
+                  <td rowspan="30"></td>
+                  <td rowspan="30"></td>
+                  <td rowspan="30"></td>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#fear_scroll">Fear Scroll<br>ゾワゾワの巻物</a></td>
-                  <td>-</td>
+                  <th>Earth Scroll</th>
+                  <th>Confusion Grass</th>
+                  <th>Monster Detector</th>
+                  <td rowspan="11">5000</td>
+                  <td rowspan="11">1750</td>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#accuracy_scroll">Accuracy Scroll<br>必中の巻物</a></td>
-                  <td>-</td>
+                  <th>Plating Scroll</th>
+                  <th>Blinding Grass</th>
+                  <th>Monsterphobic</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#cheer_scroll">Cheer Scroll<br>ファイトの巻物</a></td>
-                  <td>-</td>
+                  <th>Tag Scroll</th>
+                  <th>Nymph Grass</th>
+                  <th>Item Detector</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#trap_remove_scroll">Trap Remove Scroll<br>ワナ消しの巻物</a></td>
-                  <td>-</td>
+                  <th>Sale Scroll</th>
+                  <th>Life Grass</th>
+                  <td rowspan="6">500</td>
+                  <td rowspan="6">175</td>
+                  <th>Itemphobic</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#immobilize_scroll">Immobilize Scroll<br>はりつけの巻物</a></td>
-                  <td>-</td>
+                  <th>Onigiri Scroll</th>
+                  <th>Strength Grass</th>
+                  <th>Waterwalk Bracelet</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#gravity_scroll">Gravity Scroll<br>飛ばずの巻物</a></td>
-                  <td>-</td>
+                  <th>Pot God Scroll</th>
+                  <th>Dragon Grass</th>
+                  <th>Wall Clip Bracelet</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#escape_scroll">Escape Scroll<br>持ち帰りの巻物</a></td>
-                  <td>-</td>
+                  <th>Extraction Scroll</th>
+                  <th>Sleepy Grass</th>
+                  <th>Heal Bracelet</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#heaven_scroll">Heaven Scroll<br>天の恵みの巻物</a></td>
-                  <td>-</td>
-                  <td rowspan="4">1200</td>
-                  <td rowspan="4">600</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#earth_scroll">Earth Scroll<br>地の恵みの巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#slumber_scroll">Slumber Scroll<br>バクスイの巻物</a></td>
-                  <td>眠</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#blaze_scroll">Blaze Scroll<br>炎上の巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#confuse_scroll">Confuse Scroll<br>混乱の巻物</a></td>
-                  <td>-</td>
-                  <td rowspan="6">1500</td>
-                  <td rowspan="6">750</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#rockfall_scroll">Rockfall Scroll<br>落石の巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#lightning_scroll">Lightning Scroll<br>いかずちの巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#helpful_scroll">Helpful Scroll<br>困った時の巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#trouble_scroll">Trouble Scroll<br>困ったの巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#monster_house_scroll">Monster House Scroll<br>モンスターハウスの巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#evaporate_scroll">Evaporate Scroll<br>水がれの巻物</a></td>
-                  <td>-</td>
-                  <td rowspan="5">2000</td>
-                  <td rowspan="5">1000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#wall_collapse_scroll">Wall Collapse Scroll<br>大部屋の巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#sturdy_pot_scroll">Sturdy Pot Scroll<br>壺われずの巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#pot_expand_scroll">Pot Expand Scroll<br>壺増大の巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#copy_scroll">Copy Scroll<br>転写の巻物</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#suction_scroll">Suction Scroll<br>すいだしの巻物</a></td>
-                  <td>-</td>
-                  <td>3000</td>
-                  <td>1500</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#plating_scroll">Plating Scroll<br>メッキの巻物</a></td>
-                  <td>-</td>
-                  <td>4000</td>
-                  <td>2000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#blank_scroll">Blank Scroll<br>白紙の巻物</a></td>
-                  <td>-</td>
-                  <td>5000</td>
-                  <td>2500</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#sanctuary_scroll">Sanctuary Scroll<br>聖域の巻物</a></td>
-                  <td>-</td>
-                  <td>7500</td>
-                  <td>2500</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#extinction_scroll">Extinction Scroll<br>ねだやしの巻物</a></td>
-                  <td>-</td>
-                  <td>25000</td>
-                  <td>400</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/scrolls.html#secret_skill_scroll">Secret Skill Scroll<br>奥技の巻物</a></td>
-                  <td>-</td>
-                  <td>1500</td>
-                  <td>750</td>
-                </tr>
-              </table>
-              <table id="price_bracelet" class="price_table">
-                <td colspan="4"><img src="">Bracelet</td>
-                <tr>
-                  <th>Name</th>
-                  <th>Buy</th>
-                  <th>Sell</th>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#calm_bracelet">Calm Bracelet<br>混乱よけの腕輪</a></td>
-                  <td rowspan="5">2000</td>
-                  <td rowspan="5">1000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#rustproof_bracelet">Rustproof Bracelet<br>サビよけの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#sleepless_bracelet">Sleepless Bracelet<br>ねむらずの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#holy_bracelet">Holy Bracelet<br>呪いよけの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#sticky_bracelet">Sticky Bracelet<br>必着の腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#warp_bracelet">Warp Bracelet<br>たかとびの腕輪</a></td>
-                  <td rowspan="4">3000</td>
-                  <td rowspan="4">1500</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#strength_bracelet">Strength Bracelet<br>ちからの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#thief_bracelet">Thief Bracelet<br>とうぞくの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#wish_bracelet">Wish Bracelet<br>ねがいの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#pierce_bracelet">Pierce Bracelet<br>遠投の腕輪</a></td>
-                  <td rowspan="3">4000</td>
-                  <td rowspan="3">2000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#bullseye_bracelet">Bullseye Bracelet<br>百発百中の腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#bend_bracelet">Bend Bracelet<br>まがりの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#heal_bracelet">Heal Bracelet<br>いやしの腕輪</a></td>
-                  <td rowspan="3">5000</td>
-                  <td rowspan="3">2500</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#anti_drain_bracelet">Anti Drain Bracelet<br>ドレインよけの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#vision_bracelet">Vision Bracelet<br>よくみえの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#critical_bracelet">Critical Bracelet<br>会心の腕輪</a></td>
-                  <td rowspan="2">6000</td>
-                  <td rowspan="4">3000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#regret_bracelet">Regret Bracelet<br>痛恨の腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#protect_bracelet">Protect Bracelet<br>まもりの腕輪</a></td>
-                  <td rowspan="2">7500</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#substitute_bracelet">Substitute Bracelet<br>身代わりの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#float_bracelet">Float Bracelet<br>通過の腕輪</a></td>
-                  <td rowspan="3">10000</td>
-                  <td rowspan="3">5000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#scout_bracelet">Scout Bracelet<br>透視の腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#phantasm_bracelet">Phantasm Bracelet<br>パコレプキンの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#discount_bracelet">Discount Bracelet<br>値切の腕輪</a></td>
-                  <td>12000</td>
-                  <td>6000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#parry_bracelet">Parry Bracelet<br>うけながしの腕輪</a></td>
-                  <td rowspan="4">15000</td>
-                  <td rowspan="4">7500</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#happy_bracelet">Happy Bracelet<br>しあわせの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#no_hunger_bracelet">No Hunger Bracelet<br>ハラヘラズの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#hunger_bracelet">Hunger Bracelet<br>ハラヘリの腕輪</a></td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#spirit_bracelet">Spirit Bracelet<br>気力の腕輪</a></td>
-                  <td rowspan="3">25000</td>
-                  <td>1000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#identify_bracelet">Identify Bracelet<br>識別の腕輪</a></td>
-                  <td>12000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/bracelets.html#trapper_bracelet">Trapper Bracelet<br>ワナ師の腕輪</a></td>
-                  <td>10000</td>
-                </tr>
-              </table>
-              <table id="price_grass" class="price_table">
-                <td colspan="4"><img src="">Grass</td>
-                <tr>
-                  <th>Name</th>
-                  <th>Seal</th>
-                  <th>Buy</th>
-                  <th>Sell</th>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#weeds">Weeds<br>雑草</a></td>
-                  <td>-</td>
-                  <td>50</td>
-                  <td>25</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#herb">Herb<br>薬草</a></td>
-                  <td>薬</td>
-                  <td rowspan="3">100</td>
-                  <td rowspan="3">50</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#sleep_grass">Sleep Grass<br>睡眠草</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#dizzy_grass">Dizzy Grass<br>混乱草</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#swift_seed">Swift Seed<br>すばやさの種</a></td>
-                  <td>-</td>
-                  <td rowspan="5">300</td>
-                  <td rowspan="5">150</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#warp_grass">Warp Grass<br>高とび草</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#amnesia_grass">Amnesia Grass<br>物忘れの草</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#kigny_seed">Kigny Seed<br>キグニ族の種</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#twisty_grass">Twisty Grass<br>くねくね草</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#life_grass">Life Grass<br>命の草</a></td>
-                  <td>命</td>
-                  <td rowspan="5">400</td>
-                  <td rowspan="5">200</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#antidote_grass">Antidote Grass<br>毒消し草</a></td>
-                  <td>消</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#expand_seed">Expand Seed<br>胃拡張の種</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#shrink_seed">Shrink Seed<br>胃縮小の種</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#disaster_seed">Disaster Seed<br>超不幸の種</a></td>
-                  <td>超</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#otogiriso">Otogiriso<br>弟切草</a></td>
-                  <td>弟</td>
-                  <td rowspan="3">500</td>
-                  <td rowspan="3">250</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#sight_grass">Sight Grass<br>めぐすり草</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#dragon_grass">Dragon Grass<br>ドラゴン草</a></td>
-                  <td>火</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#flame_grass">Flame Grass<br>火炎草</a></td>
-                  <td>火</td>
-                  <td>700</td>
-                  <td>350</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#boost_grass">Boost Grass<br>よくきき草</a></td>
-                  <td>-</td>
-                  <td>1000</td>
-                  <td>500</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#strength_seed">Strength Seed<br>ちからの種</a></td>
-                  <td>ち</td>
-                  <td rowspan="2">1500</td>
-                  <td rowspan="2">700</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#poison_grass">Poison Grass<br>毒草</a></td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#happy_grass">Happy Grass<br>しあわせ草</a></td>
-                  <td>幸</td>
-                  <td rowspan="3">2000</td>
-                  <td rowspan="3">1000</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#unlucky_seed">Unlucky Seed<br>不幸の種</a></td>
-                  <td>不</td>
-                </tr>
-                <tr>
-                  <td><a href="/asuka/html/item/grass.html#invincible_grass">Invincible Grass<br>無敵草</a></td>
-                  <td>-</td>
-                </tr>
+                  <th>Blessing Scroll</th>
+                  <th>Rage Grass</th>
+                  <th>Alleyway Bracelet</th>
+                </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/grass.html#revival_grass">Revival Grass<br>復活の草</a></td>
-                  <td>-</td>
-                  <td>2500</td>
-                  <td>1250</td>
+                  <th>Curse Scroll</th>
+                  <th>Dracon Grass</th>
+                  <th>Blink Bracelet</th>
                 </tr>
                 <tr>
-                  <td><a href="/asuka/html/item/grass.html#angel_seed">Angel Seed<br>天使の種</a></td>
-                  <td>天</td>
-                  <td>3000</td>
-                  <td>1500</td>
+                  <th>Coupon Scroll</th>
+                  <th>Revival Grass</th>
+                  <td rowspan="2">1000</td>
+                  <td rowspan="2">350</td>
+                  <th>Explosion Bracelet</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
+                  <th></th>
+                  <td></td>
+                  <td></td>
                 </tr>
               </table>
             </div>

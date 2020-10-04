@@ -2,17 +2,17 @@ h2 {
   padding-left: 10px;
   padding-top: 3px;
   padding-bottom: 3px;
-  border-radius: 3px;
-  background-color: #ffdfbe;
+  border-radius: 2px;
+  background-color: #ebe9ff;
 }
 
 h3 {
   font-size: 100%;
   font-weight: normal;
-  border-top: 1px solid #ffdfbe;
-  border-bottom: 3px solid #ffdfbe;
-  border-left: 10px solid #ffdfbe;
-  border-right: 3px solid #ffdfbe;
+  border-top: 2px solid #ebe9ff;
+  border-bottom: 5px solid #ebe9ff;
+  border-left: 11px solid #ebe9ff;
+  border-right: 3px solid #ebe9ff;
   padding-left: 5px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -22,7 +22,7 @@ h3 {
 h4 {
   font-weight: normal;
   font-size: 90%;
-  border-left: 15px solid #ffdfbe;
+  border-left: 15px solid #ebe9ff;
   padding: 0.3em;
 }
 
@@ -38,7 +38,7 @@ h4 {
   text-decoration: none;
   padding-right: 10px;
   font-size: 80%;
-  color: #215dc6;
+  color: #084cc3;
 }
 
 .item_category_links a:hover {
@@ -46,41 +46,36 @@ h4 {
 }
 
 .item_category_links a:visited {
-  color: #a63d21;
+  color: #609;
 }
 
 table {
-  border: 1px solid #ccc;
+  border: 1px solid #999;
   border-collapse: collapse;
   padding: 0;
 }
 
-table caption {
-  font-size: 1.5em;
-  margin: 0.5em 0 0.75em;
-}
-
 table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
+  background-color: #fff;
+  border: 1px solid #999;
+  padding: 0.35em;
 }
 
 table th {
-  background-color: lightgray;
+  background-color: #f3f3f3;
 }
 
 table th,
 table td {
-  padding: 0.35em;
-  text-align: center;
-  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: left;
+  border: 1px solid #999;
   font-size: 80%;
+  font-weight: normal;
 }
 
 table th {
   font-size: 0.85em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
 table a {
@@ -98,4 +93,16 @@ table a:visited {
 
 p {
   font-size: 80%;
+}
+
+.category {
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  background-color: #cfafe2;
+  text-align: center;
+}
+
+.category_subrow {
+  background-color: #cfafe2;
+  text-align: center;
 }
