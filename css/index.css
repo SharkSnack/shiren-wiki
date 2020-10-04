@@ -113,6 +113,10 @@ dt {
   color: lightgray;
 }
 
+.explanation {
+  padding: 0 1em;
+}
+
 @media screen and (max-width: 600px) {
   body {
     margin: 0;

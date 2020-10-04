@@ -1,47 +1,41 @@
-#quick_links li {
-  font-size: 100%;
+table {
+  border: 1px solid #999;
+  border-collapse: collapse;
+  padding: 0;
 }
 
-.seal_equipment {
-  background-color: #8cc8ff;
+table tr {
+  background-color: #fff;
+  border: 1px solid #999;
+  padding: 0.35em;
 }
 
-.seal_grass {
-  background-color: #80ff80;
+table th {
+  background-color: #f3f3f3;
 }
 
-.seal_scroll {
-  background-color: #ffb4b4;
-}
-
-.seal_curse {
-  background-color: #6699cc;
-}
-
-.table_seals th {
-  border-color: #bbb;
-}
-
-.table_seals td {
-  padding: 5px 0.5em 5px 0.5em;
-  font-size: 80%;
-}
-
-.table_pro_con th,
-.table_pro_con td {
-  font-size: 0.65em;
-}
-
-.text_left {
+table th,
+table td {
+  padding: 5px;
   text-align: left;
+  border: 1px solid #999;
+  font-size: 80%;
+  font-weight: normal;
 }
 
-dl {
-  font-size: 90%;
+table th {
+  font-size: 0.85em;
 }
 
-dt {
-  font-weight: bold;
-  margin-left: 1em;
-  margin-top: 1em;
+table a {
+  color: #084cc3;
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+table a:visited {
+  color: #609;
 }

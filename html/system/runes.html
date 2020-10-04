@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Runes - Shiren 5 Wiki</title>
+    <link rel="icon" href="/shiren5/favicon.ico">
+    <meta charset="utf-8">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/item.css">
+    <link rel="stylesheet" href="../../css/seal.css">
+    <script src="../../js/common.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="header" class="box header">
+        <div>
+          <a href="/shiren5/html/index.html"><img src="/shiren5/image/site/koppa.png" width="36" height="37" class="header-image"></a><h1><a href="/shiren5/html/index.html">Shiren 5</a> / Runes</h1>
+        </div>
+      </header>
+      <nav id="sidebar" class="box sidebar"></nav>
+      <main id="content" class="box content">
+        <h2 class="page_heading">Runes</h2>
+        <div class="explanation">
+          <p>Runes are special abilities that can be found on weapons or shields.</p>
+          <p>There are 3 ways to add runes to equipment:</p>
+          <ul>
+            <li>The weapon or shield has an innate rune. (ex: Gold Shield comes with "Rustproof")</li>
+            <li>The weapon or shield gains a rune by leveling up. (ex: Katana gains "Rustproof" at Lv8)</li>
+            <li><a href="">Synthesize</a> weapons or shields together. (ex: Katana + Hatchet = Katana with "Critical")</li>
+          </ul>
+          <p>Generally runes make your adventure easier, but some are a double-edged sword<br>or have an outright negative effect, so some care is needed.</p>
+          <p>Unwanted runes can be removed at the Hermit's Hermitage <a href="">Blacksmith</a>.</p>
+          <p>Non-innate runes always have the Lv1 multiplier, regardless of equipment level.</p>
+        </div>
+        <ul id="quick_links">
+          <li>
+            <a href="#rune_list">Rune List</a>
+            <ul>
+              <li>
+                <a href="#weapon">Weapon</a>
+                <ul>
+                  <li><a href="#new_weapon">New Type</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#shield">Shield</a>
+                <ul>
+                  <li><a href="#new_shield">New Type</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#multipliers">Rune Multipliers</a></li>
+          <li>
+            <a href="#details">Rune Details</a>
+            <ul>
+              <li><a href="#weapon_detail">Weapon</a></li>
+              <li><a href="#shield_detail">Shield</a></li>
+            </ul>
+          </li>
+        </ul>
+        <h2 id="rune_list" class="page_heading">Rune List</h2>
+        <br>
+        <h3 id="weapon">Weapon</h3>
+        <table>
+          <tr>
+            <th>Rune</th>
+            <th>Innate</th>
+            <th>Added</th>
+            <th>Synthesis (Mixer)</th>
+            <th>Effect</th>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Wall Dig</td>
+            <td class="highlight_blue"><a href="">Rusty Pickaxe</a></td>
+            <td></td>
+            <td></td>
+            <td>Can dig out walls, but can break</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Max Wall Dig</td>
+            <td class="highlight_blue"><a href="">Wonder Pick</a></td>
+            <td></td>
+            <td></td>
+            <td>Can dig into walls without breaking</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Accurate</td>
+            <td class="highlight_blue"><a href="">True Knife</a></td>
+            <td></td>
+            <td></td>
+            <td>Direct attacks will always connect</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Tri-direction</td>
+            <td class="highlight_blue"><a href="">Breeze Blade</a></td>
+            <td></td>
+            <td></td>
+            <td>Attacks in 3 forward directions</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Critical</td>
+            <td class="highlight_blue"><a href="">Hatchet</a></td>
+            <td class="highlight_blue"><a href="">Kaburasutegi</a> 8<br><a href="">True Striker-X</a> 8<br><a href="">Worthy Sword</a> 8</td>
+            <td></td>
+            <td>22% chance to deal a critical hit</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Expendable</td>
+            <td class="highlight_blue"><a href="">Shoddy Dirk</a></td>
+            <td></td>
+            <td></td>
+            <td>Decreases upgrade value by 1 per hit</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Redeeming</td>
+            <td class="highlight_blue"><a href="">Bright Blade</a></td>
+            <td class="highlight_blue"><a href="">Ogre's Club</a> 8</td>
+            <td></td>
+            <td>After missing twice, get a charge attack<br>(100% accuracy + critical hit)</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Trap Busting</td>
+            <td class="highlight_blue"><a href="">Old Mallet</a></td>
+            <td></td>
+            <td></td>
+            <td>Destroys traps and items, but can break</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Trap Killing</td>
+            <td class="highlight_blue"><a href="">Sturdy Hammer</a></td>
+            <td></td>
+            <td></td>
+            <td>Destroys traps and items, never breaks</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Rustproof</td>
+            <td class="highlight_blue"><a href="">Dull Gold Edge</a></td>
+            <td class="highlight_blue">Many weapons</td>
+            <td class="highlight_blue"><a href="">Plating Scroll</a> (Read)</td>
+            <td>Upgrade value will never decrease</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Flame Shot</td>
+            <td class="highlight_blue"><a href="">Burning Blade</a></td>
+            <td class="highlight_blue"><a href="">Fiery Fuuma</a> 7<br><a href="">Shugouseki</a> 8</td>
+            <td></td>
+            <td>Shoots a fireball when HP is full<br>(The fireball deals 8 damage)</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Confusing</td>
+            <td class="highlight_blue"><a href="">Baffle Axe</a></td>
+            <td class="highlight_blue"><a href="">Fine Hammer</a> 5<br><a href="">Fine Mallet</a> 5<br><a href="">Flash Sword</a> 8</td>
+            <td class="highlight_blue"><a href="">Confusion Grass</a></td>
+            <td>12% chance to inflict Confused status</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Paralyzing</td>
+            <td class="highlight_blue"><a href="">Shockuto</a></td>
+            <td class="highlight_blue"><a href="">War God's Axe</a> 8<br><a href="">Pure Gold Blade</a> 8</td>
+            <td class="highlight_blue"><a href="">Paralysis Staff</a>
+            <td>12% chance to inflict Paralyzed status</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Sealing</td>
+            <td class="highlight_blue"><a href="">Sealing Keisaku</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Seal Staff</a></td>
+            <td>12% chance to inflict Sealed status</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Sedating</td>
+            <td class="highlight_blue"><a href="">Nap Rattle</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Sleepy Grass</a></td>
+            <td>12% chance to inflict Asleep status</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Blinding</td>
+            <td class="highlight_blue"><a href="">Blurry Stick</a></td>
+            <td class="highlight_blue"><a href="">Wonder Basher</a> 5<br><a href="">Sturdy Pickaxe</a> 5<br><a href="">Muramasa</a> 8</td>
+            <td class="highlight_blue"><a href="">Blinding Grass</a></td>
+            <td>12% chance to inflict Blind status</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Explode</td>
+            <td class="highlight_blue"><a href="">Crescent Katana</a></td>
+            <td class="highlight_blue"><a href="">Hellfire Katana</a> 8</td>
+            <td></td>
+            <td>Deals x1.35 damage to Exploding types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Aquatic</td>
+            <td class="highlight_blue"><a href="">Water Cutter</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Desert Scroll</a></td>
+            <td>Deals x1.35 damage to Aquatic types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Floating</td>
+            <td class="highlight_blue"><a href="">Sky Splitter</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Warp Grass</a></td>
+            <td>Deals x1.35 damage to Floating types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Cyclops</td>
+            <td class="highlight_blue"><a href="">Myopic Masher</a></td>
+            <td class="highlight_blue"><a href="">Evil Blade</a> 6</td>
+            <td class="highlight_blue"><a href="">Perception Grass</a></td>
+            <td>Deals x1.35 damage to Cyclopean types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Drain</td>
+            <td class="highlight_blue"><a href="">Drain Dagger</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Antidote Grass</a></td>
+            <td>Deals x1.35 damage to Drain types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Dragon</td>
+            <td class="highlight_blue"><a href="">Lizard Lasher</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Dragon Grass</a></td>
+            <td>Deals x1.35 damage to Dragon types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Metal</td>
+            <td class="highlight_blue"><a href="">Copper Cleaver</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Iron Arrow</a></td>
+            <td>Deals x1.35 damage to Metal types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Plant</td>
+            <td class="highlight_blue"><a href="">Scythe</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Weeds</a></td>
+            <td>Deals x1.35 damage to Plant types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anti-Magic</td>
+            <td class="highlight_blue"><a href="">Magic Masher</a></td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Ordinary Staff</a></td>
+            <td>Deals x1.35 damage to Magic types</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Lively</td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Tomahawk</a> 5<br><a href="">Spark Sword</a> 5</td>
+            <td class="highlight_blue"><a href="">Herb</a></td>
+            <td>Increase max HP by 5</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Uplifting</td>
+            <td></td>
+            <td class="highlight_blue"><a href="">Red Dagger</a> 3<br><a href="">Fine Swordite</a> 4<br><a href="">Fire Sword</a> 5</td>
+            <td class="highlight_blue"><a href="">Otogiriso</a></td>
+            <td>Increase max HP by 10</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Vitalizing</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Increase max HP by 15</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Energizing</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Increase max HP by 20</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Stupefying</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>12% chance to lower target's level by 1</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Perilous</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>12% chance to set target's HP to 1</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Enhancing</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Increases weapon base attack by 3</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Augmenting</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Increases weapon base attack by 8</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Quick Hitting</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>12% chance to attack 2 times</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Bored</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>12% chance to inflict Apathetic status</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Focusing</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Accuracy falls to 50%, but always critically hit<br>(Nullifies Accurate and Redeeming runes)</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Costly</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Pay 30 Gitan per hit to deal x1.3 damage<br>(Weapon attack drops to 0 without Gitan)</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Unsound</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>50% chance to break during a direct attack</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Obsessive</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Can't move when a monster is adjacent</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Enlightening</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Increases experience points earned</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Refining</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Chance to upgrade when you change floors</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Healing</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Heal your HP equal to 12% of damage dealt</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Anointing</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Enemy-dropped items tend to be blessed</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Blue Flame</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Shoot a blue fireball when your HP is full<br>(The blue fireball deals 20 damage)</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Dispersing</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>Extra damage will be dispersed next to you<br>(Doesn't apply to side hits from Tri-direction)</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow">Clutch</td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td>When HP is low, you'll always hit critically</td>
+          </tr>
+        </table>
+        <h4 id="new_weapon">New Type (Weapon)</h4>
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <h3 id="shield">Shield</h3>
+        <table>
+          <tr>
+            <th>Rune</th>
+            <th>Innate</th>
+            <th>Added</th>
+            <th>Synthesis</th>
+            <th>Effect</th>
+          </tr>
+          <tr>
+            <td class="highlight_yellow"></td>
+            <td class="highlight_blue"><a href=""></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <h4 id="new_shield">New Type (Shield)</h4>
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <h2 id="multipliers">Rune Multipliers</h2>
+        <table>
+          <tr>
+            <th>Rune</th>
+            <th>Item</th>
+            <th>Lv1</th>
+            <th>Lv2</th>
+            <th>Lv3</th>
+            <th>Lv4</th>
+            <th>Lv5</th>
+            <th>Lv6</th>
+            <th>Lv7</th>
+            <th>Lv8</th>
+            <th>Info</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <h2 id="details">Rune Details</h2>
+      </main>
+    </div>
+  </body>
+</html>
