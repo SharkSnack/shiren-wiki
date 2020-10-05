@@ -211,6 +211,14 @@ table th {
   background-color: #e6e6fa;
 }
 
+.highlight_green {
+  background-color: #CCFFCC;
+}
+
+.highlight_blue_2 {
+  background-color: #CCCCFF
+}
+
 .warning_text {
   color: red;
 }

@@ -41,6 +41,14 @@ table a:visited {
   color: #609;
 }
 
+.chart_table td {
+  text-align: center;
+}
+
+.text_center {
+  text-align: center;
+}
+
 .top {
   background-color: #ffb3b3;
 }
