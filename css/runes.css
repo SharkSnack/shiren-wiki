@@ -40,3 +40,47 @@ table a:hover {
 table a:visited {
   color: #609;
 }
+
+.top {
+  background-color: #ffb3b3;
+}
+
+.high {
+  background-color: #ffd3d3;
+}
+
+.mid {
+  background-color: #fffab3;
+}
+
+.low {
+  background-color: #a3e0fd;
+}
+
+.avoid {
+  background-color: #cccccc;
+}
+
+.not_applicable {
+  color: white;
+  background-color: #000000;
+}
+
+.special {
+  color: white;
+  background-color: #7700cc;
+}
+
+.emphasis {
+  font-weight: bold;
+}
+
+.table-notes {
+  font-size: 90%;
+  padding-left: 15px;
+}
+
+.detail_notes {
+  font-size: 90%;
+  padding-left: 15px;
+}
