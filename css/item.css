@@ -388,6 +388,10 @@ td.stat_table_center {
   padding-left: 15px;
 }
 
+.last_table_div {
+  padding-bottom: 3em;
+}
+
 @media screen and (max-width: 600px) {
   table {
     border: 0;
