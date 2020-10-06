@@ -49,6 +49,11 @@ table a:visited {
   text-align: center;
 }
 
+.trap_table th {
+  font-size: 80%;
+  letter-spacing: 0;
+}
+
 .top {
   background-color: #ffb3b3;
 }
