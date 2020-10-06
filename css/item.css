@@ -216,7 +216,15 @@ table th {
 }
 
 .highlight_blue_2 {
-  background-color: #CCCCFF
+  background-color: #CCCCFF;
+}
+
+.highlight_blue_3 {
+  background-color: #a3e0fd;
+}
+
+.highlight_pink {
+  background-color: #ffd3d3;
 }
 
 .warning_text {
