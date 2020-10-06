@@ -236,6 +236,10 @@ table th {
   color: red;
 }
 
+.important_text {
+  color: blue;
+}
+
 .text_non_turn_ending {
   color: #66f;
 }
