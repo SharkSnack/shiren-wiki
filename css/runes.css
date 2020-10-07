@@ -45,8 +45,17 @@ table a:visited {
   text-align: center;
 }
 
+.location_table td {
+  padding: 4px;
+  text-align: center;
+}
+
 .text_center {
   text-align: center;
+}
+
+td.td_text_left {
+  text-align: left;
 }
 
 .trap_table th {
@@ -86,6 +95,14 @@ table a:visited {
 
 .emphasis {
   font-weight: bold;
+}
+
+.desc {
+  padding-left: 20px;
+}
+
+.desc_list li {
+  margin-bottom: 5px;
 }
 
 .table-notes {
