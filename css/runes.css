@@ -105,6 +105,10 @@ td.td_text_left {
   margin-bottom: 5px;
 }
 
+.list_style_none {
+  list-style-type: none;
+}
+
 .table-notes {
   font-size: 90%;
   padding-left: 15px;
