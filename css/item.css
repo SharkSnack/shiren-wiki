@@ -394,6 +394,11 @@ td.stat_table_center {
   padding-bottom: 3em;
 }
 
+.trap_table th {
+  font-size: 80%;
+  letter-spacing: 0;
+}
+
 @media screen and (max-width: 600px) {
   table {
     border: 0;
