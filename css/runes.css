@@ -58,6 +58,10 @@ td.td_text_left {
   text-align: left;
 }
 
+th.th_text_left {
+  text-align: left;
+}
+
 .trap_table th {
   font-size: 80%;
   letter-spacing: 0;

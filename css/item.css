@@ -399,6 +399,15 @@ td.stat_table_center {
   letter-spacing: 0;
 }
 
+.npc_table th {
+  font-size: 80%;
+  letter-spacing: 0;
+}
+
+.npc_table td {
+  text-align: center;
+}
+
 @media screen and (max-width: 600px) {
   table {
     border: 0;
