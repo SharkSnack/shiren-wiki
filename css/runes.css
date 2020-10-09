@@ -93,6 +93,22 @@ td.td_text_left {
   background-color: #7700cc;
 }
 
+.platinum {
+  background-color: #e4f8ff
+}
+
+.gold {
+  background-color: #fff3b4;
+}
+
+.silver {
+  background-color: #e8e8e8;
+}
+
+.bronze {
+  background-color: #ffd4bf;
+}
+
 .emphasis {
   font-weight: bold;
 }
