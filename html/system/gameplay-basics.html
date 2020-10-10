@@ -25,33 +25,106 @@
         <div>
           <h2 class="page_heading">Gameplay Basics</h2>
           <div class="explanation">
-            <p>Text</p>
+            <p>
+              This page offers introductory information for Shiren 5's main gameplay mechanics.<br>
+              Additional details as they apply to specific dungeons or techniques can be found on other pages.
+            </p>
           </div>
           <ul id="quick_links">
             <li><a href="">Turns</a></li>
-            <li><a href="">Wind</a></li>
+            <li><a href="">Wind of Kron</a></li>
             <li><a href="">Day / Night</a></li>
             <li><a href="">Auras</a></li>
             <li><a href="">Super Shiren</a></li>
             <li><a href="">Equipment Growth</a></li>
             <li><a href="">Synthesis</a></li>
             <li><a href="">Tags</a></li>
-            <li><a href="">Blessings / Curses / Seals</a></li>
+            <li><a href="">Blessing / Curse / Seal</a></li>
             <li><a href="">Resonance</a></li>
             <li><a href="">Other Mechanics</a></li>
           </ul>
           <h2 id="">Mechanics</h2>
           <h3 id="">Turns</h3>
           <div class="explanation">
-            <p>Text</p>
+            <h4>Turns and Turn-Ending Actions</h4>
+            <p>
+              Being a turn-based roguelike, Shiren and monsters take turns when performing actions.<br>
+              Generally, turn-ending actions include movement, attacks, using an item, and stepping in place.<br>
+              Your turn <span class="blue_text_2">does not</span> end from idling, checking item details, or otherwise navigating menus.<br><br>
+              The following actions are easy to forget / mistake:
+            </p>
+            <ul class="desc_list">
+              <li>Equipping a weapon, shield, or bracelet <span class="red_text">does</span> end the turn, but equipping a projectile or staff <span class="blue_text_2">does not</span>.</li>
+              <li>Talking to an ally character or NPC <span class="red_text">does</span> end the turn.</li>
+              <li>Setting a trap on the ground <span class="blue_text_2">does not</span> end the turn.</li>
+            </ul>
+            <h4>Turns Elapsing</h4>
+            <p>
+              Various effects and events occur based on the number of turns that have elapsed.<br>
+              Do your best to avoid wasting turns with meaningless actions.
+            </p>
+            <ul class="desc_list">
+              <li>Fullness decreases by 1 every 10 turns.</li>
+              <li>Items that apply status conditions generally last a set number of turns.</li>
+              <li>A new monster is generated every N turns. (N depends on the dungeon)</li>
+              <li>A new enemy Shopkeep is generated every 5 turns when stealing from shops.</li>
+              <li>Time of day changes between day and night. (Some dungeons are daytime-only)</li>
+              <li>The Wind of Kron blows you out of the dungeon if you remain on one floor too long. (See next section)</li>
+              <li>HP regenerates every turn at a rate dependent on your max HP.<br>Examples:<br>15~50 = 1, 2, 1, 2...<br>51~66 = 1, 1, 1, 2...<br>96~101 = 1, 1, 1, 1...<br>124 = 1, 1, 1, 0...<br>200+ = 1, 0, 1, 0...</li>
+            </ul>
           </div>
-          <h3 id="">Wind</h3>
+          <h3 id="">Wind of Kron</h3>
           <div class="explanation">
-            <p>Text</p>
+            <p>
+              If you remain on the same floor of a dungeon for a long time, a strong wind begins to blow.<br>
+              The number of turns depends on the dungeon, but you'll have 3 warnings before being blown away.<br>
+              You'll automatically fail the adventure and lose all items and Gitan if that happens.<br>
+              If you can't make it to the exit in time, read an <a href="">Escape Scroll</a> or eat <a href="">Undo Grass</a>.<br><br>
+              In-game messages:
+            </p>
+            <ol class="desc_list">
+              <li>You feel the wind picking up.</li>
+              <li>The wind blows harder.</li>
+              <li>The wind gusts vigorously!</li>
+              <li>(Player) was blown away by a gust!</li>
+            </ol>
           </div>
           <h3 id="">Day / Night</h3>
           <div class="explanation">
-            <p>Text</p>
+            <p>
+              Many dungeons switch between day and night based on the number of elapsed turns.<br>
+              Day and night have their own monster tables, and all previous time of day monsters vanish<br>
+              and the floor is populated with new monsters when time of day changes.
+            </p>
+            <p>Day</p>
+            <ul class="desc_list">
+              <li>Direct attacks deal damage to monsters normally.</li>
+              <li>Can't use <a href="">abilities</a> during the day.</li>
+              <li>
+                Monsters will level up to their next rank when applicable.<br>
+                (example: Mamel → Pit Mamel)
+              </li>
+            </ul>
+            <p>Night</p>
+            <ul class="desc_list">
+              <li>Direct attacks only deal 1 damage to night monsters.</li>
+              <li>
+                Fixed damage attacks like <a href="">Dragon Grass</a> also only deal 1 damage.<br>
+                (However, special effects from staves, scrolls, etc. still work)
+              </li>
+              <li>Primarily use <a href="">abilities</a> to deal damage.</li>
+              <li>
+                Field of View changes to 1-tile radius without a <a href="">torch</a> equipped.<br>
+                (You also can't read scrolls and take more damage from night monsters without light)
+              </li>
+              <li>Night monsters have unpredictable movement, and will attack any adjacent creature.</li>
+              <li>
+                Night monsters will limit break when they level up instead of moving to their next rank.
+                <br>(example: Dark Mamel → Dark Mamel2)
+              </li>
+              <li>Can't use the Scout command unless you read a <a href="">Navigation Scroll</a> or <a href="">Fixer Scroll</a>.</li>
+              <li>Items dropped by night monsters are always <a href="">blessed</a>, and are selected from the dungeon's shop table.</li>
+            </ul>
           </div>
           <h3 id="">Auras</h3>
           <div class="explanation">
@@ -73,12 +146,12 @@
           <div class="explanation">
             <p>Text</p>
           </div>
-          <h3 id="">Blessings / Curses / Seals</h3>
+          <h3 id="">Blessing / Curse / Seal</h3>
           <div class="explanation">
           <ul class="desc_list">
             <li>Blessed items are worth 10% more Gitan, and cursed or sealed items are worth 80% of their regular value.</li>
             <li>
-              Blessed bracelets and pots are protected from being cursed, sealed, or turned into an onigiri.<br>
+              Blessed bracelets and pots are protected from being cursed, sealed, or turned into onigiri.<br>
               The blessing has a chance to wear off: "But X was fine because it was blessed." - Curse Trap, Curse Scroll, Nigiri Morph<br>
               The blessing won't wear off: "...But the Curse was ineffective." - Curse Girls
             </li>

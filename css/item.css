@@ -243,6 +243,14 @@ table th {
   color: blue;
 }
 
+.blue_text_2 {
+  color: #66f;
+}
+
+.red_text {
+  color: #f66;
+}
+
 .text_non_turn_ending {
   color: #66f;
 }
