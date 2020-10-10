@@ -98,7 +98,7 @@ th.th_text_left {
 }
 
 .platinum {
-  background-color: #e4f8ff
+  background-color: #e4f8ff;
 }
 
 .gold {
@@ -111,6 +111,26 @@ th.th_text_left {
 
 .bronze {
   background-color: #ffd4bf;
+}
+
+.purple {
+  background-color: #cfafe2;
+}
+
+.explanation_2 {
+  padding: 0 1em;
+  font-size: 90%;
+}
+
+.monster_table {
+  font-size: 95%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.monster_table td {
+  padding: 4px;
+  text-align: center;
 }
 
 .emphasis {

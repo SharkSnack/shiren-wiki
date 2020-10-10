@@ -226,6 +226,10 @@ table th {
   background-color: #a3e0fd;
 }
 
+.highlight_blue_4 {
+  background-color: #99ccff;
+}
+
 .highlight_pink {
   background-color: #ffd3d3;
 }
@@ -249,6 +253,14 @@ table th {
 
 .red_text {
   color: #f66;
+}
+
+.green_text {
+  color: #009e25;
+}
+
+.blue_text_3 {
+  color: #0060a2;
 }
 
 .text_non_turn_ending {
