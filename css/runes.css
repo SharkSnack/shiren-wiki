@@ -141,6 +141,21 @@ th.th_text_left {
   text-align: center;
 }
 
+.item_table {
+  font-size: 95%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.item_table td {
+  padding: 4px;
+  text-align: center;
+}
+
+td.text_left {
+  text-align: left;
+}
+
 .emphasis {
   font-weight: bold;
 }
