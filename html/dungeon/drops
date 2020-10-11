@@ -1,16 +1,16 @@
-weapons 36
-shields 33 
+weapon 23
+shield 22
 
-bracelets 33
-grass 33
+bracelet 9
+scroll 18
+grass 17
 
-staves 24
-pots 33
-projectiles 14
+staff 11
+pot 7
+talisman 3
+projectile 12
+food 6
 
-scrolls 52
-food 11
-talismans 13
 
 Hermit's Hermitage (Shop):
 --------------------------
@@ -162,7 +162,154 @@ Appraiser, Lost Soul, Mekky, Tagger, Connoisseur, Calligrapher, Curse Breaker, U
 
 Tower of Fortune:
 -----------------
+(Floor):
+Sale Pot
+Large Onigiri
+Sale Scroll
+Electric Staff
+Conf. Talisman
+Sky Splitter
+Reflection Pot
+Otogiriso
+Student Shield
+Strength Bracelet
+Super Torch
+Plating Scroll
+Upgrade Grass
+Tag Scroll
+Heal Grass
+Knockback Staff
+Synthesis Pot
+Wood Arrow
+Warp Grass
+Gathering Scroll
+Vacuum Slash Scrl
+Copper Cleaver
+Power Up Grass
+Alert Bracelet
+Preservation Pot
+Pinning Staff
+Drain Arrow
+Item Detector
+Monster Detector
+Exorcism Scroll
+Immunity Scroll
+Herb
+Strength Grass
+Snake Shield
 
-2F:
-Point Switch
+
+(Presto):
+Torch
+Fine Torch
+Wood Arrow
+Knockback Staff
+Rock
+Hard Peach
+Escape Scroll
+Shadow Bind Tal.
+Electric Staff
+Swap Staff
+Peach
+Warp Grass
+Upgrade Grass
+Otogiriso
+Iron Targe
+Iron Arrow
+Super Torch
+Oil Scroll
+Mage Staff
+Beast Fang
+Onigiri
+Tin Blade
+Random Arrow
+Dragon Grass
+Conf. Talisman
+Plain Targe
+Identify Scroll
+Perception Grass
+Seal Talisman
+Antidote Grass
+Alert Bracelet
+Ordinary Stick
+Swift Grass
+Porky Rock
+Sale Scroll
+Water Cutter
+Drain Arrow
+Tin Shield
+Myopic Masher
+Navigation Scroll
+Anti-Cnf. Bracelet
+Power Up Grass
+Exorcism Scroll
+
+Shiny(yellow):
+Fear Talisman
+Gyadon Blocker
+Strength Bracelet
+Safe Shield
+Shockuto
+Hide Pot
+Empathy Staff
+Day Shield
+Life Grass
+Perceptive Pot
+Revival Grass
+Recommend. Letter
+Paralysis Staff
+Beast Shield
+Super Torch
+Item Detector
+Beast Fang
+Slow Talisman
+Exorcism Scroll
+Large Onigiri
+Electric Staff
+Clone Staff
+Nap Rattle
+Dodger Pot
+Lock Shield
+Binary Shield
+Steady Shield
+Growth Bracelet
+Undo Grass
+Slow Staff
+Can. Arm Bracelet
+Synthesis Pot
+Escape Scroll
+Heal Pot
+Antidote Grass
+Cheery Grass
+Shoddy Dirk
+Sanctuary Scroll
+Strength Grass
+Random Arrow
+Zen Pot
+Perception Grass
+Slumber Scroll
+Monster Detector
+Sealing Keisaku
+Water Pot
+Swift Grass
+Sleep Talisman
+Critical Arrow
+Ordinary Pot
+Wood Arrow
+Bladite
+Heal Grass
+Earth Scroll
+Plating Scroll
+
+(Elite):
+Anti-Crs. Bracelet
+Burning Blade
+Invincible Grass
+Fuuma Shield
+Anti-Gaze Trge
+Fort. Staff
+
+1-3F: Point Switch, Spin, Rust, Hunger, Trip, Decay, Poison Arrow, Sleep, Strip
+4-9F: Point Switch, Hunger, Rust, Trip, Rockslide, Spring, Rage, Strip, Decay, Poison Arrow, Explosion, Summon
+
 
