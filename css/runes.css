@@ -117,6 +117,14 @@ th.th_text_left {
   background-color: #cfafe2;
 }
 
+.presto {
+  color: green;
+}
+
+.shiny {
+  color: #e1950a;
+}
+
 .explanation_2 {
   padding: 0 1em;
   font-size: 90%;
