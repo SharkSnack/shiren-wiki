@@ -57,7 +57,7 @@
               <td>Day</td>
             </tr>
             <tr>
-              <td class="highlight_blue">Brought Items</td>
+              <td class="highlight_blue">Bring Items</td>
               <td>Yes</td>
               <td class="highlight_blue">Allies</td>
               <td>3</td>
@@ -114,6 +114,7 @@
               <th>Atk</th>
               <th>Def</th>
               <th>Exp</th>
+              <th>E.Exp</th>
               <th>Effective<br>Rune / Item</th>
               <th>Notes</th>
             </tr>
@@ -124,6 +125,7 @@
               <td>10</td>
               <td>1</td>
               <td>5</td>
+              <td>3</td>
               <td><span class="green_text">Anti-Plant</span></td>
               <td>Throws the grass item it's carrying from a distance with piercing properties,<br>or spreads the effect to all creatures in a 1-tile radius if it's adjacent to you.<br>Transforms into Pin Kid after using the grass item it was carrying.<br>Always drops the grass item it's carrying when defeated.</td>
             </tr>
@@ -134,8 +136,9 @@
               <td>10</td>
               <td>1</td>
               <td>5</td>
+              <td>1</td>
               <td><span class="green_text">Anti-Plant</span></td>
-              <td>Moves at double speed, but only attacks once.<br>Transforms into Grass Boy if it finds a grass item, or if you throw grass at it.<br>It generally tries to run away from Shiren, but will attack if you're adjacent to it.</td>
+              <td>Moves at double speed, but only attacks once.<br>Transforms into Grass Boy if it finds a grass item, or if you throw grass at it.<br>It generally tries to run away from Shiren, but will attack if you're next to it.</td>
             </tr>
             <tr>
               <td>1-2</td>
@@ -144,8 +147,9 @@
               <td>11</td>
               <td>5</td>
               <td>15</td>
+              <td>4</td>
               <td><span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Explode</span></td>
-              <td>Swallows thrown items and multiplies the amount of exp it gives when defeated.<br>However, there's a chance it'll explode when it swallows an item.</td>
+              <td>Eats thrown items and multiplies the amount of exp it gives when defeated.<br>However, there's a chance it'll explode when it swallows an item.</td>
             </tr>
             <tr>
               <td>1-2</td>
@@ -154,6 +158,7 @@
               <td>12</td>
               <td>7</td>
               <td>18</td>
+              <td>1</td>
               <td><span class="green_text">Anti-Burgle</span></td>
               <td>Steals Gitan, and doesn't attack unless <a href="">Sealed</a>.<br>If it finds Gitan on the ground, it'll move toward it and sit on top of the Gitan.</td>
             </tr>
@@ -164,6 +169,7 @@
               <td>12</td>
               <td>7</td>
               <td>18</td>
+              <td>6</td>
               <td>-</td>
               <td>Can one-shot it by throwing an onigiri at it.</td>
             </tr>
@@ -174,8 +180,9 @@
               <td>14</td>
               <td>8</td>
               <td>45</td>
+              <td>9</td>
               <td><span class="green_text">Anti-Metal</span></td>
-              <td>Moves at double speed, but only attacks once.<br>Always generated <a href="">Napping</a>, and wakes up when you enter the room.<br>Creates traps (selected from that floor's trap table) inside rooms.<br>Pauses for 2 turns after creating a trap, and can create a trap when defeated.</td>
+              <td>Moves at double speed, but only attacks once.<br>Always generated <a href="">Napping</a>, and wakes up when you enter the room.<br>Creates traps (selected from that floor's trap table) inside rooms.<br>Stops for 2 turns after creating a trap, and can create a trap when defeated.</td>
             </tr>
             <tr>
               <td>2-4</td>
@@ -184,6 +191,7 @@
               <td>13</td>
               <td>10</td>
               <td>45</td>
+              <td>10</td>
               <td>-</td>
               <td>Throws creatures at Shiren, or Shiren at other creatures / onto traps.</td>
             </tr>
@@ -194,6 +202,7 @@
               <td>15</td>
               <td>4</td>
               <td>15</td>
+              <td>9</td>
               <td><span class="green_text">Anti-Magic</span></td>
               <td>Attracts Shiren and up to 3 other characters toward itself and attacks.<br>It won't use its special attack when you're adjacent to it.</td>
             </tr>
@@ -204,6 +213,7 @@
               <td>18</td>
               <td>4</td>
               <td>24</td>
+              <td>7</td>
               <td><span class="blue_text_3">Anti-Crs. Bracelet</span></td>
               <td><a href="">Curses or seals</a> 1 item. Throwing an <a href="">Exorcism Scroll</a> deals 100 damage.</td>
             </tr>
@@ -214,6 +224,7 @@
               <td>19</td>
               <td>10</td>
               <td>45</td>
+              <td>20</td>
               <td><span class="green_text">Anti-Aquatic</span></td>
               <td>Converts most non-direct attacks / effects to 2 damage.<br>Status condition inflicting runes still work, and explosions will still one-shot it.</td>
             </tr>
@@ -225,6 +236,7 @@
               <td>7</td>
               <td>18</td>
               <td>-</td>
+              <td>6</td>
               <td>Moves at double speed, but only attacks once.<br>They're always generated <a href="">Napping</a>, and wake up when you enter the room.<br>If you get surrounded by 3 of them, they can warp you 1~3 floors.</td>
             </tr>
             <tr>
@@ -234,6 +246,7 @@
               <td>20</td>
               <td>12</td>
               <td>43</td>
+              <td>24</td>
               <td><span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Floating</span></td>
               <td>Can move through walls, and also attack from inside walls.<br>Moves around in an erratic manner.</td>
             </tr>
@@ -244,6 +257,7 @@
               <td>16</td>
               <td>8</td>
               <td>16</td>
+              <td>8</td>
               <td><span class="green_text">Anti-Metal</span></td>
               <td>Disguises itself as an item, and attacks when you try to pick it up.</td>
             </tr>
@@ -254,6 +268,7 @@
               <td>27</td>
               <td>11</td>
               <td>46</td>
+              <td>10</td>
               <td><span class="blue_text_3">Alert Bracelet</span></td>
               <td>Occasionally yawns, inflicting <a href="">Asleep</a> status to characters in a 1-tile radius.<br>Always generated <a href="">Napping</a>, and won't wake up when Shiren enters or exits<br>the room or walks next to it.</td>
             </tr>
@@ -264,6 +279,7 @@
               <td>15</td>
               <td>12</td>
               <td>49</td>
+              <td>8</td>
               <td><span class="green_text">Anti-Plant</span><br><span class="blue_text_3">Cleansing Bracelet</span></td>
               <td>Throws <a href="">Poison Grass</a> at a target up to 2 tiles ahead.<br>Throwing an <a href="">Antidote Grass</a> deals 50 damage.<br>It can never drop anything besides Poison Grass when defeated.</td>
             </tr>
@@ -274,8 +290,9 @@
               <td>15</td>
               <td>9</td>
               <td>33</td>
+              <td>7</td>
               <td><span class="green_text">Anti-Aquatic</span></td>
-              <td>Doesn't attack, but decreases a weapon or shield's upgrade value by 1 instead.<br>Equipment tags can be lost when the equipment's upgrade value is lowered.<br>Occasionally duplicates itself when hit by an attack.</td>
+              <td>Doesn't attack, but decreases weapon or shield upgrade value by 1 instead.<br>Equipment tags can be lost when the equipment's upgrade value is lowered.<br>Occasionally duplicates itself when hit by an attack.</td>
             </tr>
             <tr>
               <td>7</td>
@@ -284,7 +301,8 @@
               <td>15</td>
               <td>9</td>
               <td>36</td>
-              <td>-</td>
+              <td>40</td>
+              <td><span class="blue_text_3">Water Pot</span><br><span class="blue_text_3">Perceptive Pot</span><br>Tag equipment</td>
               <td>Parries your equipped shield, flinging it behind you 10 tiles.</td>
             </tr>
             <tr>
@@ -294,6 +312,7 @@
               <td>21</td>
               <td>9</td>
               <td>41</td>
+              <td>12</td>
               <td><span class="green_text">Anti-Drain</span><br><span class="blue_text_3">Cleansing Bracelet</span></td>
               <td>Decreases strength by 1 when you're adjacent to it. (Ally: Inflicts <a href="">Weakened</a>)<br>Throwing an <a href="">Antidote Grass</a> deals 50 damage.</td>
             </tr>
@@ -304,6 +323,7 @@
               <td>19</td>
               <td>11</td>
               <td>55</td>
+              <td>15</td>
               <td><span class="green_text">Anti-Cyclops</span></td>
               <td>Attacks from up to 2 tiles away, and can attack through corners.<br>Can charge its strength to deal x2.0 damage on the next turn.<br>Its charge will be canceled if it moves.</td>
             </tr>
