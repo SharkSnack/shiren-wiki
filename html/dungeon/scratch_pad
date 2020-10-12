@@ -1,13 +1,19 @@
-weapon 
-shield 
-bracelet 
-scroll 
-grass 
-talisman 
-pot 
-projectile 
-food 
-other 
+weapon 32
+shield 29
+
+bracelet 12
+scroll 26
+grass 17
+food 6
+
+staff 12
+pot 13
+talisman 8
+projectile 12
+other 11
+
+
+60 x 3
 
 
 Connoisseur

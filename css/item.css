@@ -239,6 +239,10 @@ table th {
   background-color: black;
 }
 
+.highlight_orange {
+  background-color: #ffb23e;
+}
+
 .warning_text {
   color: red;
 }
