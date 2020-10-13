@@ -199,7 +199,7 @@ table th {
 }
 
 .equipment_lv8 {
-  background-color: #ffffcc;
+  background-color: #ffffeb;
 }
 
 .stacks {
@@ -207,7 +207,7 @@ table th {
 }
 
 .highlight_yellow {
-  background-color: #ffffcc;
+  background-color: #ffffd5;
 }
 
 .highlight_blue {
@@ -241,6 +241,10 @@ table th {
 
 .highlight_orange {
   background-color: #ffb23e;
+}
+
+.highlight_yellow_2 {
+  background-color: #ffffeb;
 }
 
 .warning_text {
