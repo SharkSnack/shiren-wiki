@@ -1,19 +1,23 @@
 weapon 32
 shield 29
+- 65
 
 bracelet 12
-scroll 26
+scroll 28 (+3)
 grass 17
 food 6
+- 71
 
-staff 12
-pot 13
+staff 14 (+2)
+pot 17 (+4)
 talisman 8
 projectile 12
 other 11
-
-
-60 x 3
+-72
 
 
 Connoisseur
+
+Tag
+Immunity
+Collection
