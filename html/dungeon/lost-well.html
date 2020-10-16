@@ -29,8 +29,24 @@
           </div>
           <ul id="quick_links">
             <li><a href="#dungeon_overview">Dungeon Overview</a></li>
-            <li><a href="#equipment">Equipment</a></li>
-            <li><a href="#strategy">Strategy</a></li>
+            <li><a href="#equipment">Collecting Catstones</a></li>
+            <li><a href="#strategy">Strategy</a>
+              <ul>
+                <li><a href="#thing_id">General</a></li>
+                <li><a href="#thing_id">Identifying</a></li>
+                <li><a href="#thing_id">Equipment</a></li>
+                <li><a href="#thing_id">Other Items</a></li>
+                <li><a href="#thing_id">Farming</a></li>
+              </ul>
+            </li>
+            <li><a href="#strategy">Floor Guide</a>
+              <ul>
+                <li><a href="#thing_id">1-25F</a></li>
+                <li><a href="#thing_id">26-49F</a></li>
+                <li><a href="#thing_id">50-74F</a></li>
+                <li><a href="#thing_id">75-99F</a></li>
+              </ul>
+            </li>
             <li><a href="#monsters">Monsters</a></li>
             <li><a href="#monster_table">Monster Table</a></li>
             <li><a href="#item_table">Items</a></li>
@@ -45,13 +61,13 @@
             </tr>
             <tr>
               <td class="purple">Entrance</td>
-              <td colspan="3" class="highlight_yellow">Beginner House in Inori Village. (north)</td>
+              <td colspan="3" class="highlight_yellow">Sparrow's Inn (check the well)</td>
             </tr>
           </table>
           <table class="trap_table">
             <tr>
               <td class="highlight_blue">Floors</td>
-              <td>42F (First) / 99F</td>
+              <td>30F (First) / 99F</td>
               <td class="highlight_blue">Day / Night</td>
               <td>Both</td>
             </tr>
@@ -59,11 +75,11 @@
               <td class="highlight_blue">Bring Items</td>
               <td>Yes</td>
               <td class="highlight_blue">Allies</td>
-              <td>3</td>
+              <td>1</td>
             </tr>
             <tr>
               <td class="highlight_blue">Unidentified</td>
-              <td>Weapons,<br>Shields,<br>Bracelets</td>
+              <td>All items</td>
               <td class="highlight_blue">New Items</td>
               <td>Yes</td>
             </tr>
@@ -75,85 +91,33 @@
             </tr>
             <tr>
               <td class="highlight_blue">Initial Enemies</td>
-              <td>6~15</td>
+              <td>?</td>
               <td class="highlight_blue">Spawn Rate</td>
-              <td>30 day / 20 night</td>
+              <td>?</td>
+            </tr>
+            <tr>
+              <td class="highlight_blue">Day</td>
+              <td>? turns</td>
+              <td class="highlight_blue">Night</td>
+              <td>? turns</td>
             </tr>
             <tr>
               <td class="highlight_blue">Ominous aura</td>
-              <td>-</td>
+              <td>?</td>
               <td class="highlight_blue">Wind of Kron</td>
               <td>1st: ?<br>4th: ?</td>
             </tr>
             <tr>
               <td class="highlight_blue">Clear Icon</td>
-              <td>Catstones</td>
+              <td>Sparrow</td>
               <td class="highlight_blue">Reward</td>
-              <td>Have a wish granted,<br>or Undo Grass (no Catstones)</td>
+              <td>Parry Shield (First time)</td>
             </tr>
           </table>
           <div class="explanation_2">
-            <p>List of wishes (requires 7 Catstones each time):</p>
+            <p>Text</p>
           </div>
-          <table class="trap_table">
-            <tr>
-              <th>Wish</th>
-              <th>Effect</th>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish for an unstoppable weapon.</td>
-              <td>Obtain a <a href="">Kaburagi</a>.</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish for an invincible shield.</td>
-              <td>Obtain a <a href="">Helix Shield</a>.</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish to be totally blessed.</td>
-              <td>All inventory items become blessed, including items in pots.</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish to learn the ultimate ability.</td>
-              <td>Learn the Transmogrification <a href="">ability</a>.<br>(Turns a monster in front of you into an item)<br>※ You can only wish for this one time.</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish to play a tougher dungeon.</td>
-              <td>Unlocks the <a href="">Destiny's Descent</a> dungeon.<br>(Located at the Tower of Fortune entrance area)<br>※ You can only wish for this one time.</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish to be popular with girls.</td>
-              <td>Female characters in Nekomaneki Village will react differently.<br>(Obtain a <a href="">Shrine Maid. Pot</a> if you visit the north west house)</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish to be popular with guys.</td>
-              <td>Male characters in Nekomaneki Village will react differently.<br>(Obtain 9 <a href="">David's Bullet</a> from someone toward the south)</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish that I was rich.</td>
-              <td>Your current Gitan total is increased to 999,999G.</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish to fight the Reeva Statue.</td>
-              <td>Have a rematch with <a href="">Gr. Reeva Statue</a>.</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish to fight Gendolucika.</td>
-              <td>Have a rematch with <a href="">Gendolucika</a>.<br>※ Option appears after clearing the <a href="">Old Road</a> dungeon.</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish to fight Jack Wand monsters.</td>
-              <td>Battle 1 of the 8 <a href="">Jack Wand</a> boss monsters of your choosing.<br>(It'll be registered to your Monster Book if you defeat it)</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I wish for the ability to fly.</td>
-              <td>Obtain a <a href="">Floating Bracelet</a>.<br>(You can walk on water and void tiles, and won't trigger traps)</td>
-            </tr>
-            <tr>
-              <td class="highlight_blue">I don't wish for anything.</td>
-              <td>Obtain a <a href="">Night Ward</a>.<br>(Increases direct attack damage against night monsters)</td>
-            </tr>
-          </table>
-          <h3 id="equipment">Equipment</h3>
+          <h3 id="equipment">Collecting Catstones</h3>
           <div class="explanation_2">
             <p>Text</p>
           </div>
@@ -166,15 +130,32 @@
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h4 id="tower_skywalk">1-20F</h4>
+          <h4 id="tower_skywalk">Equipment</h4>
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h4 id="tower_skywalk">21-50F</h4>
+          <h4 id="tower_skywalk">Other Items</h4>
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h4 id="tower_skywalk">51-99F</h4>
+          <h4 id="tower_skywalk">Farming</h4>
+          <div class="explanation_2">
+            <p>Text</p>
+          </div>
+          <h3 id="strategy">Floor Guide</h3>
+          <h4 id="unexplored_area">1-25F</h4>
+          <div class="explanation_2">
+            <p>Text</p>
+          </div>
+          <h4 id="unexplored_area">26-49F</h4>
+          <div class="explanation_2">
+            <p>Text</p>
+          </div>
+          <h4 id="unexplored_area">50-74F</h4>
+          <div class="explanation_2">
+            <p>Text</p>
+          </div>
+          <h4 id="unexplored_area">75-99F</h4>
           <div class="explanation_2">
             <p>Text</p>
           </div>
@@ -2443,32 +2424,148 @@
             <tr>
               <th>Trap</th>
               <th>Floors</th>
+              <th rowspan="9"></th>
+              <th>Trap</th>
+              <th>Floors</th>
+              <th rowspan="9"></th>
               <th>Trap</th>
               <th>Floors</th>
             </tr>
             <tr>
+              <td class="highlight_blue">Iron Arrow</td>
+              <td>1-2</td>
+              <td class="highlight_blue">Shadow Bind</td>
+              <td>1-90</td>
+              <td class="highlight_blue">Stairs?</td>
+              <td>1-99</td>
+            </tr>
+            <tr>
+              <td class="highlight_blue">Duelist</td>
+              <td>1-20, 75-84</td>
+              <td class="highlight_blue">Poison Arrow</td>
+              <td>1-90</td>
               <td class="highlight_blue">Point Switch</td>
               <td>1-99</td>
+            </tr>
+            <tr>
+              <td class="highlight_blue">Trip</td>
+              <td>1-90</td>
+              <td class="highlight_blue">Hunger</td>
+              <td>1-90</td>
+              <td class="highlight_blue">Shiny Object</td>
+              <td>1-99</td>
+            </tr>
+            <tr>
+              <td class="highlight_blue">Strip</td>
+              <td>1-90</td>
+              <td class="highlight_blue">Curse</td>
+              <td>1-99</td>
+              <td class="highlight_blue">Rockslide</td>
+              <td>3-5</td>
+            </tr>
+            <tr>
+              <td class="highlight_blue">Multiplication</td>
+              <td>1-90</td>
+              <td class="highlight_blue">Summon</td>
+              <td>1-99</td>
+              <td class="highlight_blue">Metal</td>
+              <td>6-90</td>
+            </tr>
+            <tr>
+              <td class="highlight_blue">Cure Monster</td>
+              <td>1-90</td>
+              <td class="highlight_blue">Slow</td>
+              <td>1-99</td>
+              <td class="highlight_blue">Explosion</td>
+              <td>11-99</td>
+            </tr>
+            <tr>
+              <td class="highlight_blue">Spin</td>
+              <td>1-90</td>
+              <td class="highlight_blue">Onigiri</td>
+              <td>1-99</td>
+              <td class="highlight_blue">Big Explosion</td>
+              <td>11-99</td>
+            </tr>
+            <tr>
+              <td class="highlight_blue">Sleep</td>
+              <td>1-90</td>
               <td class="highlight_blue">Blind</td>
-              <td>6-12, 38-99</td>
+              <td>1-99</td>
+              <th colspan="2"></th>
             </tr>
           </table>
           <h3 id="npcs">NPCs</h3>
           <div class="explanation_2">
             <p>See <a href="">Wandering NPCs</a> for details.</p>
           </div>
-          <table class="npc_table">
+          <table class="trap_table">
             <tr>
               <th>NPC</th>
               <th>Floors</th>
+              <th rowspan="11"></th>
               <th>NPC</th>
               <th>Floors</th>
             </tr>
             <tr>
-              <td class="text_left">Gachagacha</td>
-              <td>70-83</td>
-              <td class="text_left">Boy</td>
-              <td>70-83</td>
+              <td class="highlight_green">Gachagacha</td>
+              <td>1-14</td>
+              <td class="highlight_green">Boy</td>
+              <td>1-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Apprentice</td>
+              <td>1-14</td>
+              <td class="highlight_green">Appraiser</td>
+              <td>1-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Tradesman</td>
+              <td>1-14</td>
+              <td class="highlight_green">Curse Breaker</td>
+              <td>1-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Master</td>
+              <td>1-14</td>
+              <td class="highlight_green">Calligrapher</td>
+              <td>1-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Upgrader</td>
+              <td>1-14</td>
+              <td class="highlight_green">Blacksmith 1</td>
+              <td>4-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Researcher</td>
+              <td>1-14</td>
+              <td class="highlight_green">Blacksmith 2</td>
+              <td>4-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Connoisseur</td>
+              <td>1-14</td>
+              <td class="highlight_green">Peddler</td>
+              <td>4-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Lost Soul</td>
+              <td>1-14</td>
+              <td class="highlight_green">Chiroro</td>
+              <td>4-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Tagger</td>
+              <td>1-14</td>
+              <td class="highlight_green">Mekky</td>
+              <td>4-14</td>
+            </tr>
+            <tr>
+              <td class="highlight_green">Madam Ateska</td>
+              <td>1-14</td>
+              <td class="highlight_green">Digger Don</td>
+              <td>6-14</td>
             </tr>
           </table>
           <div class="page_bottom_padding"></div>
