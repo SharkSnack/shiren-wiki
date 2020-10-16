@@ -152,6 +152,17 @@ th.th_text_left {
   text-align: center;
 }
 
+.item_table_2 {
+  font-size: 88%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.item_table_2 td {
+  padding: 3.5px;
+  text-align: center;
+}
+
 td.text_left {
   text-align: left;
 }
