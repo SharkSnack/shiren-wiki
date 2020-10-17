@@ -524,7 +524,7 @@ monsters_en = {
 
 # --- main ---
 html = []
-file = File.read('descent_monsters_night')
+file = File.read('rocks_monsters_day')
 
 # headers
 html.push('<table class="trap_table">
@@ -555,7 +555,7 @@ file.each_line do |line|
 
   html.push('  <tr>')
   html.push("    <td>#{floors}</td>")
-  html.push("    <td class=\"highlight_blue\">#{monsters_en[jp_name] || 'MISSING_NAME'}</td>")
+  html.push("    <td class=\"highlight_yellow\">#{monsters_en[jp_name] || 'MISSING_NAME'}</td>")
   html.push("    <td>#{hp}</td>")
   html.push("    <td>#{attack}</td>")
   html.push("    <td>#{defense}</td>")
