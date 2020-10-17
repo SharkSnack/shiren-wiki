@@ -28,15 +28,38 @@
             <p>Text</p>
           </div>
           <ul id="quick_links">
-            <li><a href="#dungeon_overview">Dungeon Overview</a></li>
-            <li><a href="#strategy">Strategy</a></li>
-            <li><a href="#monsters">Monsters</a></li>
-            <li><a href="#monster_table">Monster Table</a></li>
-            <li><a href="#item_table">Items</a></li>
-            <li><a href="#trap_table">Traps</a></li>
+            <li><a href="#overview">Dungeon Overview</a></li>
+            <li><a href="#strategy">Strategy</a>
+              <ul>
+                <li><a href="#farming">Farming</a></li>
+              </ul>
+            </li>
+            <li><a href="#floor_guide">Floor Guide</a>
+              <ul>
+                <li><a href="#1_3f">Unexplored Area (1-3F)</a></li>
+                <li><a href="#4_6f">Tower Area 1 (4-6F)</a></li>
+                <li><a href="#7_11f">Tower Skywalk (7-11F)</a></li>
+                <li><a href="#12_14f">Tower Area 2 (12-14F)</a></li>
+                <li><a href="#boss">Boss</a></li>
+              </ul>
+            </li>
+            <li><a href="#monsters">Monsters</a>
+              <ul>
+                <li><a href="#day_monsters">Day</a></li>
+                <li><a href="#night_monsters">Night</a></li>
+              </ul>
+            </li>
+            <li><a href="#monster_table">Monster Table</a>
+              <ul>
+                <li><a href="#day_monster_table">Day</a></li>
+                <li><a href="#night_monster_table">Night</a></li>
+              </ul>
+            </li>
+            <li><a href="#items">Items</a></li>
+            <li><a href="#traps">Traps</a></li>
             <li><a href="#npcs">NPCs</a></li>
           </ul>
-          <h3 id="dungeon_overview">Dungeon Overview</h3>
+          <h2 id="overview">Dungeon Overview</h2>
           <table class="trap_table">
             <tr>
               <td class="purple">Unlock</td>
@@ -91,33 +114,34 @@
               <td>-</td>
             </tr>
           </table>
-          <h3 id="strategy">Strategy</h3>
-          <h4 id="unexplored_area">Unexplored Area (1-3F)</h4>
+          <h2 id="strategy">Strategy</h2>
+          <h3 id="farming">Farming</h3>
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h4 id="tower_area_1">Tower Area 1 (4-6F)</h4>
+          <h2 id="floor_guide">Floor Guide</h2>
+          <h3 id="1_3f">Unexplored Area (1-3F)</h3>
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h4 id="tower_skywalk">Tower Skywalk (7-11F)</h4>
+          <h3 id="4_6f">Tower Area 1 (4-6F)</h3>
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h4 id="tower_area_2">Tower Area 2 (12-14F)</h4>
+          <h3 id="7_11f">Tower Skywalk (7-11F)</h3>
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h4 id="boss">Boss</h4>
+          <h3 id="12_14f">Tower Area 2 (12-14F)</h3>
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h4 id="farming">Farming</h4>
+          <h3 id="boss">Boss</h3>
           <div class="explanation_2">
             <p>Text</p>
           </div>
-          <h3 id="monsters">Monsters</h3>
-          <h4>Day</h4>
+          <h2 id="monsters">Monsters</h2>
+          <h4 id="day_monsters">Day</h4>
           <table class="trap_table">
             <tr>
               <th>F</th>
@@ -549,7 +573,7 @@
               <td></td>
             </tr>
           </table>
-          <h4>Night</h4>
+          <h4 id="night_monsters">Night</h4>
           <table class="trap_table">
             <tr>
               <th>F</th>
@@ -937,8 +961,8 @@
               <td></td>
             </tr>
           </table>
-          <h3 id="monster_table">Monster Table</h3>
-          <table class="monster_table">
+          <h2 id="monster_table">Monster Table</h2>
+          <table id="day_monster_table" class="monster_table">
             <tr>
               <th colspan="10">Day</th>
             </tr>
@@ -1111,7 +1135,7 @@
               <td></td>
             </tr>
           </table>
-          <table class="monster_table">
+          <table id="night_monster_table" class="monster_table">
             <tr>
               <th colspan="11" class="highlight_black">Night</th>
             </tr>
@@ -1256,7 +1280,7 @@
               <td></td>
             </tr>
           </table>
-          <h3 id="item_table">Items</h3>
+          <h2 id="items">Items</h2>
           <ul>
             <li>F = Floor, Daytime monster drop</li>
             <li>S = Shop, Shiny object (yellow), Night monster drop</li>
@@ -2607,7 +2631,7 @@
               <td></td>
             </tr>
           </table>
-          <h3 id="trap_table">Traps</h3>
+          <h2 id="traps">Traps</h2>
           <table class="trap_table">
             <tr>
               <th>Trap</th>
@@ -2664,7 +2688,7 @@
               <th colspan="2"></th>
             </tr>
           </table>
-          <h3 id="npcs">NPCs</h3>
+          <h2 id="npcs">NPCs</h2>
           <div class="explanation_2">
             <p>See <a href="">Wandering NPCs</a> for details.</p>
           </div>
