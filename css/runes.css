@@ -163,6 +163,12 @@ th.th_text_left {
   text-align: center;
 }
 
+.ally_intro {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 td.text_left {
   text-align: left;
 }
