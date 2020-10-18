@@ -165,7 +165,7 @@
               <li>Gain <span class="blue_text_2">Modder</span> status - Earn x4.0 equipment exp from defeating monsters. (2 floors)</li>
               <li>Gain <span class="blue_text_2">Fast Striking</span> status - Attack twice per turn. (50 turns)</li>
               <li>Gain <span class="blue_text_2">Precise</span> status - All attacks become critical hits. (50 turns)</li>
-              <li class="list_style_none">※ Overwhelming and Indomitable can be repeated to boost attack or defense multiple times.<br>　If attack or defense reaches the boost limit, the corresponding status won't wear off even after 3 floors.</li>
+              <li class="list_style_none">※ Overwhelming and Indomitable can be repeated to boost attack or defense multiple times.</li>
             </ul>
             <p>
               In addition, your direct attacks can randomly inflict Asleep, Confused, Blind, Paralyzed, Sealed,<br>
@@ -183,15 +183,62 @@
           </div>
           <h3 id="">Equipment Growth</h3>
           <div class="explanation">
-            <p>Text</p>
+            <p>Defeating monsters with direct attacks gradually upgrades your equipped weapon and shield.</p>
+            <ul class="desc_list">
+              <li>Each monster has a set number of equipment experience points (skill points), separate from visible exp.<br>(example: <a href="">Pit Mamel</a> is worth 2 skill points)</li>
+              <li>Equipment will level up once you pass the assigned skill point threshold for that weapon or shield.<br>(example: <a href="">Ordinary Stick</a> levels up after you earn 50 skill points)</li>
+              <li>Generally, higher level monsters offer more skill points.</li>
+            </ul>
+            <p>See the <a href="">Basic Techniques</a> page for efficient equipment leveling tips.</p>
           </div>
           <h3 id="">Synthesis</h3>
           <div class="explanation">
-            <p>Text</p>
+            <p>Mechanic where you combine items to merge abilities, upgrade value, and use counts.</p>
+            <h4>Synthesis Pot</h4>
+            <ul class="desc_list">
+              <li>Lets you combine weapons with weapons, shields with shields, and staves with staves.</li>
+              <li>The first weapon or shield acts as a base, and upgrade value and <a href="">runes</a> of subsequent items transfer to it.<br>(example: Plain Targe+1 followed by Counter Shield+3 → Plain Targe+4 with the <span class="green_text">Retribution</span> rune)</li>
+              <li>Staves must have the same name, and the number of uses will be added together.<br>(Useful to synthesize an identified staff with a staff that has an unknown number of uses)</li>
+            </ul>
+            <h4>Mixer Monsters</h4>
+            <ul class="desc_list">
+              <li>Same as Synthesis Pot, but also lets you synthesize different category items together.<br>(example: Dragon Grass followed by Plain Targe+1 → Plain Targe+1 with the <span class="green_text">Anti-Fire</span> rune)</li>
+              <li>Mixers won't swallow thrown items while afflicted by certain <a href="">status conditions</a>.<br>　Won't swallow: Napping, Asleep, Sound Asleep, Sealed, Paralyzed, S-Paralyzed, Onigiri, Tottering.</li>
+              <li>Mixers will turn toward the direction the thrown item came from when it swallows an item.</li>
+              <li>See <a href="">Runes</a> for a list of item combinations to synthesize runes.</li>
+            </ul>
+            <h4>Retaining Item Blessing, Curse, Seal, and Identification</h4>
+            <ul class="desc_list">
+              <li>Generally, the state of the synthesized item takes on the state of the item that was inserted or thrown last.<br>However, Mixer synthesis has priority based on item category, so you might end up with an undesired result.<br>(If a weapon ends up cursed or sealed, synthesize the weapon with an Iron Arrow to remove it)</li>
+            </ul>
+            <h4>Mixer Synthesis Priority</h4>
+            <div class="explanation_2">
+              <p class="warning_text">Note: Item category priority is still being researched.</p>
+              <p>
+                It seems Mixers synthesize items in a set order when multiple different category items are thrown after a weapon.<br>
+                Weapons > Scrolls > Grass > Staves > Bracelets<br>
+                This is the case no matter what order you throw items, so you may end up with unexpected results.<br>
+                (Arrows, Talismans, and Pots haven't been checked yet)
+              </p>
+              <p>
+                For example, if you throw a weapon → staff (sealed) → grass, the resulting item will still be sealed<br>because grass items have a higher synthesis priority than staves.<br>
+                So in this case, you'd need to synthesize twice to remove the seal.<br>(weapon + staff, then weapon + grass)
+              </p>
+            </div>
+            <h4>Often Mixer Synthesis Mistakes</h4>
+            <ul class="desc_list">
+              <li>Throwing your main weapon or shield at a napping Mixer.<br>(Mixer mechanics changed from Shiren 4 onward, so always wake it up first)</li>
+              <li>The synthesized item was blown up by a Pop Tank monster after defeating the Mixer.<br>(Always understand the risk of synthesizing on floors where Pop Tank monsters appear)</li>
+              <li>Synthesizing staves resulted in a sealed staff.<br>(Always swing the staff you intend to synthesize last to verify that it's not sealed)</li>
+            </ul>
           </div>
           <h3 id="">Tags</h3>
           <div class="explanation">
-            <p>Text</p>
+            <p>
+              Shops in villages or dungeons can place a tag on equipment for a fee.<br>
+              Tagged equipment will be delivered to the Sentry in Hermit's Hermitage if you lose the item.<br>
+              ※ Note that you can only have up to 8 items tagged at the same time.<br>※ Mudkin monster special attacks can sometimes remove tags, so be careful.
+            </p>
           </div>
           <h3 id="">Blessing / Curse / Seal</h3>
           <div class="explanation">
@@ -295,7 +342,11 @@
           </table>
           <h3 id="">Resonance</h3>
           <div class="explanation">
-            <p>Text</p>
+            <p>
+              Equipment can grant additional effects when certain items are equipped at the same time.<br>
+              (example: equipping <a href="">Ordinary Stick</a> and <a href="">Plain Targe</a> at the same time lets you equip up to 2 bracelets)<br><br>
+              See <a href="">Resonance</a> for a list of equipment combinations and effects.
+            </p>
           </div>
           <h3 id="">Other Mechanics</h3>
           <div class="explanation">
