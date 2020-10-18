@@ -169,6 +169,11 @@ th.th_text_left {
   padding-bottom: 10px;
 }
 
+.ally_line {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
 td.text_left {
   text-align: left;
 }
