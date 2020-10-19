@@ -166,7 +166,6 @@ th.th_text_left {
 .ally_intro {
   display: flex;
   padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .ally_line {
@@ -188,6 +187,16 @@ td.text_left {
 
 .desc_list li {
   margin-bottom: 5px;
+}
+
+.ally_desc_list li {
+  margin-top: 1.2px;
+  margin-bottom: 3.2px;
+}
+
+.okon_table {
+
+  margin-top: 0;
 }
 
 .list_style_none {

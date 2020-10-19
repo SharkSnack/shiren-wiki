@@ -42,22 +42,21 @@
             </li>
           </ul>
           <h2 id="">Mechanics</h2>
-          <ul class="desc_list">
+          <ul class="ally_desc_list">
             <li>Text</li>
           </ul>
           <h2 id="">Ally List</h2>
           <h3 id="">Tao</h3>
           <div class="ally_intro">
             <img src="../../image/chara/tao.png" width=74 height=127>
-            <ul class="desc_list">
+            <ul class="ally_desc_list">
               <li>Technical character that offers a mix of ranged offense and support.</li>
               <li>She appears at the entrance to Tower of Fortune as part of the story,<br>and you're given the option to hire her as a guide for 1500G.<br>(If you decline, she'll raise the price to 2000G)</li>
               <li class="ally_line">She also appears at the Beginner House in Inori Village after clearing the main story.</li>
-              <li>She prioritizes following Shiren at all times.
+              <li>Prioritizes following Shiren at all times.
                 <ul>
                   <li>If Shiren is in view, and she isn't adjacent to him, she'll move toward him.</li>
                   <li>If she's adjacent to Shiren, and an active enemy is in range, she'll attack.</li>
-                  <li>If she's adjacent to Shiren, and there aren't any active enemies in range, she'll do nothing.</li>
                 </ul>
               </li>
               <li>Her special attack is a boomerang throw that deals fixed damage from a distance.
@@ -84,15 +83,14 @@
           <h3 id="">Jirokichi</h3>
           <div class="ally_intro">
             <img src="../../image/chara/jirokichi.png" width=107 height=152>
-            <ul class="desc_list">
+            <ul class="ally_desc_list">
               <li>Highest HP among all allies, and levels up quickly.</li>
               <li>He automatically joins you when you enter one of the three dice towers after Destiny Trail.<br>(From that point on, he's a mandatory ally until you clear the main story)</li>
               <li class="ally_line">Permanently becomes unavailable as an ally after you clear the main story.</li>
-              <li>He prioritizes following Shiren at all times.
+              <li>Prioritizes following Shiren at all times.
                 <ul>
                   <li>If Shiren is in view, and he isn't adjacent to him, he'll move toward him.</li>
                   <li>If he's adjacent to Shiren, and an active enemy is in range, he'll attack.</li>
-                  <li>If he's adjacent to Shiren, and there aren't any active enemies in range, he'll do nothing.</li>
                 </ul>
               </li>
               <li>He transforms into a gravestone when he collapses.
@@ -108,7 +106,7 @@
           <h3 id="">Kojirouta</h3>
           <div class="ally_intro">
             <img src="../../image/chara/kojirouta.png" width=122 height=150>
-            <ul class="desc_list">
+            <ul class="ally_desc_list">
               <li>High HP and attack from the start.</li>
               <li>Talk to him inside the rich man's house in Inori Village, and become his servant.</li>
               <li>He'll then join you the next time you collapse in Destiny Trail or any of the dice towers.
@@ -118,17 +116,70 @@
                   <li>This event can be skipped by clearing the main story instead of collapsing.</li>
                 </ul>
               </li>
-              <li class="ally_line">He can always be found inside the rich man's house in Inori Village.</li>
+              <li class="ally_line">He's located inside the rich man's house in Inori Village.</li>
+              <li>Prioritizes rushing at enemies unless it's night or he has low HP.
+                <ul>
+                  <li>If an active enemey is in the room, he'll move toward it regardless of being adjacent to Shiren.</li>
+                </ul>
+              </li>
+              <li>His special attack is throwing Gitan to deal fixed damage to a single target.
+                <ul>
+                  <li>The Gitan always hits, and isn't subtracted from Shiren's Gitan total.</li>
+                  <li>Range increases as he levels up, and he uses it 50% of the time if an enemy is in range.<br>(Lv1-10: 1 tile, Lv11-30: 3 tiles, Lv31-50: 5 tiles, Lv51-70: 7 tiles, Lv71-99: 9 tiles)</li>
+                  <li>The Gitan can hit targets on the other side of walls, or even inside walls.</li>
+                  <li>Damage dealt is equal to half of his max HP. (example: 50HP at level 1, so 25 damage)</li>
+                  <li>Hits monsters like Cavel Mamel, Gitan Mamel, Mixer, Bored Kappa, Flamebird, and Sweet Nut for full damage.</li>
+                  <li>Heals Froggo monsters, so he's at risk of being defeated by nearby monsters if a Froggo is present.</li>
+                  <li>He won't throw Gitan at night.</li>
+                </ul>
+              </li>
+              <li>He occasionally wanders off and leaves the party when you advance to the next floor.
+                <ul>
+                  <li>He'll always leave the party if you use the Sparrow Transport.</li>
+                  <li>He'll also leave if you reach 14F of Tower of Fortune with Tao present after clearing the main story.</li>
+                  <li>It seems he no longer wanders off once you clear both Tao and Kojirouta's post-game stories.</li>
+                </ul>
+              </li>
             </ul>
           </div>
           <h3 id="">Okon</h3>
           <div class="ally_intro">
             <img src="../../image/chara/okon_2.jpg" width=144 height=160>
-            <ul class="desc_list">
-              <li>Text</li>
+            <ul class="ally_desc_list">
+              <li>Low HP and collapses extremely easily, but offers a mix of debuffs and support.</li>
+              <li>Joins you as an ally in Nekomaneki Village after you rescue a trapped fox in a dungeon.</li>
+              <li class="ally_line">She's located near Ponta's Lot Shop in the basement of Hotel Nekomaneki.</li>
+              <li>Prioritizes following Shiren at all times.
+                <ul>
+                  <li>If Shiren is in view, and she isn't adjacent to him, she'll move toward him.</li>
+                  <li>If she's adjacent to Shiren, and an active enemy is in range, she'll attack.</li>
+                </ul>
+              </li>
+              <li>She can transform into a monster and use its special attack.
+                <ul>
+                  <li>She starts with Blade Bee, and learns more transformations as she levels up.</li>
+                  <li>She'll always use a transformation attack if the situation allows for it.<br>(example: Gazer if she's adjacent to an enemy that doesn't have a status condition)</li>
+                  <li>You can enable or disable individual transformations by talking to her.
+                    <ul>
+                      <li>Generally, it's dangerous for her to have many transformations enabled at the same time<br>since she collapses so easily - the AI might choose to use an attacking transormation<br>instead of a transformation that disables an adjacent enemy.</li>
+                      <li>If you're worried, it's best to only leave Naptapir (or Gazer) enabled for general play,<br>and toggle other transformations for one turn as needed.</li>
+                    </ul>
+                  </li>
+                  <li>Blade Bee is her main method to deal with Gyazas and Absorbiphants.</li>
+                  <li>Gazer is necessary to win (or even survive) 1-vs-1 fights until she learns Naptapir.</li>
+                  <li>Moseal should be disabled at all times, since it places her away from Shiren.</li>
+                  <li>DJ Mage can be handy to avoid fights at night or in single-room Monster Houses.</li>
+                  <li>Curse Girl should be disabled at all times, since Okon will easily collapse if she's attacked.</li>
+                  <li>Scoopie is excellent at disabling enemies in rooms, though note that it can miss.</li>
+                  <li>Grass Boy is a decent long range option, but enemies can level up if she throws Rage Grass.</li>
+                  <li>Absorbiphant offers fantastic support for Shiren, and greatly increases Okon's offense.</li>
+                  <li>Naptapir should be enabled at all times, since it completely shuts down most enemies.</li>
+                  <li>Flamebird should be used to restore HP after a fight, rather than enabling it while fighting.</li>
+                </ul>
+              </li>
             </ul>
           </div>
-          <table>
+          <table class="okon_table">
             <tr>
               <th>Level</th>
               <th>Monster</th>
@@ -188,19 +239,19 @@
           <h3 id="">Koharu</h3>
           <div class="ally_intro">
             <img src="../../image/chara/koharu_2.jpg" width=133 height=160>
-            <ul class="desc_list">
+            <ul class="ally_desc_list">
               <li>Text</li>
             </ul>
           </div>
           <h3 id="">Gen</h3>
           <div class="ally_intro">
             <img src="../../image/chara/gen.png" width=132 height=159>
-            <ul class="desc_list">
+            <ul class="ally_desc_list">
               <li>Text</li>
             </ul>
           </div>
           <h3 id="">Sage / Sparrow</h3>
-          <ul class="desc_list">
+          <ul class="ally_desc_list">
             <li>Text</li>
           </ul>
           <div class="page_bottom_padding"></div>
