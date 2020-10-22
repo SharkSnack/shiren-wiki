@@ -1,19 +1,19 @@
 weapon 35
-shield 31
-bracelet 29
-- 95 + 6 = 101
+shield 32
+bracelet 24
+- 91 + 6 = 97
 
 scroll 43
-grass 33
+grass 32
 projectile 14
-- 90 + 6 = 96
+- 89 + 6 = 95
 
 staff 24
 pot 32
 talisman 13
 food 10
-other 8
-- 87 + 10 = 97
+other 11
+- 90 + 10 = 100
 
 91
 
