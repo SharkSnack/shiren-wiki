@@ -163,6 +163,17 @@ th.th_text_left {
   text-align: center;
 }
 
+.monster_table_2 {
+  font-size: 85%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.monster_table_2 td {
+  padding: 2.25px;
+  text-align: center;
+}
+
 .ally_intro {
   display: flex;
   padding-top: 10px;

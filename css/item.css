@@ -218,6 +218,11 @@ table th {
   background-color: #CCFFCC;
 }
 
+.highlight_green_2 {
+  background-color: #008000;
+  color: white;
+}
+
 .highlight_blue_2 {
   background-color: #CCCCFF;
 }
@@ -232,6 +237,11 @@ table th {
 
 .highlight_blue_5 {
   background-color: #cbeeff
+}
+
+.highlight_blue_6 {
+  background-color: #0000FF;
+  color: white;
 }
 
 .highlight_pink {
@@ -293,6 +303,22 @@ table th {
 
 .text_orange {
   color: orange;
+}
+
+.highlight_yellow_4 {
+  background-color: #FFFF99;
+}
+
+.highlight_pink_2 {
+  background-color: #FF8080;
+}
+
+.highlight_orange_3 {
+  background-color: #FFCC99;
+}
+
+.highlight_orange_4 {
+  background-color: #FF9900;
 }
 
 .diagram {
