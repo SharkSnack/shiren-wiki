@@ -522,19 +522,19 @@ monsters_en = {
   闇しまぐいデビル: 'Dark Isleater'
 }.with_indifferent_access
 
-
-html = ['<table class="monster_table">
-<tr>
-<th>Day</th>
-</tr>']
-
 floors = 99
 column_count = 12
+time_of_day = 'Day'
 day_or_night_class = 'highlight_yellow'
-file = File.read('descent_monsters_day')
+file = File.read('chasm_monsters_day')
+
+html = ["<table class=\"monster_table_2\">
+  <tr>
+    <th colspan=\"#{column_count}\">#{time_of_day} (Unsorted)</th>
+  </tr>"]
 
 # generate number of floors + floor number
-floors.times { |i| html.push("<tr>\n<td>#{i+1}</td>") }
+floors.times { |i| html.push("  <tr>\n    <td>#{i+1}</td>") }
 
 # add monster cells
 file.each_line do |line|
@@ -545,7 +545,7 @@ file.each_line do |line|
   # if single floor (- and / are not present)
   if !floor_range.match?(/[-|\/]/)
     floor = floor_range.to_i
-    html[floor] = html[floor] + "\n<td class=\"#{day_or_night_class}\">#{monster_name}</td>"
+    html[floor] = html[floor] + "\n    <td class=\"#{day_or_night_class}\">#{monster_name}</td>"
     next
   end
 
@@ -557,7 +557,7 @@ file.each_line do |line|
       # if single floor (- is not present)
       if !r.match?(/[-]/)
         floor = r.to_i
-        html[floor] = html[floor] + "\n<td class=\"#{day_or_night_class}\">#{monster_name}</td>"
+        html[floor] = html[floor] + "\n    <td class=\"#{day_or_night_class}\">#{monster_name}</td>"
       # it's a floor range (- is present)
       else
         range = r.split('-')
@@ -565,7 +565,7 @@ file.each_line do |line|
         end_floor = range[1].to_i
 
         (start_floor..end_floor).each do |i|
-          html[i] = html[i] + "\n<td class=\"#{day_or_night_class}\">#{monster_name}</td>"
+          html[i] = html[i] + "\n    <td class=\"#{day_or_night_class}\">#{monster_name}</td>"
         end
       end
     end
@@ -578,7 +578,7 @@ file.each_line do |line|
       end_floor = range[1].to_i
 
       (start_floor..end_floor).each do |i|
-        html[i] = html[i] + "\n<td class=\"#{day_or_night_class}\">#{monster_name}</td>"
+        html[i] = html[i] + "\n    <td class=\"#{day_or_night_class}\">#{monster_name}</td>"
       end
     end
   end
@@ -590,12 +590,12 @@ floors.times do |i|
 
   if monster_count.length < column_count
     (column_count - monster_count.length).times do
-      html[i+1] = html[i+1] + "\n<td></td>"
+      html[i+1] = html[i+1] + "\n    <td></td>"
     end
   end
 
   # row endings
-  html[i+1] = html[i+1] + "\n</tr>"
+  html[i+1] = html[i+1] + "\n  </tr>"
 end
 
 html.push('</table>')
