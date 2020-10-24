@@ -185,6 +185,17 @@ th.th_text_left {
   text-align: center;
 }
 
+.monster_table_4 {
+  font-size: 70%;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.monster_table_4 td {
+  padding: 1px;
+  text-align: center;
+}
+
 .ally_intro {
   display: flex;
   padding-top: 10px;
