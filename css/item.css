@@ -285,6 +285,10 @@ table th {
   color: #f66;
 }
 
+.purple_text {
+  color: purple;
+}
+
 .green_text {
   color: #009e25;
 }
