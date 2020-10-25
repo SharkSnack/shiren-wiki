@@ -67,6 +67,16 @@ th.th_text_left {
   letter-spacing: 0;
 }
 
+.monsters_table th {
+  font-size: 80%;
+  padding: 3px;
+  letter-spacing: 0;
+}
+
+.monsters_table td {
+  padding: 3.25px;
+}
+
 .top {
   background-color: #ffb3b3;
 }

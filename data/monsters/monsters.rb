@@ -522,23 +522,322 @@ monsters_en = {
   闇しまぐいデビル: 'Dark Isleater'
 }.with_indifferent_access
 
+effective = {
+  Sproutant: '<span class="green_text">Anti-Plant</span>',
+  Sproutyrant: '<span class="green_text">Anti-Plant</span>',
+  Sprouterror: '<span class="green_text">Anti-Plant</span>',
+  Sproutitan: '<span class="green_text">Anti-Plant</span>',
+  Seedie: '<span class="green_text">Anti-Plant</span>',
+  Beanie: '<span class="green_text">Anti-Plant</span>',
+  Nuttie: '<span class="green_text">Anti-Plant</span>',
+  Grainie: '<span class="green_text">Anti-Plant</span>',
+  'Grass Boy': '<span class="green_text">Anti-Plant</span>',
+  'Grass Bro': '<span class="green_text">Anti-Plant</span>',
+  'Grass Guy': '<span class="green_text">Anti-Plant</span>',
+  'Grass Gramps': '<span class="green_text">Anti-Plant</span>',
+  'Pin Kid': '<span class="green_text">Anti-Plant</span>',
+  'Pin Dude': '<span class="green_text">Anti-Plant</span>',
+  'Pin Poppa': '<span class="green_text">Anti-Plant</span>',
+  'Pin Gramps': '<span class="green_text">Anti-Plant</span>',
+  'Sweet Nut': '<span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Explode</span>',
+  'Acrid Nut': '<span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Explode</span>',
+  'Spicy Nut': '<span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Explode</span>',
+  'Bitter Nut': '<span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Explode</span>',
+  'Blade Bee': '<span class="green_text">Anti-Floating</span><br><span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  'Dagger Bee': '<span class="green_text">Anti-Floating</span><br><span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  'Katana Bee': '<span class="green_text">Anti-Floating</span><br><span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  Zanbeeto: '<span class="green_text">Anti-Floating</span><br><span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  'Dark Blade Bee': '<span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  'Dark Dagger Bee': '<span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  'Dark Katana Bee': '<span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  'Dark Zanbeeto': '<span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  'Nigiri Morph': '<span class="green_text">Anti-Onigiri</span><br>Bless items',
+  'Nigiri Boss': '<span class="green_text">Anti-Onigiri</span><br>Bless items',
+  'Nigiri King': '<span class="green_text">Anti-Onigiri</span><br>Bless items',
+  'Foul Nigiri Morph': '<span class="green_text">Anti-Onigiri</span><br>Bless items',
+  'Foul Nigiri Boss': '<span class="green_text">Anti-Onigiri</span><br>Bless items',
+  'Foul Nigiri King': '<span class="green_text">Anti-Onigiri</span><br>Bless items',
+  Froggo: '<span class="green_text">Anti-Burgle</span>',
+  Froggucci: '<span class="green_text">Anti-Burgle</span>',
+  Froggon: '<span class="green_text">Anti-Burgle</span>',
+  Kleptoad: '<span class="green_text">Anti-Burgle</span>',
+  'Snide Froggo': '<span class="green_text">Anti-Burgle</span>',
+  'Snide Froggucci': '<span class="green_text">Anti-Burgle</span>',
+  'Snide Froggon': '<span class="green_text">Anti-Burgle</span>',
+  'Snide Kleptoad': '<span class="green_text">Anti-Burgle</span>',
+  Karakuroid: '<span class="green_text">Anti-Metal</span>',
+  Steamroid: '<span class="green_text">Anti-Metal</span>',
+  Electroid: '<span class="green_text">Anti-Metal</span>',
+  Cyberoid: '<span class="green_text">Anti-Metal</span>',
+  'Tiger Tosser': '<span class="green_text">Unmoving</span>',
+  'Tiger Hurler': '<span class="green_text">Unmoving</span>',
+  'Tiger Chucker': '<span class="green_text">Unmoving</span>',
+  'Tiger Ace': '<span class="green_text">Unmoving</span>',
+  'Dark Tosser': '<span class="green_text">Unmoving</span>',
+  'Dark Hurler': '<span class="green_text">Unmoving</span>',
+  'Dark Chucker': '<span class="green_text">Unmoving</span>',
+  'Dark Ace': '<span class="green_text">Unmoving</span>',
+  'Curse Girl': '<span class="blue_text_3">Anti-Crs. Bracelet</span>',
+  Cursister: '<span class="blue_text_3">Anti-Crs. Bracelet</span>',
+  Curspinster: '<span class="blue_text_3">Anti-Crs. Bracelet</span>',
+  Cursenior: '<span class="blue_text_3">Anti-Crs. Bracelet</span>',
+  'Foul Curse Girl': '<span class="blue_text_3">Anti-Crs. Bracelet</span>',
+  'Foul Cursister': '<span class="blue_text_3">Anti-Crs. Bracelet</span>',
+  'Foul Curspinster': '<span class="blue_text_3">Anti-Crs. Bracelet</span>',
+  'Foul Cursenior': '<span class="blue_text_3">Anti-Crs. Bracelet</span>',
+  Fearabbit: '<span class="green_text">Anti-Magic</span><br><span class="green_text">Unmoving</span>',
+  Scarabbit: '<span class="green_text">Anti-Magic</span><br><span class="green_text">Unmoving</span>',
+  Horrabbit: '<span class="green_text">Anti-Magic</span><br><span class="green_text">Unmoving</span>',
+  Terrabbit: '<span class="green_text">Anti-Magic</span><br><span class="green_text">Unmoving</span>',
+  'Dark Fearabbit': '<span class="green_text">Unmoving</span>',
+  'Dark Scarabbit': '<span class="green_text">Unmoving</span>',
+  'Dark Horrabbit': '<span class="green_text">Unmoving</span>',
+  'Dark Terrabbit': '<span class="green_text">Unmoving</span>',
+  Gyaza: '<span class="green_text">Anti-Aquatic</span>',
+  'Death Gyaza': '<span class="green_text">Anti-Aquatic</span>',
+  'Hell Gyaza': '<span class="green_text">Anti-Aquatic</span>',
+  'Doom Gyaza': '<span class="green_text">Anti-Aquatic</span>',
+  Pumphantasm: '<span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Floating</span>',
+  Pumphantom: '<span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Floating</span>',
+  Pumpanshee: '<span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Floating</span>',
+  Pumptergeist: '<span class="green_text">Anti-Plant</span><br><span class="green_text">Anti-Floating</span>',
+  "N'dubba": '<span class="green_text">Anti-Metal</span>',
+  "N'twyn": '<span class="green_text">Anti-Metal</span>',
+  "N'mach": '<span class="green_text">Anti-Metal</span>',
+  "N'dup": '<span class="green_text">Anti-Metal</span>',
+  Scorpion: '<span class="green_text">Anti-Drain</span><br><span class="blue_text_3">Cleansing Bracelet</span>',
+  VeniScorp: '<span class="green_text">Anti-Drain</span><br><span class="blue_text_3">Cleansing Bracelet</span>',
+  StunScorp: '<span class="green_text">Anti-Drain</span><br><span class="blue_text_3">Cleansing Bracelet</span>',
+  BlightScorp: '<span class="green_text">Anti-Drain</span><br><span class="blue_text_3">Cleansing Bracelet</span>',
+  'Dark Scorpion': '<span class="blue_text_3">Cleansing Bracelet</span>',
+  'Dark VeniScorp': '<span class="blue_text_3">Cleansing Bracelet</span>',
+  'Dark StunScorp': '<span class="blue_text_3">Cleansing Bracelet</span>',
+  'Dark BlightScorp': '<span class="blue_text_3">Cleansing Bracelet</span>',
+  Mutaikon: '<span class="green_text">Anti-Plant</span><br><span class="blue_text_3">Cleansing Bracelet</span>',
+  Dazikon: '<span class="green_text">Anti-Plant</span><br><span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  Dozikon: '<span class="green_text">Anti-Plant</span><br><span class="blue_text_3">Alert Bracelet</span>',
+  Mesmerikon: '<span class="green_text">Anti-Plant</span><br><span class="blue_text_3">Dodger Pot</span>',
+  'Dark Mutaikon': '<span class="blue_text_3">Cleansing Bracelet</span>',
+  'Dark Dazikon': '<span class="blue_text_3">Anti-Cnf. Bracelet</span>',
+  'Dark Dozikon': '<span class="blue_text_3">Alert Bracelet</span>',
+  'Dark Mesmerikon': '<span class="blue_text_3">Dodger Pot</span>',
+  Naptapir: '<span class="blue_text_3">Alert Bracelet</span>',
+  Snooztapir: '<span class="blue_text_3">Alert Bracelet</span>',
+  Doztapir: '<span class="blue_text_3">Alert Bracelet</span>',
+  Comatapir: '<span class="blue_text_3">Alert Bracelet</span>',
+  'Dark Naptapir': '<span class="blue_text_3">Alert Bracelet</span>',
+  'Dark Snooztapir': '<span class="blue_text_3">Alert Bracelet</span>',
+  'Dark Doztapir': '<span class="blue_text_3">Alert Bracelet</span>',
+  'Dark Comatapir': '<span class="blue_text_3">Alert Bracelet</span>',
+  Swordsman: '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  Fencer: '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  Sensei: '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  Swordmaster: '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  'Evil Swordsman': '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  'Evil Fencer': '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  'Evil Sensei': '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  'Evil Swordmaster': '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  Mudkin: '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Rustproof</span>',
+  Muddy: '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Rustproof</span>',
+  Mudster: '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Rustproof</span>',
+  Mudder: '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Rustproof</span><br><span class="blue_text_3">Monster Detector</span>',
+  'Shady Mudkin': '<span class="green_text">Rustproof</span>',
+  'Shady Muddy': '<span class="green_text">Rustproof</span>',
+  'Shady Mudster': '<span class="green_text">Rustproof</span>',
+  'Shady Mudder': '<span class="green_text">Rustproof</span><br><span class="blue_text_3">Monster Detector</span>',
+  'Polygon Spinna': '<span class="green_text">Anti-Drain</span><br><span class="green_text">Anti-Magic</span><br><span class="blue_text_3">Staunch Bracelet</span>',
+  'Polygon Shaka': '<span class="green_text">Anti-Drain</span><br><span class="green_text">Anti-Magic</span><br><span class="blue_text_3">Staunch Bracelet</span>',
+  'Polygon Singa': '<span class="green_text">Anti-Drain</span><br><span class="green_text">Anti-Magic</span><br><span class="blue_text_3">Staunch Bracelet</span>',
+  'Polygon Stunna': '<span class="green_text">Anti-Drain</span><br><span class="green_text">Anti-Magic</span><br><span class="blue_text_3">Staunch Bracelet</span>',
+  'Evil PolySpinna': '<span class="blue_text_3">Staunch Bracelet</span>',
+  'Evil PolyShaka': '<span class="blue_text_3">Staunch Bracelet</span>',
+  'Evil PolySinga': '<span class="blue_text_3">Staunch Bracelet</span>',
+  'Evil PolyStunna': '<span class="blue_text_3">Staunch Bracelet</span>',
+  'Metalhead': '<span class="green_text">Anti-Cyclops</span>',
+  'Ironhead': '<span class="green_text">Anti-Cyclops</span>',
+  'Steelhead': '<span class="green_text">Anti-Cyclops</span>',
+  'Doomhead': '<span class="green_text">Anti-Cyclops</span>',
+  'Kid Squid': '<span class="green_text">Anti-Aquatic</span>',
+  'Squidfficial': '<span class="green_text">Anti-Aquatic</span>',
+  'Kind Squid': '<span class="green_text">Anti-Aquatic</span>',
+  'Squidperor': '<span class="green_text">Anti-Aquatic</span>',
+  'Foly': '<span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Floating</span>',
+  'Bored Kappa': '<span class="green_text">Anti-Aquatic</span>',
+  'Kappa Pest': '<span class="green_text">Anti-Aquatic</span><br><span class="blue_text_3">Dodger Pot</span>',
+  'Vexing Kappa': '<span class="green_text">Anti-Aquatic</span><br><span class="blue_text_3">Dodger Pot</span>',
+  'Kappa Troll': '<span class="green_text">Anti-Aquatic</span><br><span class="blue_text_3">Dodger Pot</span>',
+  'Dark Kappa Pest': '<span class="blue_text_3">Dodger Pot</span>',
+  'Dark Vexing Kappa': '<span class="blue_text_3">Dodger Pot</span>',
+  'Dark Kappa Troll': '<span class="blue_text_3">Dodger Pot</span>',
+  'Hopodile': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Dragon</span>',
+  'Hipadile': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Dragon</span>',
+  'Oingodile': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Dragon</span>',
+  'Boingodile': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Dragon</span>',
+  'Flamebird': '<span class="green_text">Anti-Floating</span>',
+  'Sparkbird': '<span class="green_text">Anti-Floating</span>',
+  'Flarebird': '<span class="green_text">Anti-Floating</span>',
+  'Blazebird': '<span class="green_text">Anti-Floating</span>',
+  'Yanpii': '<span class="green_text">Unmoving</span>',
+  'Sr. Yanpii': '<span class="green_text">Unmoving</span>',
+  'Lt. Yanpii': '<span class="green_text">Unmoving</span>',
+  'Boss Yanpii': '<span class="green_text">Unmoving</span>',
+  'Sinful Yanpii': '<span class="green_text">Unmoving</span>',
+  'Sinful Sr. Yanpii': '<span class="green_text">Unmoving</span>',
+  'Sinful Lt. Yanpii': '<span class="green_text">Unmoving</span>',
+  'Sinful Boss Yanpii': '<span class="green_text">Unmoving</span>',
+  'Scoopie': '<span class="green_text">Anti-Metal</span><br><span class="blue_text_3">Dodger Pot</span>',
+  'Spadie': '<span class="green_text">Anti-Metal</span><br><span class="blue_text_3">Dodger Pot</span>',
+  'Trowelie': '<span class="green_text">Anti-Metal</span><br><span class="blue_text_3">Dodger Pot</span>',
+  'Shovelie': '<span class="green_text">Anti-Metal</span><br><span class="blue_text_3">Dodger Pot</span>',
+  'Wicked Scoopie': '<span class="blue_text_3">Dodger Pot</span>',
+  'Wicked Spadie': '<span class="blue_text_3">Dodger Pot</span>',
+  'Wicked Trowelie': '<span class="blue_text_3">Dodger Pot</span>',
+  'Wicked Shovelie': '<span class="blue_text_3">Dodger Pot</span>',
+  'Zalokleft': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Theft</span>',
+  'Green Zalokleft': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Theft</span>',
+  'Iron Zalokleft': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Theft</span>',
+  'Zalokleftis King': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Theft</span>',
+  'Bad Zalokleft': '<span class="green_text">Anti-Theft</span>',
+  'Bad G. Zalokleft': '<span class="green_text">Anti-Theft</span>',
+  'Bad I. Zalokleft': '<span class="green_text">Anti-Theft</span>',
+  'Bad Zalokleft King': '<span class="green_text">Anti-Theft</span>',
+  'Gyadon': '<span class="green_text">Anti-Floating</span><br><span class="green_text">Anti-Peck</span>',
+  'Gyairas': '<span class="green_text">Anti-Floating</span><br><span class="green_text">Anti-Peck</span>',
+  'Gyandora': '<span class="green_text">Anti-Floating</span><br><span class="green_text">Anti-Peck</span>',
+  'Gyandoron': '<span class="green_text">Anti-Floating</span><br><span class="green_text">Anti-Peck</span>',
+  'Violent Gyadon': '<span class="green_text">Anti-Peck</span>',
+  'Violent Gyairas': '<span class="green_text">Anti-Peck</span>',
+  'Violent Gyandora': '<span class="green_text">Anti-Peck</span>',
+  'Violent Gyandoron': '<span class="green_text">Anti-Peck</span>',
+  'Gazer': '<span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Magic</span><br><span class="green_text">Anti-Hypno</span>',
+  'Super Gazer': '<span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Magic</span><br><span class="green_text">Anti-Hypno</span>',
+  'Hyper Gazer': '<span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Magic</span><br><span class="green_text">Anti-Hypno</span>',
+  'Ultra Gazer': '<span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Magic</span><br><span class="green_text">Anti-Hypno</span>',
+  'Evil Gazer': '<span class="green_text">Anti-Hypno</span>',
+  'Evil Super Gazer': '<span class="green_text">Anti-Hypno</span>',
+  'Evil Hyper Gazer': '<span class="green_text">Anti-Hypno</span>',
+  'Evil Ultra Gazer': '<span class="green_text">Anti-Hypno</span>',
+  'Dragon': '<span class="green_text">Anti-Dragon</span><br><span class="green_text">Anti-Fire</span>',
+  'Sky Dragon': '<span class="green_text">Anti-Dragon</span><br><span class="green_text">Anti-Fire</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Archdragon': '<span class="green_text">Anti-Dragon</span><br><span class="green_text">Anti-Fire</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Abyssal Dragon': '<span class="green_text">Anti-Dragon</span><br><span class="green_text">Anti-Fire</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Evil Dragon': '<span class="green_text">Anti-Fire</span>',
+  'Evil Sky Dragon': '<span class="green_text">Anti-Fire</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Evil Archdragon': '<span class="green_text">Anti-Fire</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Evil Abyss Dragon': '<span class="green_text">Anti-Fire</span><br><span class="blue_text_3">Zen Pot</span>',
+  'DJ Mage': '<span class="green_text">Anti-Magic</span><br><span class="green_text">Magi-Twister</span>',
+  'MC Mage': '<span class="green_text">Anti-Magic</span><br><span class="green_text">Magi-Twister</span>',
+  'MC Wizard': '<span class="green_text">Anti-Magic</span><br><span class="green_text">Magi-Twister</span><br><span class="blue_text_3">Reflection Pot</span>',
+  'MC Sorceror': '<span class="green_text">Anti-Magic</span><br><span class="green_text">Magi-Twister</span><br><span class="blue_text_3">Reflection Pot</span>',
+  'Dark DJ Mage': '<span class="green_text">Magi-Twister</span>',
+  'Dark MC Mage': '<span class="green_text">Magi-Twister</span>',
+  'Dark MC Wizard': '<span class="green_text">Magi-Twister</span><br><span class="blue_text_3">Reflection Pot</span>',
+  'Dark MC Sorceror': '<span class="green_text">Magi-Twister</span><br><span class="blue_text_3">Reflection Pot</span>',
+  'Porko': '<span class="blue_text_3">Dodger Pot</span>',
+  'Porkon': '<span class="blue_text_3">Dodger Pot</span>',
+  'Porgon': '<span class="blue_text_3">Dodger Pot</span>',
+  'Sinister Porko': '<span class="blue_text_3">Dodger Pot</span>',
+  'Sinister Porkon': '<span class="blue_text_3">Dodger Pot</span>',
+  'Sinister Porgon': '<span class="blue_text_3">Dodger Pot</span>',
+  'Boy Cart': '<span class="blue_text_3">Dodger Pot</span>',
+  'Cross Cart': '<span class="blue_text_3">Dodger Pot</span>',
+  'Strong Cart': '<span class="blue_text_3">Dodger Pot</span>',
+  'Pierce Cart': '<span class="blue_text_3">Dodger Pot</span>',
+  'Dark Boy Cart': '<span class="blue_text_3">Dodger Pot</span>',
+  'Dark Cross Cart': '<span class="blue_text_3">Dodger Pot</span>',
+  'Dark Strong Cart': '<span class="blue_text_3">Dodger Pot</span>',
+  'Dark Pierce Cart': '<span class="blue_text_3">Dodger Pot</span>',
+  'Pop Tank': '<span class="green_text">Anti-Metal</span><br><span class="green_text">Anti-Explode</span><br><span class="green_text">Anti-Blast</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Grampa Tank': '<span class="green_text">Anti-Metal</span><br><span class="green_text">Anti-Explode</span><br><span class="green_text">Anti-Blast</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Ornery Tank': '<span class="green_text">Anti-Metal</span><br><span class="green_text">Anti-Explode</span><br><span class="green_text">Anti-Blast</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Cranky Tank': '<span class="green_text">Anti-Metal</span><br><span class="green_text">Anti-Explode</span><br><span class="green_text">Anti-Blast</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Dark Pop Tank': '<span class="green_text">Anti-Blast</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Dark Grampa Tank': '<span class="green_text">Anti-Blast</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Dark Ornery Tank': '<span class="green_text">Anti-Blast</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Dark Cranky Tank': '<span class="green_text">Anti-Blast</span><br><span class="blue_text_3">Zen Pot</span>',
+  'Absorbiphant': '<span class="green_text">Anti-Drain</span>',
+  'Digestiphant': '<span class="green_text">Anti-Drain</span>',
+  'Spongiderm': '<span class="green_text">Anti-Drain</span>',
+  'Osmammoth': '<span class="green_text">Anti-Drain</span>',
+  'Punisher': '<span class="blue_text_3">Water Pot</span>',
+  'Debaser': '<span class="blue_text_3">Water Pot</span>',
+  'Ruiner': '<span class="blue_text_3">Water Pot</span>',
+  'Despoiler': '<span class="blue_text_3">Water Pot</span>',
+  "Hell's Punisher": '<span class="blue_text_3">Water Pot</span>',
+  "Hell's Debaser": '<span class="blue_text_3">Water Pot</span>',
+  "Hell's Ruiner": '<span class="blue_text_3">Water Pot</span>',
+  "Hell's Despoiler": '<span class="blue_text_3">Water Pot</span>',
+  'Firepuff': '<span class="green_text">Anti-Dragon</span><br><span class="green_text">Anti-Floating</span><br><span class="green_text">Anti-Fire</span>',
+  'Flamepuff': '<span class="green_text">Anti-Dragon</span><br><span class="green_text">Anti-Floating</span><br><span class="green_text">Anti-Fire</span>',
+  'Blazepuff': '<span class="green_text">Anti-Dragon</span><br><span class="green_text">Anti-Floating</span><br><span class="green_text">Anti-Fire</span>',
+  'Pyrepuff': '<span class="green_text">Anti-Dragon</span><br><span class="green_text">Anti-Floating</span><br><span class="green_text">Anti-Fire</span>',
+  'Evil Firepuff': '<span class="green_text">Anti-Fire</span>',
+  'Evil Flamepuff': '<span class="green_text">Anti-Fire</span>',
+  'Evil Blazepuff': '<span class="green_text">Anti-Fire</span>',
+  'Evil Pyrepuff': '<span class="green_text">Anti-Fire</span>',
+  'Crow Tengu': '<span class="green_text">Anti-Floating</span>',
+  'Falcon Tengu': '<span class="green_text">Anti-Floating</span>',
+  'Eagle Tengu': '<span class="green_text">Anti-Floating</span>',
+  'Phoenix Tengu': '<span class="green_text">Anti-Floating</span>',
+  'FO-Uβ': '<span class="green_text">Anti-Metal</span><br><span class="green_text">Anti-Floating</span>',
+  'FO-U': '<span class="green_text">Anti-Metal</span><br><span class="green_text">Anti-Floating</span>',
+  'FO-UZ': '<span class="green_text">Anti-Metal</span><br><span class="green_text">Anti-Floating</span>',
+  'FO-UZZ': '<span class="green_text">Anti-Metal</span><br><span class="green_text">Anti-Floating</span>',
+  'Myriman': '<span class="green_text">Anti-Drain</span>',
+  'Billman': '<span class="green_text">Anti-Drain</span>',
+  'Trillman': '<span class="green_text">Anti-Drain</span>',
+  'Googoman': '<span class="green_text">Anti-Drain</span>',
+  'Moseal': '<span class="green_text">Anti-Aquatic</span>',
+  'Momoseal': '<span class="green_text">Anti-Aquatic</span>',
+  'Momomoseal': '<span class="green_text">Anti-Aquatic</span>',
+  'Momomomoseal': '<span class="green_text">Anti-Aquatic</span>',
+  'Shagga': '<span class="green_text">Anti-Dragon</span><br><span class="blue_text_3">Water Pot</span>',
+  'Nashagga': '<span class="green_text">Anti-Dragon</span><br><span class="blue_text_3">Water Pot</span>',
+  'Lashagga': '<span class="green_text">Anti-Dragon</span><br><span class="blue_text_3">Water Pot</span>',
+  'Bashagga': '<span class="green_text">Anti-Dragon</span><br><span class="blue_text_3">Water Pot</span>',
+  'Filthy Shagga': '<span class="blue_text_3">Water Pot</span>',
+  'Filthy Nashagga': '<span class="blue_text_3">Water Pot</span>',
+  'Filthy Lashagga': '<span class="blue_text_3">Water Pot</span>',
+  'Filthy Bashagga': '<span class="blue_text_3">Water Pot</span>',
+  'Explochin': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Explode</span><br><span class="green_text">Anti-Blast</span>',
+  'Concusschin': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Explode</span><br><span class="green_text">Anti-Blast</span>',
+  'Fulminachin': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Explode</span><br><span class="green_text">Anti-Blast</span>',
+  'Detonachin': '<span class="green_text">Anti-Aquatic</span><br><span class="green_text">Anti-Cyclops</span><br><span class="green_text">Anti-Explode</span><br><span class="green_text">Anti-Blast</span>',
+  'Evil Explochin': '<span class="green_text">Anti-Blast</span>',
+  'Evil Concusschin': '<span class="green_text">Anti-Blast</span>',
+  'Evil Fulminachin': '<span class="green_text">Anti-Blast</span>',
+  'Evil Detonachin': '<span class="green_text">Anti-Blast</span>',
+  'Pot Knave': '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  'Item Knave': '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  'Knave King': '<span class="blue_text_3">Anti-Parry Brce.</span>',
+  'Chow': '<span class="green_text">Anti-Floating</span>',
+  'Snacky': '<span class="green_text">Anti-Floating</span>',
+  'Munchy': '<span class="green_text">Anti-Floating</span>',
+  'Mealy': '<span class="green_text">Anti-Floating</span>'
+}.with_indifferent_access
+
+notes = {
+  
+}.with_indifferent_access
+
 # --- main ---
 html = []
-file = File.read('rocks_monsters_day')
+time_of_day_class = 'highlight_blue'
+file = File.read('well_monsters_night')
 
 # headers
-html.push('<table class="trap_table">
-  <tr>
-    <th>F</th>
-    <th>Name</th>
-    <th>HP</th>
-    <th>Atk</th>
-    <th>Def</th>
-    <th>Exp</th>
-    <th>Skill</th>
-    <th>Effective<br>Rune / Item</th>
-    <th>Notes</th>
-  </tr>')
+html.push('          <table class="monsters_table">
+            <tr>
+              <th>F</th>
+              <th>Name</th>
+              <th>HP</th>
+              <th>Atk</th>
+              <th>Def</th>
+              <th>Exp</th>
+              <th>Skill</th>
+              <th>Effective<br>Rune / Item</th>
+              <th>Notes</th>
+            </tr>')
 
 file.each_line do |line|
   regex = /(\S+)/
@@ -553,19 +852,19 @@ file.each_line do |line|
   exp = words[5][0]
   skill = words[6][0]
 
-  html.push('  <tr>')
-  html.push("    <td>#{floors}</td>")
-  html.push("    <td class=\"highlight_yellow\">#{monsters_en[jp_name] || 'MISSING_NAME'}</td>")
-  html.push("    <td>#{hp}</td>")
-  html.push("    <td>#{attack}</td>")
-  html.push("    <td>#{defense}</td>")
-  html.push("    <td>#{exp}</td>")
-  html.push("    <td>#{skill}</td>")
-  html.push("    <td><span class=\"green_text\"></span></td>")
-  html.push("    <td></td>")
-  html.push('  </tr>')
+  html.push('            <tr>')
+  html.push("              <td>#{floors}</td>")
+  html.push("              <td class=\"#{time_of_day_class}\">#{monsters_en[jp_name] || 'MISSING_NAME'}</td>")
+  html.push("              <td>#{hp}</td>")
+  html.push("              <td>#{attack}</td>")
+  html.push("              <td>#{defense}</td>")
+  html.push("              <td>#{exp}</td>")
+  html.push("              <td>#{skill}</td>")
+  html.push("              <td>#{effective[monsters_en[jp_name]] || '-'}</td>")
+  html.push("              <td>#{notes[monsters_en[jp_name]] || '-'}</td>")
+  html.push('            </tr>')
 end
 
-html.push('</table>')
+html.push('          </table>')
 
 File.write('output.html', html.join("\n"))

@@ -875,7 +875,11 @@ monsters.each_with_index { |val, index|
   html.push('            <tr>')
   html.push("              <td>#{index}</td>")
   monsters[index].each do |m|
-    html.push("              <td class=\"#{monster_classes[m] || day_or_night_class}\">#{m}</td>")
+    if m.blank?
+      html.push('              <td></td>')
+    else
+      html.push("              <td class=\"#{monster_classes[m] || day_or_night_class}\">#{m}</td>")
+    end
   end
   html.push('            </tr>')
 }
