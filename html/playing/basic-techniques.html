@@ -131,15 +131,18 @@
             <li><a href="#">Miscellaneous Knowledge</a>
               <ul>
                 <li><a href="#">Rune Priority</a></li>
-                <li><a href="#">Secret Rune Recipes</a></li>
+                <li><a href="#">Multi-Item Rune Recipes</a></li>
                 <li><a href="#">NPCs Dodge Equipment</a></li>
-                <li><a href="#">Equip Projectiles / Staves</a></li>
+                <li><a href="#">Set Projectiles / Staves</a></li>
                 <li><a href="#">Selling Sale Pots in Villages</a></li>
+                <li><a href="#">Reclaim Equipment Without Tags</a></li>
                 <li><a href="#">Night Monster Movement</a></li>
                 <li><a href="#">Night Monster Experience Points</a></li>
                 <li><a href="#">Monster Licenses at Night</a></li>
                 <li><a href="#">Monster House BGM Change</a></li>
                 <li><a href="#">N'mach and N'dup in Villages</a></li>
+                <li><a href="#">New Items Warning</a></li>
+                <li><a href="#">Can't Register Monsters While Blind</a></li>
               </ul>
             </li>
           </ul>
@@ -350,17 +353,21 @@
             <p>Text</p>
           </div>
           <h2 id="">Synthesis</h2>
+          <div class="explanation_2">
+            <p>See <a href="">Gameplay Basics</a> for an overview of synthesis mechanics.</p>
+            <p>That page details Mixer synthesis item category priorty, how to remove curses or retain blessings when synthesizing,<br>and status conditions that prevent Mixers from swallowing items.</p>
+          </div>
           <h3 id="">Sub Weapon / Shield</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>If your main weapon or shield doesn't have any open rune slots, go ahead and synthesize runes onto a second<br>weapon or shield to free up inventory space, and then synthesize that later after your main weapon or shield levels up.</p>
           </div>
           <h3 id="">Identify Using Mixers</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Items that get synthesized with a weapon or shield by a Mixer are identified on the spot.<br>(So the next time you come across that item, it'll be identified)</p>
           </div>
           <h3 id="">Expand Mixer's Stomach</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Throw a Stomach Expander at a Mixer to increase the number of items it can swallow by 1. (or 2 if blessed)<br>This can be repeated up to a max of the Mixer being able to swallow 8 items.<br>※ Stomach Expanders must be thrown while the Mixer can still swallow items. (example: Before Mixermon swallows 3 items)<br>※ The Mixer powers up for every Stomach Expander you throw as well, so be careful when fighting it.</p>
           </div>
           <h2 id="">Dungeon Tricks</h2>
           <h3 id="">Waiting for Day / Night</h3>
@@ -478,6 +485,10 @@
           <div class="explanation_2">
             <p>※ Use a Blessing Pot to eliminate the need to bless Extraction Scrolls if desired.</p>
           </div>
+          <h4 id="" class="emphasis">New Item Bracelets</h4>
+          <div class="explanation_2">
+            <p>Similar to <a href="">99 Use Staves</a>, but carry equipment you want to upgrade instead of staves.</p>
+          </div>
           <h3 id="">Equipment Level</h3>
           <h4 class="emphasis">Blessed Gambler's + Extraction Scrolls</h4>
           <ol class="desc_list">
@@ -507,20 +518,42 @@
           <h3 id="">Catstones</h3>
           <h4 id="" class="emphasis">Before Entering Post-Game Dungeons</h4>
           <div class="explanation_2">
-            <p>The Tanuki who sells Catstones will only go to Destiny Trail, Tower of the Past, Tower of the Present,<br>Tower of the Future, and Fortune Tower, so you can easily collect Catstones using the Sparrow Transport.</p>
+            <p>The Tanuki who sells Catstones will only go to Destiny Trail, Tower of the Past, Tower of the Present,<br>Tower of the Future, and Tower of Fortune, so you can easily collect Catstones using the Sparrow Transport.</p>
           </div>
           <h4 id="" class="emphasis">After Entering Post-Game Dungeons</h4>
           <div class="explanation_2">
             <p>Collect Catstones by cheating at Pick-A-Choice shops in <a href="">Lost Well</a>. (Read Collection Scrolls)</p>
+          </div>
+          <h4 id="" class="emphasis">Soft-Resetting for Location</h4>
+          <div class="explanation_2">
+            <p>Quit the game without saving to change the Tanuki's location when it changes after purchasing a Catstone.<br><span class="warning_text">※ Save once after depositing all items and Gitan before using this method. (Point Card will be set to 0 as well)</span></p>
           </div>
           <h3 id="">Experience Points</h3>
           <div class="explanation_2">
             <p>Text</p>
           </div>
           <h3 id="">99 Use Staves</h3>
+          <h4 id="" class="emphasis">New Item Bracelets</h4>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Unlike Shiren 4, Upgrade Pots have a random chance of shattering when changing floors in Shiren 5,<br>so use the "Switching floors may upgrade weapons, shields, staves, or Gitan" <a href="">new item</a> bracelet effect instead.<br>(It selects 1 item at random when you change floors and increases upgrade value or use count by 1, excluding pots)</p>
+            <p>Required:</p>
           </div>
+          <ol class="desc_list">
+            <li>Two new item bracelets with the "Switching floors may upgrade weapons, shields, staves, or Gitan" effect.</li>
+            <li>New item staves with the Transient → Swap effect. (Ideally, enough staves to last 99 floors)</li>
+            <li>Weapon and shield set that grants 2 bracelet resonance.</li>
+            <li>An ally NPC. (Max level Koharu is best for consistency)</li>
+          </ol>
+          <div class="explanation_2">
+            <p>Steps:</p>
+          </div>
+          <ol class="desc_list">
+            <li>Head to <a href="">Inori Cave</a>, and insert all items except for the above equipment and staves into pots.</li>
+            <li>Equip the weapon and shield set, and both new item bracelets.</li>
+            <li>Set the new item staff to the L button, and swing it at your ally to warp to the stairs → repeat 99 floors. (~10 minutes)<br>(This increases upgrade value or use count by 99 x 2 = 198 per run, since there are 2 bracelets)</li>
+            <li>Repeat until you have a nice stock of 99 use new item staves with the Transient → Swap effect.</li>
+            <li>Repeat the process, this time carrying other staves.</li>
+          </ol>
           <h2 id="">Miscellaneous Knowledge</h2>
           <h3 id="">Rune Priority</h3>
           <div class="explanation_2">
@@ -542,41 +575,65 @@
             <dt>Offensive + Costly (0 Gitan)</dt>
             <dd>Shield defense is added to attack like normal.</dd>
           </dl>
-          <h3 id="">Secret Rune Recipes</h3>
+          <h3 id="">Multi-Item Rune Recipes</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>These rune recipes are difficult to happen upon while playing the game normally.<br>(See <a href="">Runes</a> for details about each rune)</p>
           </div>
+          <dl>
+            <dt>Healing</dt>
+            <dd>Heal Bracelet + Heal Pot</dd>
+            <dt>Blue Flame</dt>
+            <dd>Oil Scroll + Upgrade Seed + Explosion Bracelet</dd>
+            <dt>Quick Hitting</dt>
+            <dd>Choose 2: Swift Grass, Swift Staff, Swift Talisman</dd>
+            <dt>Agile</dt>
+            <dd>Perception Grass x 2</dd>
+            <dt>Anti-Blast※</dt>
+            <dd>Immunity Scroll + Fort. Staff + Explosion Bracelet</dd>
+          </dl>
           <h3 id="">NPCs Dodge Equipment</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>NPCs always dodge weapons, shields, and bracelets.<br>It's possible to use this to your advantage when fighting Swordsman family monsters.</p>
           </div>
-          <h3 id="">Equip Projectiles / Staves</h3>
+          <h3 id="">Set Projectiles / Staves</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>You can set projectiles and staves, letting you use the item by pressing the L button.<br>Setting an item doesn't end your turn, and the item won't be unequipped by Strip Traps.</p>
           </div>
           <h3 id="">Selling Sale Pots in Villages</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Gitan inside Sale Pots will be included in the selling price.</p>
+          </div>
+          <h3 id="">Reclaim Equipment Without Tags</h3>
+          <div class="explanation_2">
+            <p>An untagged weapon or shield you lost can occasionally be found in the field south of the Beginner House in Inori Village.</p>
           </div>
           <h3 id="">Night Monster Movement</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>All monsters in Shiren 5 have wandering movement at night. (This wasn't the case in Shiren 4)</p>
           </div>
           <h3 id="">Night Monster Experience Points</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Most night monsters offer less than or equal to 10% experience points compared to their daytime counterparts.<br>However, Sweet Nut, Moseal, and Myriman family monsters offer more experience points at night.</p>
           </div>
           <h3 id="">Monster Licenses at Night</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Night monsters won't become friendly.</p>
           </div>
           <h3 id="">Monster House BGM Change</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>The music returns to normal when the room empties, instead of when all monsters are defeated like Shiren 4.</p>
           </div>
           <h3 id="">N'mach and N'dup in Villages</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>N'machs and N'dups are automatically identified when you enter a village. (This wasn't the case in Shiren 4)<br>Deposit them using multi-select (R button) to erase them.</p>
+          </div>
+          <h3 id="">New Items Warning</h3>
+          <div class="explanation_2">
+            <p><span class="warning_text">You can't unregister new items once registered</span>, and you can only register up to 64 items.<br>If you want to experience post-game dungeons without breaking the balance, never register new items.</p>
+          </div>
+          <h3 id="">Can't Register Monsters While Blind</h3>
+          <div class="explanation_2">
+            <p>Monsters you defeat while you're afflicted with the <a href="">Blind</a> status condition won't be registered to the Monster Book.<br>This is the case even if you have Monster Detector or Scout Bracelet equipped.</p>
           </div>
           <div class="page_bottom_padding"></div>
         </div>
