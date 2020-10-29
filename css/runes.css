@@ -173,6 +173,11 @@ th.th_text_left {
   text-align: center;
 }
 
+.dungeon_location_table td {
+  padding: 3px;
+  font-size: 70%;
+}
+
 .monster_table_2 {
   font-size: 85%;
   letter-spacing: 0;
