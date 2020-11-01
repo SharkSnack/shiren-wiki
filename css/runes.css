@@ -242,6 +242,10 @@ td.text_left {
   margin-bottom: 3.2px;
 }
 
+.spaced_list li {
+  margin-bottom: 20px;
+}
+
 .okon_table {
   margin-top: 0;
 }
