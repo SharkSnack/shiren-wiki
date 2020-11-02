@@ -110,7 +110,7 @@
                 <li><a href="#">Nigiri Morph Factory</a></li>
                 <li><a href="#">Zalokleft Hunting</a></li>
                 <li><a href="#">Grass Boy / Bro Hunting</a></li>
-                <li><a href="#">Grass Guy / Gramps Hunting</a></li>
+                <li><a href="#">Grass Guy / Gramps Factory</a></li>
                 <li><a href="#">Maneater Hunting</a></li>
                 <li><a href="#">Checking for Stairs? Trap</a></li>
                 <li><a href="#">Remove Enemy Auras</a></li>
@@ -119,33 +119,34 @@
             </li>
             <li><a href="#">Earning / Collecting</a>
               <ul>
-                <li><a href="#">Points</a></li>
-                <li><a href="#">Blank Scrolls</a></li>
-                <li><a href="#">Synthesis Pots</a></li>
-                <li><a href="#">Upgrade Value</a></li>
-                <li><a href="#">Equipment Level</a></li>
-                <li><a href="#">Gitan</a></li>
-                <li><a href="#">Catstones</a></li>
-                <li><a href="#">Experience Points</a></li>
-                <li><a href="#">99 Use Staves</a></li>
+                <li><a href="#points">Points</a></li>
+                <li><a href="#blank_scrolls">Blank Scrolls</a></li>
+                <li><a href="#synthesis_pots">Synthesis Pots</a></li>
+                <li><a href="#upgrade_value">Upgrade Value</a></li>
+                <li><a href="#equipment_level">Equipment Level</a></li>
+                <li><a href="#gitan">Gitan</a></li>
+                <li><a href="#catstones">Catstones</a></li>
+                <li><a href="#experience_points">Experience Points</a></li>
+                <li><a href="#99_use_staves">99 Use Staves</a></li>
               </ul>
             </li>
-            <li><a href="#">Miscellaneous Knowledge</a>
+            <li><a href="#misc_knowledge">Miscellaneous Knowledge</a>
               <ul>
-                <li><a href="#">Rune Priority</a></li>
-                <li><a href="#">Multi-Item Rune Recipes</a></li>
-                <li><a href="#">NPCs Dodge Equipment</a></li>
-                <li><a href="#">Set Projectiles / Staves</a></li>
-                <li><a href="#">Selling Sale Pots in Villages</a></li>
-                <li><a href="#">Reclaim Equipment Without Tags</a></li>
-                <li><a href="#">Night Monster Movement</a></li>
-                <li><a href="#">Night Monster Experience Points</a></li>
-                <li><a href="#">Monster Licenses at Night</a></li>
-                <li><a href="#">Monster House BGM Change</a></li>
-                <li><a href="#">N'mach and N'dup in Villages</a></li>
-                <li><a href="#">New Items Warning</a></li>
-                <li><a href="#">Can't Register Monsters While Blind</a></li>
-                <li><a href="#">Rare Item Locations</a></li>
+                <li><a href="#attack_accuracy">Attack Accuracy</a></li>
+                <li><a href="#rune_priority">Rune Priority</a></li>
+                <li><a href="#rune_recipes">Multi-Item Rune Recipes</a></li>
+                <li><a href="#npc_dodge">NPCs Dodge Equipment</a></li>
+                <li><a href="#set_projectiles">Set Projectiles / Staves</a></li>
+                <li><a href="#sale_pot_villages">Selling Sale Pots in Villages</a></li>
+                <li><a href="#reclaim_equipment">Reclaim Equipment Without Tags</a></li>
+                <li><a href="#night_movement">Night Monster Movement</a></li>
+                <li><a href="#night_experience">Night Monster Experience Points</a></li>
+                <li><a href="#night_license">Monster Licenses at Night</a></li>
+                <li><a href="#monster_house_bgm">Monster House BGM Change</a></li>
+                <li><a href="#nmach_ndup_villages">N'mach and N'dup in Villages</a></li>
+                <li><a href="#new_items_warning">New Items Warning</a></li>
+                <li><a href="#blind_monster_registration">Can't Register Monsters While Blind</a></li>
+                <li><a href="#rare_item_locations">Rare Item Locations</a></li>
               </ul>
             </li>
           </ul>
@@ -922,7 +923,7 @@
             </li>
             <li>Paralysis Staff, Hide Pot, Transient Staff
               <ul>
-                <li>Used for method 2.<br>Paralysis Staff is likely the most consistent item.</li>
+                <li>Used for method 2.<br>Paralysis Staff is likely the most consistent of the three.</li>
               </ul>
             </li>
             <li>Fort. Staff
@@ -958,24 +959,105 @@
           </ul>
           <h4 id="" class="emphasis">Method 1</h4>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Read an Immunity Scroll in a large room, and wait on one end for the Grass Dude or Grass Gramps to throw grass.<br>Rectangular rooms work the best, and it's an easy setup since you don't really have to prepare anything in advance<br>aside from getting lucky with map generation.</p>
+            <p>Some luck is required, since you'll end up needing to defeat or run away from the Grass Dude or Grass Gramps<br>if they don't throw the grass item before they're adjacent to you.</p>
+            <p>Other enemies approaching can be an issue, as they can potentially be buffed by Power Up Grass or Swift Grass.<br>This is especially the case if the positive effect grass hits the enemy but misses Shiren.</p>
           </div>
           <h4 id="" class="emphasis">Method 2</h4>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Place a grass item in the corner of a room, and inflict Paralyzed or Hiding status on a monster on top of the item.</p>
+          </div>
+          <pre class="diagram">
+            G = grass　　M = monster　　P = paralyzed monster
+
+            ■ ■ ■ ■　　 　　■ ■ ■ ■　　 　　■ ■ ■ ■
+            □ □ G ■　　→　　□ □ M ■　　→　　□ □ P ■
+            □ □ □ ■　　 　　□ □ □ ■　　 　　□ □ □ ■
+          </pre>
+          <div class="explanation_2">
+            <p>The number of grass items a Grass Boy family monster can carry is based on their level,<br>so they will continuously approach the grass item under the paralyzed monster, but won't be able to pick it up.<br>They'll still throw grass items when you're lined up, and there's no worry of the Grass Boy family monster approaching.<br>They also won't attack you unless you move adjacent to them.</p>
+            <p>However, other enemies getting hit by Confusion, Blinding, or Rage grasses can cause trouble. (Especially Rage Grass)<br>Such monsters might level up by defeating other enemies, or might undo the paralysis of the monster in the corner.<br>Lots of Grass Boy and Pin Kid family monsters will gather in the corner while performing this method,<br>so it's best to approach them and thin them out from time to time to try and prevent accidents.<br>※ Confusion and Rage grasses aren't in the item tables of Pitfall of Life and Underground Manor.</p>
           </div>
           <h4 id="" class="emphasis">Method 3</h4>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Method that uses items like Fort. Staff, Wall Clip Bracelet, and Pickaxe to wall yourself in.</p>
+            <p>Make use of a Grass Boy family monster as shown in the example diagrams below.<br>It's much more efficient than methods 1 and 2, because you'll mostly get hit by its spreading grass<br>special attack (100% accuracy) rather than hoping thrown grass will hit you (84% accuracy).</p>
+            <p>The setup is ruined if you get hit by Warp Grass unless you have items like Wall Clip Bracelet or Pinning Staff,<br>so equipping a Steady Shield is highly recommended.<br>It's also important to use this method only when you're able to defeat monsters from inside the wall.<br>(examples: Breeze Blade or Tri-direction rune, Wall Clip Bracelet, arrows, etc.)</p>
+            <p>It's generally safe to use this method without an Immunity Scroll if other monsters on the floor<br>don't have long-range attacks or the ability to attack through walls.</p>
+            <p>Example 1:</p>
+          </div>
+          <pre class="diagram">
+            S = Shiren　　F = Fort. Staff wall
+
+            □ □ □ □ ■
+            □ □ □ F ■
+            □ □ F S ■
+            ■ ■ ■ ■ ■
+          </pre>
+          <div class="explanation_2">
+            <p>This method consumes 2 uses of a Fort. Staff, but keeps you inside the room.<br>Place a grass item on the ground under Shiren to attract Pin Kid family monsters and increase efficiency.<br>You can also do this while standing on the stairs, eliminating the need to defeat enemies when you're ready to move on.<br>(Can't place grass under Shiren if you do this while standing on the stairs)</p>
+            <p>Example 2:</p>
+          </div>
+          <pre class="diagram">
+            S = Shiren　　F = Fort. Staff wall
+
+            ■ ■ □ □ □
+            ■ F □ □ □
+            ■ S ■ ■ ■
+            ■ ■ ■ ■ ■
+
+            ※ Can use Wall Clip Bracelet instead of Fort. Staff.
+          </pre>
+          <div class="explanation_2">
+            <p>The idea is to dig out the corner of a room, and stand inside the dug out tile.<br>Very inefficient if you're unable to defeat enemies from inside the wall, and since you're outside of the room,<br>you won't be able to attract Pin Kid family monsters by placing a grass item on the ground under Shiren.<br>Enemies can also generate in the room you're next to, so there are a decent number of drawbacks.</p>
+            <p>The main advantage is that you only consume 1 use of a Fort. Staff,<br>and it can be performed without a Fort. Staff if you have a Wall Clip Bracelet.</p>
           </div>
           <h4 id="" class="emphasis">Method 3-2</h4>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Similar to method 3, but trap a Grass Bro family monster inside the wall instead of Shiren.<br>Easiest way to accomplish this is to use items like Knockback Staff or Swap Staff.</p>
+            <p>It's not as efficient since you're relying on a single Grass Boy family monster rather than a rotation,<br>but it's very consistent because you can defeat other monsters that approach you.<br>You can simply return to the room if you're hit by Warp Grass, so a Steady Shield isn't required.</p>
           </div>
           <h3 id="">Maneater Hunting</h3>
-          <div class="explanation_2">
-            <p>Text</p>
-          </div>
+          <ul class="desc_list">
+            <li><span class="emphasis">Generating Maneaters</span>
+              <ul>
+                <li>An Ominous Aura warning can occur after a set number of turns on select floors of specific dungeons.<br>Once the ominous aura warning occurs, Maneaters get added to the monster table of that floor.<br>From that point, every time a new monster is generated, it rolls for a Maneater.<br>If the check succeeds, a Maneater appearance message occurs, the BGM changes, and only Maneaters will spawn.<br>If it fails, the new monster won't be generated. (So new monster spawns are greatly reduced after the warning)<br>So depending on your luck, you could end up waiting until the wind blows without seeing a Maneater after the warning.<br>※ The roll for Maneaters will occur every time a new monster is generated, even if it previously failed.</li>
+              </ul>
+            </li>
+            <li><span class="emphasis">Benefits</span>
+              <ul>
+                <li>Maneaters have around a 1/3 chance to drop an item when defeated. (Item is selected from the dungeon's shop table)</li>
+                <li>They also offer lots of experience points and equipment skill points.<br>Defeating multiple copies of the same monster in a row grants bonus skill points, so you can rapidly level up equipment,<br>especially when combined with Tinkerer (Upgrade Seed) or Modder (Super) status to gain x4.0 skill points per Maneater.</li>
+              </ul>
+            </li>
+            <li><span class="emphasis">How to hunt</span>
+              <ul>
+                <li>Maneaters were greatly buffed in this game, and its roar inflicts Paralyzed status instead of Afraid status like Shiren 4.<br>Therefore trying to defeat them from a distance usually doesn't work out, since they'll paralyze you and get a hit in.<br>You also risk losing Super status at the same time, so having Immune status is basically required.</li>
+                <li>Throwing Gitan at a Maneater deals a maximum of 10 damage.</li>
+                <li>Sanctuary Scrolls are ignored, so you'll need to create a different safe space or use status conditions.</li>
+                <li><span class="emphasis">Slow status is ineffective</span> - Maneaters have an ability that changes their speed to Swift (1 attack) when Shiren is visible.<br>Other status effects wear off in half the duration due to its Swift status too, so it's best to deal with them<br>before they've detected Shiren.</li>
+                <li>Use items like Navigation Scroll or Monster Detector to detect them in hallways, and then shoot arrows<br>or throw a talisman to inflict a status condition to weaken them from a distance before they gain Swift status.</li>
+                <li>Staves are mostly ineffective with the exception of Clone Staff and Mage Staff.</li>
+                <li>The Maneater needs to be defeated by a direct attack for you to gain equipment skill points,<br>so the key to success is finding a way to minimize the risk of getting hit by its powerful Swift status attack.</li>
+                <li>The safest method is to wall yourself in and attack through a corner using Tri-direction or Flame Shot runes, or arrows.<br>If you don't have a Fort. Staff, you can dig out a corner of a room from a hallway to attract Maneaters in the room.<br>※ Dig in a T shape instead of L shape so that you don't get attacked from behind.</li>
+              </ul>
+              <p>Example:</p>
+              <pre class="diagram">
+                S = Shiren　M = Maneater　X = Stairs
+
+                ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■
+                ■ ■ ■ ■ □ □ □ □ □ □ ■
+                ■ ■ □ □ □ □ □ X □ □ ■
+                ■ ■ □ ■ □ □ □ □ □ □ ■
+                □ □ □ ■ □ □ □ □ □ □ ■
+                ■ □ ■ ■ □ □ □ □ □ □ ■
+                ■ □ ■ ■ M □ □ □ □ □ ■
+                ■ □ □ S ■ ■ ■ ■ □ ■ ■
+                ■ □ ■ ■ ■ ■ ■ ■ □ ■ ■
+                ■ ■ ■ ■ ■ ■ ■ ■ □ ■ ■
+              </pre>
+            </li>
+          </ul>
           <h3 id="">Checking for Stairs? Trap</h3>
           <div class="explanation_2">
             <p>Select dungeons generate a trap called Stairs? Trap near the end, which look like stairs but actually hide a random trap.<br>Performing an attack over the Stairs? Trap tile won't reveal it, and stepping on it makes the stairs vanish and triggers the trap.<br>It can't be detected by thrown rocks either, so it can be quite troublesome to deal with.</p>
@@ -991,7 +1073,7 @@
             <li>
               <p><span class="emphasis">Dash next to the stairs</span><br>Position yourself so that you're off by 1 row or column from the stairs, and hold B and move in the direction of the stairs.<br>If you stop on a tile that is diagonal from the stairs, it's real.</p>
               <pre class="diagram">
-                □ = floor　　■ = stairs　　S = Shiren
+                ■ = stairs　　S = Shiren
 
                 Real:　　　　　　　　　Fake:
                 □ □ □ □ □ □ □　　　　□ □ □ □ □ □ □
@@ -1002,7 +1084,7 @@
               </pre>
               <p>Example:</p>
               <pre class="diagram">
-                □ = floor　　■ = stairs　　S = Shiren
+                ■ = stairs　　S = Shiren
 
                 Start:　　　　　　　　Real:　　　　　　　　　Fake:
                 □ □ □ □ □ □ □　　　　□ □ □ □ □ □ □　　　　□ □ □ □ □ □ □
@@ -1165,6 +1247,56 @@
             <li>Repeat the process, this time carrying other staves.</li>
           </ol>
           <h2 id="">Miscellaneous Knowledge</h2>
+          <h3 id="#attack_accuracy">Attack Accuracy</h3>
+          <div class="explanation_2">
+            <p>No weapon: 92%</p>
+            <p>Shiren's direct attack accuracy increases based on weapon level.</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th>Weapon Level</th>
+              <th>1-3</th>
+              <th>4-5</th>
+              <th>6-7</th>
+              <th>8</th>
+            </tr>
+            <tr>
+              <td>Accuracy</td>
+              <td>92%</td>
+              <td>93%</td>
+              <td>94%</td>
+              <td>95%</td>
+            </tr>
+          </table>
+          <div class="explanation_2">
+            <p>Projectiles: 84%</p>
+            <p>Monsters: 88%</p>
+            <p>Monster direct attack accuracy decreases when you have a Spry Shield equipped.<br>(Agile rune is always level 1, so 78% accuracy)</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th>Spry Shield Level</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+            </tr>
+            <tr>
+              <td>Accuracy</td>
+              <td>78%</td>
+              <td>75%</td>
+              <td>72%</td>
+              <td>69%</td>
+              <td>66%</td>
+              <td>63%</td>
+              <td>60%</td>
+              <td>57%</td>
+            </tr>
+          </table>
           <h3 id="">Rune Priority</h3>
           <div class="explanation_2">
             <p>Some runes take priority over others in Shiren 5.</p>
