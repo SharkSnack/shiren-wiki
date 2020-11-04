@@ -117,7 +117,7 @@
             </li>
             <li>Possible values for weapon and shield stats are based on equipment level, so always insert Lv8 equipment.</li>
             <li>Resonance is based on the base item. (example: Strength Bracelet as a base, resonates with Counter Shield)</li>
-            <li>Inserting a Fixer Scroll as a base allows you to read the New Item scorll without light at night.</li>
+            <li>Inserting a Fixer Scroll as a base allows you to read the New Item scroll without light at night.</li>
           </ul>
           <h3 id="properties">Properties</h3>
           <ul class="desc_list">
@@ -175,13 +175,13 @@
           <h3 id="recommended_items">Recommended Items</h3>
           <dl>
             <dt>Transient Staff + "Switch places with your target"</dt>
-            <dd>Text</dd>
-            <dt>Mnster House Scrl + "Read to make foes in room vanish"</dt>
-            <dd>Text</dd>
+            <dd>Swing at an enemy or NPC to warp Shiren to the stairs.<br>Useful for escaping bad situations, rushing stairs, stealing, etc.</dd>
+            <dt>Mnster House Scrl + "Make foes in room vanish" + "Removes all traps on this floor" + "Attract items on the ground"</dt>
+            <dd>Useful for obtaining items.<br>The Trap Deletion Scrl and Collection Scroll effects can be skipped.<br>(It's very difficult to get all 3 effects in the correct order on a scroll)</dd>
             <dt>Floating Bracelet</dt>
-            <dd>Text</dd>
+            <dd>New Item bracelets will never gain the abilities of Floating Bracelet, Trapper Bracelet, and Night Ward,<br>so it's recommended to use Floating Bracelet as a base. (Walk on water and void tiles, traps won't trigger)<br>New Item abilities to aim for include: Scout, Time Stop, Identify, Anti-Parry, Anti-Crs., Alert.</dd>
             <dt>Weapon, Shield</dt>
-            <dd>Text</dd>
+            <dd>Recommended to use the Shugouseki set as a base, since it's the highest stat set for 2 bracelet resonance.<br>(Shugouseki = Lv8 Red Blade / Lv8 Red Shield)</dd>
           </dl>
           <h2 id="new_item_abilities">New Item Abilities</h2>
           <h3 id="weapon">Weapon</h3>
@@ -612,7 +612,7 @@
           <br>
           <h3 id="bracelet">Bracelet</h3>
           <div class="explanation_2">
-            <p>Many New Item bracelet descriptions are either mistranslated, or somewhat misleading.<br>The abilities that are based on existing items have the exact same effect. (See <a href="">Bracelets</a> for details)</p>
+            <p>Many New Item bracelet descriptions are either mistranslated or misleading.<br>The abilities that are based on existing items have the exact same effect. (See <a href="">Bracelets</a> for details)</p>
             <p><span class="important_text">Blue text</span> = New Item exclusive ability.</p>
             <p>Possible:</p>
           </div>
@@ -755,7 +755,7 @@
             <tr>
               <th class="highlight_blue">Ability</th>
               <th class="highlight_blue">Item</th>
-              <th rowspan="3"></th>
+              <th rowspan="4"></th>
               <th class="highlight_blue">Ability</th>
               <th class="highlight_blue">Item</th>
             </tr>
@@ -768,26 +768,497 @@
             <tr>
               <td>Allows you to move while floating</td>
               <td>Floating Bracelet</td>
-              <th colspan="2"></th>
+              <td>Take damage if monsters are visible</td>
+              <td>Monsterphobic</td>
+            </tr>
+            <tr>
+              <td>Take damage whenever you pick up an item</td>
+              <td>Itemphobic</td>
+              <td>Get sleepier every ten steps you take</td>
+              <td>Dozer Bracelet</td>
             </tr>
           </table>
           <br>
           <h3 id="grass">Grass</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>The abilities that are based on existing items have the exact same effect. (See <a href="">Grass</a> for details)</p>
+            <p>There are no New Item exclusive abilities.</p>
+            <p>Possible:</p>
           </div>
+          <table class="trap_table">
+            <tr>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+              <th rowspan="16"></th>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+            </tr>
+            <tr>
+              <td>This does not have any particular effect</td>
+              <td>Weeds</td>
+              <td>Heals a little HP</td>
+              <td>Herb</td>
+            </tr>
+            <tr>
+              <td>Heals HP</td>
+              <td>Otogiriso</td>
+              <td>Heals a lot of HP</td>
+              <td>Heal Grass</td>
+            </tr>
+            <tr>
+              <td>Increases max HP</td>
+              <td>Life Grass</td>
+              <td>Increases max fullness</td>
+              <td>Stomach Expander</td>
+            </tr>
+            <tr>
+              <td>Decreases max fullness</td>
+              <td>Stomach Shrinker</td>
+              <td>Increases level by 1</td>
+              <td>Cheery Grass</td>
+            </tr>
+            <tr>
+              <td>Increases level by 3</td>
+              <td>Angel Seed</td>
+              <td>Decreases level by 3</td>
+              <td>Unlucky Seed</td>
+            </tr>
+            <tr>
+              <td>Something terrible has happened.</td>
+              <td>SuperUnlucky Seed</td>
+              <td>Strength restored to maximum value</td>
+              <td>Antidote Grass</td>
+            </tr>
+            <tr>
+              <td>If strength is full, max strength is raised</td>
+              <td>Strength Grass</td>
+              <td>Decreases strength and action speed</td>
+              <td>Poison Grass</td>
+            </tr>
+            <tr>
+              <td>Action speed will increase by 1</td>
+              <td>Swift Grass</td>
+              <td>Become afflicted with Confused status</td>
+              <td>Confusion Grass</td>
+            </tr>
+            <tr>
+              <td>Become afflicted with Asleep status</td>
+              <td>Sleepy Grass</td>
+              <td>Become afflicted with Berserk status</td>
+              <td>Rage Grass</td>
+            </tr>
+            <tr>
+              <td>Forget what an identified item was</td>
+              <td>Amnesia Grass</td>
+              <td>Warp somewhere on the floor</td>
+              <td>Warp Grass</td>
+            </tr>
+            <tr>
+              <td>Become afflicted with Farseeing status</td>
+              <td>Perception Grass</td>
+              <td>Attack by breathing fire</td>
+              <td>Dragon Grass</td>
+            </tr>
+            <tr>
+              <td>Become afflicted with Buffed status</td>
+              <td>Power Up Grass</td>
+              <td>Become afflicted with Invincible status</td>
+              <td>Invincible Grass</td>
+            </tr>
+            <tr>
+              <td>Raises you if KOed while holding it</td>
+              <td>Revival Grass</td>
+              <td>All items will become cursed or sealed</td>
+              <td>Imabikiso</td>
+            </tr>
+            <tr>
+              <td>Become afflicted with Tinkerer status</td>
+              <td>Upgrade Seed</td>
+              <td>Become afflicted with Blind status</td>
+              <td>Blinding Grass</td>
+            </tr>
+            <tr>
+              <td>When KOed, choose to get up or escape</td>
+              <td>Undo Grass</td>
+              <th colspan="2"></th>
+            </tr>
+          </table>
+          <div class="explanation_2">
+            <p>Not Possible:</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+              <th rowspan="4"></th>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+            </tr>
+            <tr>
+              <td>Thrown items will penetrate everything</td>
+              <td>Dracon Grass</td>
+              <td>Equipment is removed</td>
+              <td>Nymph Grass</td>
+            </tr>
+            <tr>
+              <td>Get up when KOed, but with a stomachache</td>
+              <td>Gut Grass</td>
+              <td>When KOed, you might get up or escape</td>
+              <td>Repeat Grass</td>
+            </tr>
+            <tr>
+              <td>Your feelings will recover slightly</td>
+              <td>Fine Grass</td>
+              <th colspan="2"></th>
+            </tr>
+          </table>
+          <br>
           <h3 id="scroll">Scroll</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>The abilities that are based on existing items have the exact same effect. (See <a href="">Scrolls</a> for details)</p>
+            <p>There are no New Item exclusive abilities.</p>
+            <p>Possible:</p>
           </div>
+          <table class="trap_table">
+            <tr>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+              <th rowspan="21"></th>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+            </tr>
+            <tr>
+              <td>Read to make the floor brighter</td>
+              <td>Navigation Scroll</td>
+              <td>Read to remove curse and seal from item</td>
+              <td>Exorcism Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to identify selected item</td>
+              <td>Identify Scroll</td>
+              <td>Read to strengthen selected weapon</td>
+              <td>Fate Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to strengthen selected shield</td>
+              <td>Earth Scroll</td>
+              <td>Read to plate weapon or shield</td>
+              <td>Plating Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to afflict foes in room with Confused</td>
+              <td>Confusion Scroll</td>
+              <td>Read, afflict foes in room w/Sound Asleep</td>
+              <td>Slumber Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to deal damage to foes in room</td>
+              <td>Vacuum Slash Scrl</td>
+              <td>Read to make foes in room vanish</td>
+              <td>Expulsion Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to afflict nearby foes with Afraid</td>
+              <td>Fear Scroll</td>
+              <td>Remove all traps on this floor</td>
+              <td>Trap Deletion Scrl</td>
+            </tr>
+            <tr>
+              <td>Read to fix what ails you</td>
+              <td>Fixer Scroll</td>
+              <td>Read to increase capacity of pot by 1</td>
+              <td>Pot God Scroll</td>
+            </tr>
+            <tr>
+              <td>Ride on top to avoid direct attacks</td>
+              <td>Sanctuary Scroll</td>
+              <td>Read to give yourself Muzzled status</td>
+              <td>Muzzled Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to give yourself Grounded status</td>
+              <td>Grounded status</td>
+              <td>Read to raise action speed of nearby foes</td>
+              <td>Swift Foe Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to summon a monster house</td>
+              <td>Mnster House Scrl</td>
+              <td>Read to place many traps</td>
+              <td>Trap Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to forget the current floor's layout</td>
+              <td>Lost Scroll</td>
+              <td>Read to change water tiles to floor tiles</td>
+              <td>Desert Scroll</td>
+            </tr>
+            <tr>
+              <td>Throw to vanquish the monster it hits</td>
+              <td>Extinction Scroll</td>
+              <td>Read to attract items or living creatures</td>
+              <td>Attraction Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to extract contents of selected pot</td>
+              <td>Extraction Scroll</td>
+              <td>Read to remove all auras from this floor</td>
+              <td>Dispel Aura Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to swap night and day</td>
+              <td>Night-Day Scroll</td>
+              <td>Give to a special store to be granted entry</td>
+              <td>Recommend. Letter</td>
+            </tr>
+            <tr>
+              <td>Read to make all techniques usable again</td>
+              <td>Replenish Scroll</td>
+              <td>Read to turn the selected item into food</td>
+              <td>Onigiri Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to grant self, allies Immune status</td>
+              <td>Immunity Scroll</td>
+              <td>Read to make item cursed or sealed</td>
+              <td>Curse Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to bless selected item</td>
+              <td>Blessing Scroll</td>
+              <td>Read to attract ally or foe</td>
+              <td>Gathering Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to attract items on the ground</td>
+              <td>Collection Scroll</td>
+              <td>Read to transmutate selected item into G</td>
+              <td>Sale Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to make something happen</td>
+              <td>Gambler's Scroll</td>
+              <td>Foes stepped on get Tottering status</td>
+              <td>Oil Scroll</td>
+            </tr>
+            <tr>
+              <td>Rooms with this stuck to it will be bright</td>
+              <td>Light Scroll</td>
+              <th colspan="2"></th>
+            </tr>
+          </table>
+          <div class="explanation_2">
+            <p>Not Possible:</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+              <th rowspan="8"></th>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+            </tr>
+            <tr>
+              <td>Read to escape from the dungeon</td>
+              <td>Escape Scroll</td>
+              <td>Rewrite this as any scroll you want</td>
+              <td>Blank Scroll</td>
+            </tr>
+            <tr>
+              <td>This scroll will tear if you read it.</td>
+              <td>Wet Scroll</td>
+              <td>Eat to replenish fullness</td>
+              <td>Squid Sushi Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to apply tag to weapon or shield</td>
+              <td>Tag Scroll</td>
+              <td>Nothing will happen if you read this.</td>
+              <td>Piece of Paper</td>
+            </tr>
+            <tr>
+              <td>Read to make merchandise free</td>
+              <td>Coupon Scroll</td>
+              <td>Read to make a declaration to monsters</td>
+              <td>Nixer Scroll</td>
+            </tr>
+            <tr>
+              <td>Use all your G to buy food</td>
+              <td>Commend. Letter</td>
+              <td>Read to call an elephant with a dog bark</td>
+              <td>Pot Dog Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to make all your G vanish</td>
+              <td>Bankruptcy Scroll</td>
+              <td>Read to bless you with a good husband</td>
+              <td>Mate Scroll</td>
+            </tr>
+            <tr>
+              <td>Read to strengthen an unselected item</td>
+              <td>Darth Scroll</td>
+              <td>Read to make a branch somewhere recover</td>
+              <td>Arbor Scroll</td>
+            </tr>
+          </table>
+          <br>
           <h3 id="staff">Staff</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>The abilities that are based on existing items have the exact same effect. (See <a href="">Staves</a> for details)</p>
+            <p>There are no New Item exclusive abilities.</p>
+            <p>Possible:</p>
           </div>
+          <table class="trap_table">
+            <tr>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+              <th rowspan="9"></th>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+            </tr>
+            <tr>
+              <td>Become afflicted with Empathetic status</td>
+              <td>Empathy Staff</td>
+              <td>Switch places with your target</td>
+              <td>Swap Staff</td>
+            </tr>
+            <tr>
+              <td>Blast your target away</td>
+              <td>Knockback Staff</td>
+              <td>Become afflicted with Sealed status</td>
+              <td>Seal Staff</td>
+            </tr>
+            <tr>
+              <td>Become afflicted with Cloned status</td>
+              <td>Clone Staff</td>
+              <td>If you are holding this, you will not trip</td>
+              <td>Balance Staff</td>
+            </tr>
+            <tr>
+              <td>Tunnel 10 tiles straight into a wall</td>
+              <td>Boring Staff</td>
+              <td>Jump to where the magic bullet hits</td>
+              <td>Pinning Staff</td>
+            </tr>
+            <tr>
+              <td>Action speed will increase by 1</td>
+              <td>Swift Staff</td>
+              <td>Action speed will decrease by 1</td>
+              <td>Slow Staff</td>
+            </tr>
+            <tr>
+              <td>Increase level by 1</td>
+              <td>Glorious Staff</td>
+              <td>Lose 1 level</td>
+              <td>Unlucky Staff</td>
+            </tr>
+            <tr>
+              <td>Delete traps in the magic bullet's path</td>
+              <td>Trap Del. Staff</td>
+              <td>Deal random effect to target</td>
+              <td>Mage Staff</td>
+            </tr>
+            <tr>
+              <td>This does not have any particular effect</td>
+              <td>Ordinary Staff</td>
+              <td>Deal electric damage</td>
+              <td>Electric Staff</td>
+            </tr>
+          </table>
+          <div class="explanation_2">
+            <p>Not Possible:</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+              <th rowspan="5"></th>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+            </tr>
+            <tr>
+              <td>Warps stairs, gives user Paralyzed status</td>
+              <td>Transient Staff</td>
+              <td>Become afflicted with Paralyzed status</td>
+              <td>Paralysis Staff</td>
+            </tr>
+            <tr>
+              <td>Create a wall in front of you</td>
+              <td>Fort. Staff</td>
+              <td>Allows you to watch a sad play</td>
+              <td>Drama Staff</td>
+            </tr>
+            <tr>
+              <td>Become afflicted with Empathetic status</td>
+              <td>Sharing Staff</td>
+              <td>Get divine retribution from the forest god</td>
+              <td>Staff of Sacrifice</td>
+            </tr>
+            <tr>
+              <td>Take electric damage</td>
+              <td>Shocking Staff</td>
+              <td>If you trip holding this, you'll be scolded</td>
+              <td>Nagging Staff</td>
+            </tr>
+          </table>
+          <br>
           <h3 id="talisman">Talisman</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>The abilities that are based on existing items have the exact same effect. (See <a href="">Talismans</a> for details)</p>
+            <p>There are no New Item exclusive abilities.</p>
+            <p>Possible:</p>
           </div>
+          <table class="trap_table">
+            <tr>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+              <th rowspan="8"></th>
+              <th class="highlight_blue">Ability</th>
+              <th class="highlight_blue">Item</th>
+            </tr>
+            <tr>
+              <td>Inflicts Asleep status</td>
+              <td>Sleep Talisman</td>
+              <td>Inflicts Sealed status</td>
+              <td>Seal Talisman</td>
+            </tr>
+            <tr>
+              <td>Inflicts Confused status</td>
+              <td>Conf. Talisman</td>
+              <td>Inflicts Inaccurate status</td>
+              <td>Inacc. Talisman</td>
+            </tr>
+            <tr>
+              <td>Inflicts Afraid status</td>
+              <td>Fear Talisman</td>
+              <td>Inflicts Shadow Bound status</td>
+              <td>Shadow Bind Tal.</td>
+            </tr>
+            <tr>
+              <td>Action speed will increase by 1</td>
+              <td>Swift Talisman</td>
+              <td>Action speed will decrease by 1</td>
+              <td>Slow Talisman</td>
+            </tr>
+            <tr>
+              <td>Inflicts Berserk status</td>
+              <td>Berserker Tal.</td>
+              <td>Inflicts Enraged status</td>
+              <td>Enraged Talisman</td>
+            </tr>
+            <tr>
+              <td>Inflicts Furious status</td>
+              <td>Furious Talisman</td>
+              <td>Inflicts Sound Asleep status</td>
+              <td>Slumber Talisman</td>
+            </tr>
+            <tr>
+              <td>Increase level by 1</td>
+              <td>Glorious Talisman</td>
+              <th colspan="2"></th>
+            </tr>
+          </table>
+          <br>
           <div class="page_bottom_padding"></div>
         </div>
       </main>
