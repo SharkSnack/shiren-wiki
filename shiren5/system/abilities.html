@@ -50,6 +50,7 @@
             <a href="#formations">Formations</a>
             <ul>
               <li><a href="#surrounded">Surrounded</a></li>
+              <li><a href="#5-line">5 Line</a></li>
               <li><a href="#3-line">3 Line</a></li>
               <li><a href="#2-line">2 Line</a></li>
               <li><a href="#cross">Cross</a></li>
@@ -365,7 +366,7 @@
         </table>
         <h2 id="formations">Formations</h2>
         <div class="explanation">
-          Text
+          <p>Formations are special effects that occur based on character positions when an ability is used.<br>When multiple formation conditions are met at the same time, the higher priority formation is chosen.<br>Some formations only activate with abilities of a specific category.</p>
         </div>
         <table>
           <tr>
@@ -382,30 +383,36 @@
           </tr>
           <tr>
             <td class="text_center">2</td>
+            <td class="highlight_yellow_2">5 Line</td>
+            <td>Restore 200 HP</td>
+            <td>Room</td>
+          </tr>
+          <tr>
+            <td class="text_center">3</td>
             <td class="highlight_yellow_2">3 Line</td>
             <td>Restore 50 HP</td>
             <td>Room</td>
           </tr>
           <tr>
-            <td class="text_center">3</td>
+            <td class="text_center">4</td>
             <td class="highlight_yellow_2">2 Line</td>
             <td>Cure ailments</td>
             <td>Room</td>
           </tr>
           <tr>
-            <td class="text_center">4</td>
+            <td class="text_center">5</td>
             <td class="highlight_yellow_2">Cross</td>
             <td>Replenish 3 abilities</td>
             <td>Room, Floor</td>
           </tr>
           <tr>
-            <td class="text_center">5</td>
+            <td class="text_center">6</td>
             <td class="highlight_yellow_2">Sandwich</td>
             <td>Restore 20 HP</td>
             <td>Room</td>
           </tr>
           <tr>
-            <td class="text_center">6</td>
+            <td class="text_center">7</td>
             <td class="highlight_yellow_2">Cornered</td>
             <td>Deal more damage</td>
             <td>Room, Single-target</td>
@@ -465,8 +472,63 @@
             <td class="highlight_yellow_2">_</td>
           </tr>
         </table>
-        <ul>
-          <li>Text</li>
+        <ul class="desc_list">
+          <li>Warps you to a different location on the current floor. (Nullified by <span class="green_text">Unmoving</span> rune)</li>
+          <li>Highest priority, and activates no matter what direction you're facing.</li>
+          <li>Activates with Room category abilities. (Doesn't activate with single-target abilities)</li>
+        </ul>
+        <h4 id="3-line">5 Line</h4>
+        <table class="chart_table">
+          <tr>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_blue_3">→</td>
+            <td class="highlight_pink">M</td>
+            <td class="highlight_pink">M</td>
+            <td class="highlight_pink">M</td>
+            <td class="highlight_pink">M</td>
+            <td class="highlight_pink">M</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+          </tr>
+          <tr>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+            <td class="highlight_yellow_2">_</td>
+          </tr>
+        </table>
+        <ul class="desc_list">
+          <li>Restores 200 HP.</li>
+          <li>Priority 2, and Shiren must be facing the line of enemies.</li>
+          <li>Activates with Room category abilities. (Other categories are untested)</li>
         </ul>
         <h4 id="3-line">3 Line</h4>
         <table class="chart_table">
@@ -552,8 +614,10 @@
             <td class="highlight_yellow_2">_</td>
           </tr>
         </table>
-        <ul>
-          <li>Text</li>
+        <ul class="desc_list">
+          <li>Restores 50 HP.</li>
+          <li>Priority 3, and Shiren must be facing the line of enemies.
+          <li>Activates with Room category abilities. (Other categories are untested)</li>
         </ul>
         <h4 id="2-line">2 Line</h4>
         <table class="chart_table">
@@ -639,8 +703,12 @@
             <td class="highlight_yellow_2">_</td>
           </tr>
         </table>
-        <ul>
-          <li>Text</li>
+        <ul class="desc_list">
+          <li>Cures negative status conditions.</li>
+          <li>Priority 4, and Shiren must be facing the line of enemies.
+          <li>Often accidentally triggered in place of Cross formation. (Ability Replenish)</li>
+          <li>Activates with Room category abilities. (Other categories are untested)</li>
+          <li>Room Healing Flash appears to use ally positions for formations,<br>so you can restore HP and ailments at the same time if you have allies.</li>
         </ul>
         <h4 id="cross">Cross</h4>
         <table class="chart_table">
@@ -726,8 +794,12 @@
             <td class="highlight_yellow_2">_</td>
           </tr>
         </table>
-        <ul>
-          <li>Text</li>
+        <ul class="desc_list">
+          <li>Replenishes 3 abilities.</li>
+          <li>Pretty much exclusive to Crawling Confusion, but has the highest return among formations.</li>
+          <li>Priority 5 - check the direction Shiren is facing to avoid triggering a higher priority formation.</li>
+          <li>Activates with Room category abilities. (Doesn't activate with single-target abilities)</li>
+          <li>It apparently also activates with Last Stand.</li>
         </ul>
         <h4 id="sandwich">Sandwich</h4>
         <table class="chart_table">
@@ -849,8 +921,11 @@
             <td class="highlight_yellow_2">_</td>
           </tr>
         </table>
-        <ul>
-          <li>Text</li>
+        <ul class="desc_list">
+          <li>Restores 20 HP.</li>
+          <li>Priority 6 - check the direction Shiren is facing to avoid triggering a higher priority formation.</li>
+          <li>Activates with Room category abilities. (Other categories are untested)</li>
+          <li>It appears to activate even when enemies aren't adjacent, provided they're spaced the same.</li>
         </ul>
         <h4 id="cornered">Cornered</h4>
         <table class="chart_table">
@@ -900,8 +975,10 @@
             <td class="highlight_black">W</td>
           </tr>
         </table>
-        <ul>
-          <li>Text</li>
+        <ul class="desc_list">
+          <li>Boosts power of ability.</li>
+          <li>Priority 7, and there must be an impassable tile behind Shiren.</li>
+          <li>Activates with Room category and single-target abilities.</li>
         </ul>
         <h4 id="square">Square</h4>
         <table class="chart_table">
@@ -951,8 +1028,9 @@
             <td class="highlight_yellow_2">_</td>
           </tr>
         </table>
-        <ul>
-          <li>Text</li>
+        <ul class="desc_list">
+          <li>Restores HP.</li>
+          <li>Activates with Room category abilities. (Other categories are untested)</li>
         </ul>
         <h2 id="recommended-sets">Recommended Sets</h2>
         <div class="explanation">
@@ -1001,7 +1079,7 @@
           </tr>
           <tr>
             <td>Attacking<br>(Close range,<br>Multi-use)</td>
-            <td class="highlight_yellow_2">Staccato Wave<br>Onigiri Bonanza (with <a href="/shiren5/system/runes#ability-regen">Ability Regen</a> rune)</td>
+            <td class="highlight_yellow_2">Staccato Wave<br>Onigiri Bonanza (with <a href="/shiren5/system/runes#shield">Ability Regen</a> rune)</td>
             <td>Explosion Bracelet</td>
           </tr>
         </table>
