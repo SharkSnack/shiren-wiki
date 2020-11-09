@@ -26,8 +26,8 @@
           <h2 class="page_heading">Status Conditions</h2>
           <div class="explanation">
             <p>Status conditions are states that affect a character's behavior in various ways.<br>All statuses besides "Regular" can be categorized as positive or negative.</p>
-            <p><a href="">Absorbiphant</a> monsters and the Sparrow <a href="">NPC</a> can remove all status conditions<br>except for Super (and its boosts), Dueling, Dodger, Cautious, Reflective, and Zen.</p>
-            <p>For information about auras, check the <a href="">Gameplay Basics</a> page.</p>
+            <p><a href="/shiren5/system/monsters#absorbiphant">Absorbiphant</a> monsters and the Sparrow <a href="/shiren5/system/npcs#sparrow">NPC</a> can remove all status conditions<br>except for Super (and its boosts), Dueling, Dodger, Cautious, Reflective, and Zen.</p>
+            <p>For information about auras, check the <a href="/shiren5/system/gameplay-basics">Gameplay Basics</a> page.</p>
           </div>
           <h4>Shiren</h4>
           <ul class="desc_list">
@@ -57,7 +57,7 @@
               <th>Causes</th>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Slow</th>
+              <th id="slow" rowspan="3" class="highlight_pink">Slow</th>
               <td>Shiren</td>
               <td rowspan="2">Perform 1 action every 2 turns. (20 turns)</td>
               <td rowspan="2">Slow Trap, Poison Grass, Mutaikons,<br>Mage Staff, Slow Staff, Slow Talisman,<br>MC Sorceror</td>
@@ -71,7 +71,7 @@
               <td>The above, and Water Pot</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Swift,<br>Haste</th>
+              <th id="swift" rowspan="3" class="highlight_blue_5">Swift,<br>Haste</th>
               <td>Shiren</td>
               <td rowspan="3">Perform 2 actions every turn.</td>
               <td rowspan="2">DJ Mage, Swift Grass, Swift Talisman,<br>Shrine Maid. Pot</td>
@@ -84,7 +84,7 @@
               <td>The above, and Swift Foe Scroll,<br>Gambler's Scroll</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Confused</th>
+              <th id="confused" rowspan="3" class="highlight_pink">Confused</th>
               <td>Shiren</td>
               <td>Movement and attacks will execute in a random direction. (12 turns)<br>Projectiles, thrown items, and staves can be used normally.<br>If a direct attack turns to face an ally, it'll deal damage.</td>
               <td rowspan="2">Spin Trap, Confusion Grass,<br>Conf. Talisman, Mage Staff,<br>MC Mage, MC Wizard, Dazikon, Foly</td>
@@ -99,7 +99,7 @@
               <td>The above, and Confusion Scroll</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Asleep</th>
+              <th id="asleep" rowspan="3" class="highlight_pink">Asleep</th>
               <td>Shiren</td>
               <td rowspan="3">Unable to perform any actions for 6 turns.</td>
               <td rowspan="3">Sleep Trap, Sleepy Grass, Mage Staff,<br>Sleep Talisman, Naptapirs, Dozikon</td>
@@ -111,7 +111,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Sound Asleep,<br>Sound Sleep,<br>Slumbering</th>
+              <th id="sound-asleep" rowspan="3" class="highlight_pink">Sound Asleep,<br>Sound Sleep,<br>Slumbering</th>
               <td>Shiren</td>
               <td rowspan="3">Unable to perform any actions for 12 turns.<br>Action speed is increased by 1 stage afterward.</td>
               <td rowspan="2">Slumber Talisman</td>
@@ -124,7 +124,7 @@
               <td>The above, and Slumber Scroll</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Blind</th>
+              <th id="blind" rowspan="3" class="highlight_pink">Blind</th>
               <td>Shiren</td>
               <td>Field of view is reduced to zero for 10 turns, and you can't read scrolls.<br>Overwrites <span class="green_text">Farseeing</span> status. Check for walls using show tiles controls.<br>If you have the ability to see enemies, they will still appear on the map.<br>(example: having a Monster Detector bracelet equipped)<br>All other creatures will display as "Someone" in scrolling messages.</td>
               <td rowspan="2">Blinding Grass, Blind Trap,<br>Drama Staff, Kid Squids, MC Mage</td>
@@ -138,7 +138,7 @@
               <td>The above, and Darkroom</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Paralyzed</th>
+              <th id="paralyzed" rowspan="3" class="highlight_pink">Paralyzed</th>
               <td>Shiren</td>
               <td>Unable to perform actions unless attacked or hit by an effect.<br>The paralysis wears off after 40 turns.</td>
               <td rowspan="2">Paralysis Staff, Transient Staff,<br>MC Mage, MC Wizard, Maneaters</td>
@@ -152,7 +152,7 @@
               <td>The above, and Fixer Scroll</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">S-Paralyzed,<br>Super Paralyzed</th>
+              <th id="s-paralyzed" rowspan="3" class="highlight_pink">S-Paralyzed,<br>Super Paralyzed</th>
               <td>Shiren</td>
               <td>Unable to perform actions unless attacked or hit by an effect 2 times.<br>The paralysis wears off after 40 turns.</td>
               <td rowspan="3">Paralysis Staff (blessed),<br>Transient Staff (blessed)</td>
@@ -165,7 +165,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Empathetic</th>
+              <th id="empathetic" rowspan="3" class="highlight_pink">Empathetic</th>
               <td>Shiren</td>
               <td rowspan="2">When the target who inflicted this status takes damage,<br>Shiren or the ally will receive the same amount of damage.<br>Effect lasts until the target is gone from the floor, or you change floors.<br>You won't receive damage if you defeat the target in one hit.</td>
               <td rowspan="3">Empathy Staff, Sharing Staff,<br>MC Sorceror</td>
@@ -178,7 +178,7 @@
               <td>When you take damage, the target will take the same amount of damage.</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">S-Empathetic,<br>Super Empathetic</th>
+              <th id="s-empathetic" rowspan="3" class="highlight_pink">S-Empathetic,<br>Super Empathetic</th>
               <td>Shiren</td>
               <td rowspan="2">When the target who inflicted this status takes damage,<br>Shiren or the ally will receive double the amount of damage.<br>Effect lasts until the target is gone from the floor, or you change floors.<br>You won't receive damage if you defeat the target in one hit.</td>
               <td rowspan="3">Empathy Staff (blessed),<br>Sharing Staff (blessed)</td>
@@ -191,7 +191,7 @@
               <td>When you take damage, the target will take double the amount of damage.</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Hiding</th>
+              <th id="hiding" rowspan="3" class="highlight_blue_5">Hiding</th>
               <td>Shiren</td>
               <td>Unable to act for 20 turns, but won't be detected by monsters.<br>Immediately fail the adventure if you hide while on a void or water tile.</td>
               <td rowspan="3">Hide Pot</td>
@@ -205,7 +205,7 @@
               <td>Unable to act, but won't be detected by other monsters.<br>Can't break free until they get hit by an attack or effect.<br>Immediately collapse if they hide while on a void or water tile.</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Cloned,<br>Substitution</th>
+              <th id="cloned" rowspan="3" class="highlight_pink">Cloned,<br>Substitution</th>
               <td>Shiren</td>
               <td>Same as <span class="green_text">Confused</span> status.</td>
               <td rowspan="3">Clone Staff, MC Wizard</td>
@@ -219,7 +219,7 @@
               <td>Transforms into Fake Shiren for 30 turns.<br>Monsters that can see the fake will prioritize it over Shiren and his allies.<br>The transformed monster won't use special attacks, and will be treated<br>as a character on land, even if they were a Floating or Aquatic type.<br>Some monsters won't use special attacks when a fake is visible.<br>Only one fake can be present at a time, so the first monster will<br>return to normal and be left <span class="green_text">Confused</span> if a second fake is made.</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Enduring</th>
+              <th id="enduring" rowspan="3" class="highlight_blue_5">Enduring</th>
               <td>Shiren</td>
               <td rowspan="3">Lets you survive what would've been a fatal blow with 1 HP.<br>Wears off after activating, or if you advance 2 floors.</td>
               <td rowspan="3">Juicy Peach</td>
@@ -231,13 +231,13 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Apathetic</th>
+              <th id="apathetic" class="highlight_pink">Apathetic</th>
               <td>Monster</td>
               <td>Unable to perform any actions for 6 turns.</td>
               <td>Amnesia Grass, Gauge Blind. Trap</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Berserk</th>
+              <th id="berserk" rowspan="3" class="highlight_pink">Berserk</th>
               <td>Shiren</td>
               <td>Player loses control of Shiren for 30 turns.<br>During that time, Shiren will search out and attack the nearest creature.<br>He won't charge into walls if you have a Wall Clip Bracelet equipped.</td>
               <td rowspan="3">Rage Grass, Berserker Tal.,<br>Mesmerikon, MC Wizard, Foly</td>
@@ -251,7 +251,7 @@
               <td>Can't use special attacks, and attacks the nearest creature for 30 turns.<br>Night monsters are immune to this status.</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Shadow Bound</th>
+              <th id="shadow-bound" rowspan="3" class="highlight_pink">Shadow Bound</th>
               <td>Shiren</td>
               <td>Prevents you from moving for 3 turns.<br>You can still attack and change directions.</td>
               <td rowspan="3">Shadow Bind Tal.,<br>Shadow Bind Trap, Foly</td>
@@ -265,7 +265,7 @@
               <td>Prevents movement for 10 turns, but can still attack and change directions.</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Afraid</th>
+              <th id="afraid" rowspan="3" class="highlight_pink">Afraid</th>
               <td>Shiren</td>
               <td>Reverses the direction of your attacks and thrown items for 15 turns.<br>Movement is not affected.</td>
               <td rowspan="2">Fear Talisman</td>
@@ -279,7 +279,7 @@
               <td>The above, and Fear Scroll,<br>Dicey Distractor</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Sealed</th>
+              <th id="sealed" rowspan="3" class="highlight_pink">Sealed</th>
               <td>Shiren</td>
               <td>Same as <span class="green_text">Muzzled</span> status, but also can't use staves. (20 turns)<br>However, you can still eat peaches.</td>
               <td>Seal Staff, Seal Talisman, MC Wizard</td>
@@ -295,7 +295,7 @@
               <td>The above, and Water Pot,<br>Room Sealant</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Inaccurate</th>
+              <th id="inaccurate" rowspan="3" class="highlight_pink">Inaccurate</th>
               <td>Shiren</td>
               <td>Direct attacks will always miss for 10 turns.<br>However, if the target is <span class="green_text">Asleep</span> or <span class="green_text">Paralyzed</span>, the attack will still connect.</td>
               <td rowspan="3">Inacc. Talisman, Foly</td>
@@ -308,7 +308,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Onigiri</th>
+              <th id="onigiri" rowspan="3" class="highlight_pink">Onigiri</th>
               <td>Shiren</td>
               <td>Transforms into an onigiri for 10 turns.<br>Attack and defense get set to 0, and equipment effects are nullified.<br>You can't use items or abilities, and you can't ascend or descend stairs.<br>You'll immediately collapse if you get hit by fire or explosion damage,<br>or if you step on a Decay Trap or land on a water tile.</td>
               <td rowspan="2">Onigiri Trap, MC Sorceror,<br>Nigiri Boss, Nigiri King</td>
@@ -323,13 +323,13 @@
               <td>The above, and Onigiri Bonanza</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Tottering</th>
+              <th id="tottering" class="highlight_pink">Tottering</th>
               <td>Monster</td>
               <td>Unable to perform any actions for 6 turns, and receives double damage.<br>If the target was a Mixer, it will drop swallowed items on the ground.</td>
               <td>Oil Scroll</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Enraged</th>
+              <th id="enraged" rowspan="3" class="highlight_blue_5">Enraged</th>
               <td>Shiren</td>
               <td rowspan="2">Doubles attack power for 15 turns.</td>
               <td rowspan="2">Enraged Talisman</td>
@@ -343,7 +343,7 @@
               <td>The above, and Rage Trap</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Furious,<br>Super Enraged</th>
+              <th id="furious" rowspan="3" class="highlight_blue_5">Furious,<br>Super Enraged</th>
               <td>Shiren</td>
               <td rowspan="2">Doubles attack power and grants <span class="green_text">Swift</span> status for 15 turns.</td>
               <td rowspan="3">Furious Talisman</td>
@@ -356,7 +356,7 @@
               <td>Doubles attack power and grants <span class="green_text">Swift</span> status for 15 turns.<br>(Can attack 2 times per turn)</td>
             </tr>
             <tr>
-              <th rowspan="2" class="highlight_blue_5">Plated,<br>Plating</th>
+              <th id="plated" rowspan="2" class="highlight_blue_5">Plated,<br>Plating</th>
               <td>Shiren</td>
               <td rowspan="2">Makes the character immune to most attacks and traps.<br>The plating has a chance to wear off when hit by attacks or trap effects.</td>
               <td rowspan="2">Mekky (NPC)</td>
@@ -365,7 +365,7 @@
               <td>Ally</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Farseeing</th>
+              <th id="farseeing" rowspan="3" class="highlight_blue_5">Farseeing</th>
               <td>Shiren</td>
               <td>Reveals hidden traps, and lets you read scrolls without light at night.<br>Overwrites <span class="green_text">Blind</span> status.<br>Wears off if you're inflicted with <span class="green_text">Blind</span> status, or if you change floors.</td>
               <td rowspan="3">Perception Grass</td>
@@ -378,25 +378,25 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Gauge Blind,<br>Gauge Vanish</th>
+              <th id="gauge-blind" class="highlight_pink">Gauge Blind,<br>Gauge Vanish</th>
               <td>Shiren</td>
               <td>HP and fullness bars are hidden for 100 turns.<br>Other stats show as ????, stopping you from checking your current status.</td>
               <td>Gauge Blind. Trap</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Muzzled</th>
+              <th id="muzzled" class="highlight_pink">Muzzled</th>
               <td>Shiren</td>
               <td>Unable to eat, read, use abilities, or talk to allies or Shopkeeps.<br>Wears off when you change floors.</td>
               <td>Muzzled Scroll</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Grounded</th>
+              <th id="grounded" class="highlight_pink">Grounded</th>
               <td>Shiren</td>
               <td>Unable to pick up items, but can still use items that are on the ground.<br>Wears off when you change floors.</td>
               <td>Grounded Scroll, Foly</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Hypnotized</th>
+              <th id="hypnotized" rowspan="3" class="highlight_pink">Hypnotized</th>
               <td>Shiren</td>
               <td>Face a random direction and attack, use an item, or throw an item. (1 turn)</td>
               <td rowspan="3">Gazers</td>
@@ -409,31 +409,31 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Grassnesia</th>
+              <th id="grassnesia" class="highlight_pink">Grassnesia</th>
               <td>Shiren</td>
               <td>Unable to use or throw grass items for 100 turns.</td>
               <td>Myriman</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Scrollnesia</th>
+              <th id="scrollnesia" class="highlight_pink">Scrollnesia</th>
               <td>Shiren</td>
               <td>Unable to use or throw scrolls for 100 turns.</td>
               <td>Billman</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Staffnesia</th>
+              <th id="staffnesia" class="highlight_pink">Staffnesia</th>
               <td>Shiren</td>
               <td>Unable to use or throw staves for 100 turns.</td>
               <td>Trillman</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Potnesia</th>
+              <th id="potnesia" class="highlight_pink">Potnesia</th>
               <td>Shiren</td>
               <td>Unable to use or throw pots for 100 turns.</td>
               <td>Googoman</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Laughing</th>
+              <th id="laughing" rowspan="3" class="highlight_pink">Laughing</th>
               <td>Shiren</td>
               <td rowspan="2">Unable to perform any actions for 6 turns.</td>
               <td rowspan="3">Hilarious Pot</td>
@@ -446,13 +446,13 @@
               <td>Unable to perform any actions for 6 turns.<br>The laughter spreads to adjacent enemies and other enemies in the room.<br>All enemies stop laughing when one enemy recovers.</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Napping</th>
+              <th id="napping" class="highlight_pink">Napping</th>
               <td>Monster</td>
               <td>The monster is sleeping and won't wake up on its own.<br>May wake up when you move next to it, or when you enter or exit the room.<br>Floaty, Karakuroid, and Zalokleft monsters are always generated napping,<br>along with monsters inside regular Monster Houses.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Invincible</th>
+              <th id="invincible" rowspan="3" class="highlight_blue_5">Invincible</th>
               <td>Shiren</td>
               <td rowspan="3">Nullifies all damage received for 20 turns.<br>However, this status doesn't protect against effects unrelated to damage.</td>
               <td rowspan="3">Invincible Grass, Shrine Maid. Pot</td>
@@ -464,25 +464,25 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th class="highlight_pink">Potted</th>
+              <th id="potted" class="highlight_pink">Potted</th>
               <td>Shiren</td>
               <td>Your hand is stuck in a pot, and your weapon is unequipped.<br>Unable to pick up or use items, and can't use abilities.<br>Wears off when you change floors, or step on a Strip Trap.<br>Chance for the pot to shatter when you attack or get hit by enemies.</td>
               <td>Sticky Pot</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Tinkerer,<br>Reinforcer</th>
+              <th id="tinkerer" class="highlight_blue_5">Tinkerer,<br>Reinforcer</th>
               <td>Shiren</td>
               <td>Gain x4.0 equipment skill points when you defeat enemies for 100 turns.<br>Wears off when you change floors.</td>
               <td>Upgrade Seed</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Cannon Arm</th>
+              <th id="cannon-arm" class="highlight_blue_5">Cannon Arm</th>
               <td>Shiren</td>
               <td>Thrown items and projectiles fly forever, going through walls and creatures.<br>Wears off when you change floors.</td>
               <td>Dracon Grass</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Immune</th>
+              <th id="immune" rowspan="3" class="highlight_blue_5">Immune</th>
               <td>Shiren</td>
               <td rowspan="2">Makes the character immune to negative status conditions.<br>Wears off when you change floors.</td>
               <td rowspan="2">Immunity Scroll, Peach (blessed)</td>
@@ -496,7 +496,7 @@
               <td>Peach (blessed)</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Klein</th>
+              <th id="klein" rowspan="3" class="highlight_blue_5">Klein</th>
               <td>Shiren</td>
               <td>Attack power and defense are switched for 20 turns.<br>Wears off when you change floors.</td>
               <td rowspan="3">Klein Pot</td>
@@ -509,19 +509,19 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Fast Regen</th>
+              <th id="fast-regen" class="highlight_blue_5">Fast Regen</th>
               <td>Shiren</td>
               <td>Increases natural HP regeneration per turn by 1 HP.<br>Wears off when you change floors.</td>
               <td>Self-Help</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Night Vision</th>
+              <th id="night-vision" class="highlight_blue_5">Night Vision</th>
               <td>Shiren</td>
               <td>Lets you read scrolls without light at night.<br>Wears off when you change floors.</td>
               <td>Beacon of Light</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_yellow_3">Zen,<br>Reflector</th>
+              <th id="zen" rowspan="3" class="highlight_yellow_3">Zen,<br>Reflector</th>
               <td>Shiren</td>
               <td rowspan="3">Makes characters immune to fire and explosion damage.<br>Includes Dragon, Firepuff, Pop Tank, Explochin special attacks or abilities,<br>Explosion / Big Explosion traps, Explosion Bracelet, 4-2-8 and Fever pots.<br>Onigiri can still be grilled, but you won't collapse if you have <span class="green_text">Onigiri</span> status.<br>Wears off when you change floors. (Shiren reviving doesn't remove it)</td>
               <td rowspan="3">Zen Pot</td>
@@ -533,7 +533,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_yellow_3">Dodger</th>
+              <th id="dodger" rowspan="3" class="highlight_yellow_3">Dodger</th>
               <td>Shiren</td>
               <td rowspan="3">Projectiles and thrown items always miss.<br>Includes Bored Kappa, Field Knave, Porky, Scoopie, Mutaikon, Bow Boy,<br>and Grass Boy special attacks.<br>Wears off when you change floors. (Shiren reviving doesn't remove it)</td>
               <td rowspan="3">Dodger Pot</td>
@@ -545,7 +545,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_yellow_3">Reflective,<br>Cautious</th>
+              <th id="reflective" rowspan="3" class="highlight_yellow_3">Reflective,<br>Cautious</th>
               <td>Shiren</td>
               <td rowspan="3">Reflects all magic.<br>Includes DJ Mage, Gazer, and Polygon Spinna special attacks.<br>Gazer's hypnosis is reflected as confusion, and Polygon Spinna's special<br>attack is reflected as damage.<br>Wears off when you change floors. (Shiren reviving doesn't remove it)</td>
               <td rowspan="3">Reflection Pot</td>
@@ -557,7 +557,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_yellow_3">Cautious,<br>Watcher</th>
+              <th id="cautious" rowspan="3" class="highlight_yellow_3">Cautious,<br>Watcher</th>
               <td>Shiren</td>
               <td rowspan="3">You won't drop items, and others can't steal items from you.<br>Includes Zalokleft, Froggo, Gyadon, Swordsman, higher level<br>Field Knave special attacks, and Trip Traps.<br>Wears off when you change floors. (Shiren reviving doesn't remove it)</td>
               <td rowspan="3">Perceptive Pot</td>
@@ -569,49 +569,49 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Ninja,<br>Tiptoe</th>
+              <th id="ninja" class="highlight_blue_5">Ninja,<br>Tiptoe</th>
               <td>Shiren</td>
               <td><span class="green_text">Napping</span> monsters won't wake up when you move next to them<br>or when you enter or exit the room.<br>Wears off when you change floors.</td>
               <td>Special Onigiri</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Knowledgeable,<br>Mass Identifier</th>
+              <th id="knowledgeable" class="highlight_blue_5">Knowledgeable,<br>Mass Identifier</th>
               <td>Shiren</td>
               <td>Items are automatically identified when picked up or inserted into pots.<br>Wears off when you change floors.</td>
               <td>Special Onigiri</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Satiated</th>
+              <th id="satiated" class="highlight_blue_5">Satiated</th>
               <td>Shiren</td>
               <td>Stops natural fullness depletion.<br>Wears off when you change floors.</td>
               <td>Special Onigiri</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Insomnia</th>
+              <th id="insomnia" class="highlight_blue_5">Insomnia</th>
               <td>Shiren</td>
               <td>You won't fall asleep.<br>Wears off when you change floors.</td>
               <td>Special Onigiri</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Unwavering,<br>Power Save</th>
+              <th id="unwavering" class="highlight_blue_5">Unwavering,<br>Power Save</th>
               <td>Shiren</td>
               <td>Your strength can't be decreased.<br>Wears off when you change floors.</td>
               <td>Special Onigiri</td>
             </tr>
             <tr>
-              <th class="highlight_yellow_3">Starving,<br>Hunger</th>
+              <th id="starving" class="highlight_yellow_3">Starving,<br>Hunger</th>
               <td>Shiren</td>
               <td>Natural HP regeneration stops, and you lose 1 HP every turn.<br>Canceled when your fullness increases is above 0.</td>
               <td>Fullness reaches 0</td>
             </tr>
             <tr>
-              <th class="highlight_yellow_3">Danger,<br>Pinch</th>
+              <th id="danger" class="highlight_yellow_3">Danger,<br>Pinch</th>
               <td>Shiren</td>
               <td>Shiren's current HP is less than 30% of his max HP. (HP bar turns red)<br>Wears off when Shiren's HP increases above 30% of his max HP.</td>
               <td>HP is less than 30% of max HP</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Buffed,<br>Empowered</th>
+              <th id="buffed" rowspan="3" class="highlight_blue_5">Buffed,<br>Empowered</th>
               <td>Shiren</td>
               <td rowspan="3">Boosts damage dealt by 50% per stage. (8 stages max)<br>Damage dealt = 150%, 200%, 250%, 300%, 350%, 400%, 450%, 500%.</td>
               <td>Power Up Grass</td>
@@ -624,7 +624,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Weakened</th>
+              <th id="weakened" rowspan="3" class="highlight_pink">Weakened</th>
               <td>Shiren</td>
               <td rowspan="3">Decreases damage dealt by about 50%. (8 stages max)<br>Damage reduction = 50%, 60%, 70%, 80%, 90%, 95%, 97%, 99%</td>
               <td>Rotten Peach</td>
@@ -637,7 +637,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_blue_5">Bolstered,<br>Fortified</th>
+              <th id="bolstered" rowspan="3" class="highlight_blue_5">Bolstered,<br>Fortified</th>
               <td>Shiren</td>
               <td rowspan="3">Decreases damage received by about 50%. (8 stages max)<br>Damage reduction = 50%, 60%, 70%, 80%, 90%, 95%, 97%, 99%</td>
               <td rowspan="3">Hard Peach</td>
@@ -649,7 +649,7 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th rowspan="3" class="highlight_pink">Wizened</th>
+              <th id="wizened" rowspan="3" class="highlight_pink">Wizened</th>
               <td>Shiren</td>
               <td rowspan="3">Increases damage received by 50% per stage. (8 stages max)<br>Damage taken = 150%, 200%, 250%, 300%, 350%, 400%, 450%, 500%.</td>
               <td>Rotten Peach</td>
@@ -662,55 +662,55 @@
               <td>Monster</td>
             </tr>
             <tr>
-              <th class="highlight_yellow_3">Dueling</th>
+              <th id="dueling" class="highlight_yellow_3">Dueling</th>
               <td>Monster</td>
               <td>The monster might drop a license when defeated by Shiren. (20 turns)</td>
               <td>Duelist Trap</td>
             </tr>
             <tr>
-              <th class="highlight_yellow_3">Awakened-ish,<br>Nearly Awakened</th>
+              <th id="awakened-ish" class="highlight_yellow_3">Awakened-ish,<br>Nearly Awakened</th>
               <td>Shiren</td>
               <td>Chance to occur when you defeat enemies.<br>Chance to wear off when a hunger message is displayed, turns elapse<br>while you're <span class="green_text">Starving</span> or in <span class="green_text">Danger</span>, you step on a trap, or are inflicted<br>with a negative status condition.</td>
-              <td>Chance to occur every 10 enemies<br>you defeat during an adventure</td>
+              <td>Chance to occur when you defeat<br>enemies during an adventure</td>
             </tr>
             <tr>
-              <th class="highlight_yellow_3">Super</th>
+              <th id="super" class="highlight_yellow_3">Super</th>
               <td>Shiren</td>
               <td>Chance to occur when you defeat enemies while <span class="green_text">Awakened-ish</span>.<br>Gain one of the following bonuses every 10 enemies you defeat:<br><span class="green_text">Overwhelming</span>, <span class="green_text">Indomitable</span>, <span class="green_text">Modder</span>, <span class="green_text">Super Swift</span>, <span class="green_text">Fast Striking</span>, <span class="green_text">Precise</span>.<br>Your direct attacks have a chance to inflict <span class="green_text">Confused</span>, <span class="green_text">Blind</span>, <span class="green_text">Berserk</span>,<br><span class="green_text">Asleep</span>, <span class="green_text">Paralyzed</span>, <span class="green_text">Sealed</span>, or <span class="green_text">Shadow Bound</span> status.<br>Chance to wear off when a hunger message is displayed, turns elapse<br>while you're <span class="green_text">Starving</span> or in <span class="green_text">Danger</span>, you step on a trap, or are inflicted<br>with a negative status condition. (Lose all bonuses when it wears off)</td>
-              <td>Chance to occur every 10 enemies<br>you defeat while <span class="green_text">Awakened-ish</span></td>
+              <td>Chance to occur when you defeat<br>enemies while <span class="green_text">Awakened-ish</span></td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Overwhelming</th>
+              <th id="overwhelming" class="highlight_blue_5">Overwhelming</th>
               <td>Shiren</td>
               <td>Same as <span class="green_text">Buffed</span> status, but lasts 3 floors.</td>
               <td><span class="green_text">Super</span> status</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Indomitable</th>
+              <th id="indomitable" class="highlight_blue_5">Indomitable</th>
               <td>Shiren</td>
               <td>Same as <span class="green_text">Bolstered</span> status, but lasts 3 floors.</td>
               <td><span class="green_text">Super</span> status</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Super Swift</th>
+              <th id="super-swift" class="highlight_blue_5">Super Swift</th>
               <td>Shiren</td>
               <td>Same as <span class="green_text">Swift</span> status, but lasts 50 turns.<br>(100 turns from Shiren's perspective)</td>
               <td><span class="green_text">Super</span> status</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Modder</th>
+              <th id="modder" class="highlight_blue_5">Modder</th>
               <td>Shiren</td>
               <td>Same as <span class="green_text">Tinkerer</span> status, but lasts 2 floors.</td>
               <td><span class="green_text">Super</span> status</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Fast Striking,<br>Swift Striking</th>
+              <th id="fast-striking" class="highlight_blue_5">Fast Striking,<br>Swift Striking</th>
               <td>Shiren</td>
               <td>Perform 2 direct attacks per turn for 50 turns.</td>
               <td><span class="green_text">Super</span> status</td>
             </tr>
             <tr>
-              <th class="highlight_blue_5">Precise,<br>Deadly Accurate</th>
+              <th id="precise" class="highlight_blue_5">Precise,<br>Deadly Accurate</th>
               <td>Shiren</td>
               <td>Direct attacks always deal a critical hit for 50 turns.</td>
               <td><span class="green_text">Super</span> status</td>

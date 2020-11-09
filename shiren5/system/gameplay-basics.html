@@ -31,20 +31,20 @@
             </p>
           </div>
           <ul id="quick_links">
-            <li><a href="">Turns</a></li>
-            <li><a href="">Wind of Kron</a></li>
-            <li><a href="">Day / Night</a></li>
-            <li><a href="">Auras</a></li>
-            <li><a href="">Super Shiren</a></li>
-            <li><a href="">Equipment Growth</a></li>
-            <li><a href="">Synthesis</a></li>
-            <li><a href="">Tags</a></li>
-            <li><a href="">Blessing / Curse / Seal</a></li>
-            <li><a href="">Resonance</a></li>
-            <li><a href="">Other Mechanics</a></li>
+            <li><a href="#turns">Turns</a></li>
+            <li><a href="#wind-of-kron">Wind of Kron</a></li>
+            <li><a href="#day-night">Day / Night</a></li>
+            <li><a href="#auras">Auras</a></li>
+            <li><a href="#super-shiren">Super Shiren</a></li>
+            <li><a href="#equipment-growth">Equipment Growth</a></li>
+            <li><a href="#synthesis">Synthesis</a></li>
+            <li><a href="#tags">Tags</a></li>
+            <li><a href="#blessing-curse-seal">Blessing / Curse / Seal</a></li>
+            <li><a href="#resonance">Resonance</a></li>
+            <li><a href="#other-mechanics">Other Mechanics</a></li>
           </ul>
-          <h2 id="">Mechanics</h2>
-          <h3 id="">Turns</h3>
+          <h2 id="#mechanics">Mechanics</h2>
+          <h3 id="#turns">Turns</h3>
           <div class="explanation">
             <h4>Turns and Turn-Ending Actions</h4>
             <p>
@@ -73,13 +73,13 @@
               <li>HP regenerates every turn at a rate dependent on your max HP.<br>Examples:<br>15~50 = 1, 2, 1, 2...<br>51~66 = 1, 1, 1, 2...<br>96~101 = 1, 1, 1, 1...<br>124 = 1, 1, 1, 0...<br>200+ = 1, 0, 1, 0...</li>
             </ul>
           </div>
-          <h3 id="">Wind of Kron</h3>
+          <h3 id="wind-of-kron">Wind of Kron</h3>
           <div class="explanation">
             <p>
               If you remain on the same floor of a dungeon for a long time, a strong wind begins to blow.<br>
               The number of turns depends on the dungeon, but you'll have 3 warnings before being blown away.<br>
               You'll automatically fail the adventure and lose all items and Gitan if that happens.<br>
-              If you can't make it to the exit in time, read an <a href="">Escape Scroll</a> or eat <a href="">Undo Grass</a>.<br><br>
+              If you can't make it to the exit in time, read an <a href="/shiren5/item/scrolls#escape-scroll">Escape Scroll</a> or eat <a href="/shiren5/item/grass#undo-grass">Undo Grass</a>.<br><br>
               In-game messages:
             </p>
             <ol class="desc_list">
@@ -89,7 +89,7 @@
               <li>(Player) was blown away by a gust!</li>
             </ol>
           </div>
-          <h3 id="">Day / Night</h3>
+          <h3 id="day-night">Day / Night</h3>
           <div class="explanation">
             <p>
               Many dungeons switch between day and night based on the number of elapsed turns.<br>
@@ -100,7 +100,7 @@
             <p>Day</p>
             <ul class="desc_list">
               <li>Direct attacks deal damage to monsters normally.</li>
-              <li>Can't use <a href="">abilities</a> during the day.</li>
+              <li>Can't use <a href="/shiren5/system/abilities">abilities</a> during the day.</li>
               <li>
                 Monsters will level up to their next rank when applicable.<br>
                 (example: Mamel → Pit Mamel)
@@ -110,12 +110,12 @@
             <ul class="desc_list">
               <li>Direct attacks only deal 1 damage to night monsters.</li>
               <li>
-                Fixed damage attacks like <a href="">Dragon Grass</a> also only deal 1 damage.<br>
+                Fixed damage attacks like <a href="/shiren5/item/grass#dragon-grass">Dragon Grass</a> also only deal 1 damage.<br>
                 (However, special effects from staves, scrolls, etc. still work)
               </li>
-              <li>Primarily use <a href="">abilities</a> to deal damage.</li>
+              <li>Primarily use <a href="/shiren5/system/abilities">abilities</a> to deal damage.</li>
               <li>
-                Field of View changes to 1-tile radius without a <a href="">torch</a> equipped.<br>
+                Field of View changes to 1-tile radius without a <a href="/shiren5/item/weapons#torch">torch</a> equipped.<br>
                 (You also can't read scrolls and take more damage from night monsters without light)
               </li>
               <li>Night monsters have unpredictable movement, and will attack any adjacent creature.</li>
@@ -123,18 +123,18 @@
                 Night monsters will limit break when they level up instead of moving to their next rank.
                 <br>(example: Dark Mamel → Dark Mamel2)
               </li>
-              <li>Can't use the Scout command unless you read a <a href="">Navigation Scroll</a> or <a href="">Fixer Scroll</a>.</li>
-              <li>Items dropped by night monsters are always <a href="">blessed</a>, and are selected from the dungeon's shop table.</li>
+              <li>Can't use the Scout command unless you read a <a href="/shiren5/item/scrolls#navigation-scroll">Navigation Scroll</a> or <a href="/shiren5/item/scrolls#fixer-scroll">Fixer Scroll</a>.</li>
+              <li>Items dropped by night monsters are always <a href="#blessing-curse-seal">blessed</a>, and are selected from the dungeon's shop table.</li>
             </ul>
           </div>
-          <h3 id="">Auras</h3>
+          <h3 id="auras">Auras</h3>
           <div class="explanation">
             <p>
               Monsters sometimes have auras when they're generated naturally, including initial floor population.<br>
               They'll never have auras if they weren't generated in a natural manner, such as being summoned.<br>
               Whether or not monsters can generate with auras depends on the dungeon and specific floor.<br><br>
               Defeating monsters with auras grants double experience points, so take advantage of that when possible.<br>
-              Auras can be removed by reading a <a href="">Dispel Aura Scroll</a>, swinging a <a href="">Seal Staff</a>, or throwing <a href="">Talismans</a>.<br>
+              Auras can be removed by reading a <a href="/shiren5/item/scrolls#dispel-aura-scroll">Dispel Aura Scroll</a>, swinging a <a href="/shiren5/item/staves#seal-staff">Seal Staff</a>, or throwing <a href="/shiren5/item/talismans">Talismans</a>.<br>
               There are three types of auras: <span class="highlight_pink">Red</span>, <span class="highlight_blue_3">Blue</span>, and <span class="highlight_yellow">Yellow</span>.
             </p>
             <ul class="desc_list">
@@ -143,12 +143,9 @@
               <li><span class="highlight_yellow">Yellow</span>: Increases action speed by 2 stages.</li>
             </ul>
           </div>
-          <h3 id="">Super Shiren</h3>
+          <h3 id="super-shiren">Super Shiren</h3>
           <div class="explanation">
-            <p>
-              Every time the number of enemies you've defeated reaches a multiple of 10 during one adventure,<br>
-              there's a chance for one of the following effects to occur based on Shiren's current status:
-            </p>
+            <p>There's a chance for one of the following to occur when you defeat enemies based on Shiren's status:</p>
             <p>Normal</p>
             <ul class="desc_list">
               <li>Chance to gain <span class="blue_text_2">Awakened-ish</span> status.</li>
@@ -157,7 +154,7 @@
             <ul class="desc_list">
               <li>Chance to gain <span class="blue_text_2">Super</span> status.</li>
             </ul>
-            <p>Super</p>
+            <p>Super (gain a bonus every 10 enemies you defeat)</p>
             <ul class="desc_list">
               <li>Gain <span class="blue_text_2">Overwhelming</span> status - Increases attack power. (3 floors)</li>
               <li>Gain <span class="blue_text_2">Indomitable</span> status - Increases defense. (3 floors)</li>
@@ -169,7 +166,7 @@
             </ul>
             <p>
               In addition, your direct attacks can randomly inflict Asleep, Confused, Blind, Paralyzed, Sealed,<br>
-              Berserk, or Shadow Bound status while you have <span class="blue_text_2">Super</span> status. (See <a href="">Status Conditions</a> for details)
+              Berserk, or Shadow Bound status while you have <span class="blue_text_2">Super</span> status. (See <a href="/shiren5/system/status-conditions">Status Conditions</a> for details)
             </p>
             <p>Shiren's <span class="blue_text_2">Awakened-ish</span> and <span class="blue_text_2">Super</span> statuses can be lost by the following events:</p>
             <ul class="desc_list">
@@ -181,32 +178,32 @@
               <li class="list_style_none">※ The 0 fullness and less than 30% HP checks occur every turn, so try to recover from them right away.</li>
             </ul>
           </div>
-          <h3 id="">Equipment Growth</h3>
+          <h3 id="equipment-growth">Equipment Growth</h3>
           <div class="explanation">
             <p>Defeating monsters with direct attacks gradually upgrades your equipped weapon and shield.</p>
             <ul class="desc_list">
-              <li>Each monster has a set number of equipment experience points (skill points), separate from visible exp.<br>(example: <a href="">Pit Mamel</a> is worth 2 skill points)</li>
-              <li>Equipment will level up once you pass the assigned skill point threshold for that weapon or shield.<br>(example: <a href="">Ordinary Stick</a> levels up after you earn 50 skill points)</li>
+              <li>Each monster has a set number of equipment experience points (skill points), separate from visible exp.<br>(example: <a href="/shiren5/system/monsters#mamel">Pit Mamel</a> is worth 2 skill points)</li>
+              <li>Equipment will level up once you pass the assigned skill point threshold for that weapon or shield.<br>(example: <a href="/shiren5/item/weapons#ordinary-stick">Ordinary Stick</a> levels up after you earn 50 skill points)</li>
               <li>Generally, higher level monsters offer more skill points.</li>
             </ul>
-            <p>See the <a href="">Basic Techniques</a> page for efficient equipment leveling tips.</p>
+            <p>See the <a href="/shiren5/guide/tips-and-tricks#equipment-level">Tips and Tricks</a> page for efficient equipment leveling tips.</p>
           </div>
-          <h3 id="">Synthesis</h3>
+          <h3 id="synthesis">Synthesis</h3>
           <div class="explanation">
             <p>Mechanic where you combine items to merge abilities, upgrade value, and use counts.</p>
             <h4>Synthesis Pot</h4>
             <ul class="desc_list">
               <li>Lets you combine weapons with weapons, shields with shields, and staves with staves.</li>
-              <li>The first weapon or shield acts as a base, and upgrade value and <a href="">runes</a> of subsequent items transfer to it.<br>(example: Plain Targe+1 followed by Counter Shield+3 → Plain Targe+4 with the <span class="green_text">Retribution</span> rune)</li>
+              <li>The first weapon or shield acts as a base, and upgrade value and <a href="/shiren5/system/runes">runes</a> of subsequent items transfer to it.<br>(example: Plain Targe+1 followed by Counter Shield+3 → Plain Targe+4 with the <span class="green_text">Retribution</span> rune)</li>
               <li>Staves must have the same name, and the number of uses will be added together.<br>(Useful to synthesize an identified staff with a staff that has an unknown number of uses)</li>
             </ul>
             <h4>Mixer Monsters</h4>
             <ul class="desc_list">
               <li>Same as Synthesis Pot, but also lets you synthesize different category items together.<br>(example: Dragon Grass followed by Plain Targe+1 → Plain Targe+1 with the <span class="green_text">Anti-Fire</span> rune)</li>
-              <li>Mixers won't swallow thrown items while afflicted by certain <a href="">status conditions</a>.<br>　Won't swallow: Napping, Asleep, Sound Asleep, Sealed, Paralyzed, S-Paralyzed, Onigiri, Tottering.</li>
+              <li>Mixers won't swallow thrown items while afflicted by certain <a href="/shiren5/system/status-conditions">status conditions</a>.<br>　Won't swallow: Napping, Asleep, Sound Asleep, Sealed, Paralyzed, S-Paralyzed, Onigiri, Tottering.</li>
               <li>Mixers will turn toward the direction the thrown item came from when it swallows an item.</li>
               <li>Any swallowed items will be placed on the ground when time of day switches and the Mixer vanishes.</li>
-              <li>See <a href="">Runes</a> for a list of item combinations to synthesize runes.</li>
+              <li>See <a href="/shiren5/system/runes">Runes</a> for a list of item combinations to synthesize runes.</li>
             </ul>
             <h4>Retaining Item Blessing, Curse, Seal, and Identification</h4>
             <ul class="desc_list">
@@ -233,7 +230,7 @@
               <li>Synthesizing staves resulted in a sealed staff.<br>(Always swing the staff you intend to synthesize last to verify that it's not sealed)</li>
             </ul>
           </div>
-          <h3 id="">Tags</h3>
+          <h3 id="tags">Tags</h3>
           <div class="explanation">
             <p>
               Shops in villages or dungeons can place a tag on equipment for a fee.<br>
@@ -241,7 +238,7 @@
               ※ Note that you can only have up to 8 items tagged at the same time.<br>※ Mudkin monster special attacks can sometimes remove tags, so be careful.
             </p>
           </div>
-          <h3 id="">Blessing / Curse / Seal</h3>
+          <h3 id="blessing-curse-seal">Blessing / Curse / Seal</h3>
           <div class="explanation">
           <ul class="desc_list">
             <li>Blessed items are worth 10% more Gitan, and cursed or sealed items are worth 80% of their regular value.</li>
@@ -288,7 +285,7 @@
             </tr>
             <tr>
               <td>Staff</td>
-              <td>Doubled effectiveness.<br>(example: Transient Staff inflicts <a href="">S-Paralysis</a>)</td>
+              <td>Doubled effectiveness.<br>(example: Transient Staff inflicts <a href="/shiren5/system/status-conditions#s-paralysis">S-Paralysis</a>)</td>
               <td>-</td>
               <td>Staff can't be used.<br>No effect when thrown.</td>
             </tr>
@@ -300,7 +297,7 @@
             </tr>
             <tr>
               <td>Scroll</td>
-              <td>Scroll doesn't vanish when you read it.<br>If it sticks to the ground, you can pick it up again.<br>(Blessing wears off afterward for either case)<br>※ <a href="">Extraction Scroll</a> still vanishes when blessed.</td>
+              <td>Scroll doesn't vanish when you read it.<br>If it sticks to the ground, you can pick it up again.<br>(Blessing wears off afterward for either case)<br>※ <a href="/shiren5/item/scrolls#extraction-scroll">Extraction Scroll</a> still vanishes when blessed.</td>
               <td>-</td>
               <td>Scroll can't be read.</td>
             </tr>
@@ -318,7 +315,7 @@
             </tr>
             <tr>
               <td>Food</td>
-              <td>Doubled effectiveness.<br>Peaches also have additional effects.<br>(See <a href="">Food</a> for details)</td>
+              <td>Doubled effectiveness.<br>Peaches also have additional effects.<br>(See <a href="/shiren5/item/food">Food</a> for details)</td>
               <td>-</td>
               <td>Item can't be eaten.</td>
             </tr>
@@ -341,15 +338,15 @@
               <td>Can't collect points.</td>
             </tr>
           </table>
-          <h3 id="">Resonance</h3>
+          <h3 id="resonance">Resonance</h3>
           <div class="explanation">
             <p>
               Equipment can grant additional effects when certain items are equipped at the same time.<br>
-              (example: equipping <a href="">Ordinary Stick</a> and <a href="">Plain Targe</a> at the same time lets you equip up to 2 bracelets)<br><br>
-              See <a href="">Resonance</a> for a list of equipment combinations and effects.
+              (example: equipping <a href="/shiren5/item/weapons#ordinary-stick">Ordinary Stick</a> and <a href="/shiren5/item/shields#plain-targe">Plain Targe</a> at the same time lets you equip up to 2 bracelets)<br><br>
+              See <a href="/shiren5/system/resonance">Resonance</a> for a list of equipment combinations and effects.
             </p>
           </div>
-          <h3 id="">Other Mechanics</h3>
+          <h3 id="other-mechanics">Other Mechanics</h3>
           <div class="explanation">
             <p>Text</p>
           </div>

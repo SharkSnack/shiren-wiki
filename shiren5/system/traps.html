@@ -26,7 +26,7 @@
           <h2 class="page_heading">Traps</h2>
           <div class="explanation">
             <p>Traps are dungeon objects that trigger when stepped on, and have a wide variety of effects.<br>The effect of a trap also differs based on what caused it to trigger. (Shiren, monster, or an item landing on the trap)</p>
-            <p>See <a href="">Gen's Turf</a> for information about Trapper Status.</p>
+            <p>See <a href="/shiren5/dungeon/gens-turf">Gen's Turf</a> for information about Trapper Status.</p>
             <p>※ Traps are listed in Item Book order.</p>
           </div>
           <table class="trap_table">
@@ -39,7 +39,7 @@
               <th>Notes</th>
             </tr>
             <tr>
-              <th>Wood Arrow Trap</th>
+              <th id="wood-arrow-trap">Wood Arrow Trap</th>
               <td>Wood Arrow flies from<br>the left of the direction<br>Shiren is facing.<br>Deals 4~6 damage.</td>
               <td>Wood Arrow flies from<br>the left of the direction<br>the monster is facing.<br>Deals 4~6 damage.</td>
               <td>Wood Arrow flies<br>from the left of the<br>direction Shiren is<br>facing.</td>
@@ -47,7 +47,7 @@
               <td>Arrows from traps have<br>100% accuracy, and fly<br>until they hit a wall.<br>(Dodger Pot works)</td>
             </tr>
             <tr>
-              <th>Iron Arrow Trap</th>
+              <th id="iron-arrow-trap">Iron Arrow Trap</th>
               <td>Iron Arrow flies from<br>the left of the direction<br>Shiren is facing.<br>Deals more damage<br>than Wood Arrow Trap.</td>
               <td>Iron Arrow flies from<br>the left of the direction<br>the monster is facing.<br>Deals more damage<br>than Wood Arrow Trap.</td>
               <td>Iron Arrow flies<br>from the left of the<br>direction Shiren is<br>facing.</td>
@@ -55,15 +55,15 @@
               <td>Arrows from traps have<br>100% accuracy, and fly<br>until they hit a wall.<br>(Dodger Pot works)</td>
             </tr>
             <tr>
-              <th>Poison Arrow Trap</th>
+              <th id="poison-arrow-trap">Poison Arrow Trap</th>
               <td>Poison Arrow flies from<br>the left of the direction<br>Shiren is facing.<br>Deals 4~6 damage and<br>decreases strength by 1.</td>
-              <td>Poison Arrow flies from<br>the left of the direction<br>the monster is facing.<br>Deals 4~6 damage<br>and inflicts <a href="">Weakened</a>.<br>※ <a href="">Buffs</a> both <a href="">Scorpions</a><br>and <a href="">Mutaikons</a>.</td>
+              <td>Poison Arrow flies from<br>the left of the direction<br>the monster is facing.<br>Deals 4~6 damage<br>and inflicts <a href="/shiren5/system/status-conditions#weakened">Weakened</a>.<br>※ <a href="/shiren5/system/status-conditions#buffed">Buffs</a> both <a href="/shiren5/system/monsters#scorpion">Scorpions</a><br>and <a href="/shiren5/system/monsters#mutaikon">Mutaikons</a>.</td>
               <td>Poison Arrow flies<br>from the left of the<br>direction Shiren is<br>facing.</td>
               <td>Collect arrows,<br>Shoot at Sweet Nut<br>to boost experience<br>points or grill onigiri.</td>
               <td>Arrows from traps have<br>100% accuracy, and fly<br>until they hit a wall.<br>(Dodger Pot works)</td>
             </tr>
             <tr>
-              <th>Log Trap</th>
+              <th id="log-trap">Log Trap</th>
               <td>Log flies from the<br>direction Shiren is facing,<br>knocking him backward<br>10 tiles. (4 times max)</td>
               <td>Log flies from the<br>direction the monster is<br>facing, knocking them<br>backward 10 tiles.</td>
               <td>Log flies from the<br>direction Shiren is<br>facing.</td>
@@ -71,7 +71,7 @@
               <td>Sweet Nuts don't<br>swallow logs.</td>
             </tr>
             <tr>
-              <th>Rockslide Trap</th>
+              <th id="rockslide-trap">Rockslide Trap</th>
               <td>Rock falls from above.<br>Deals 16~20 damage.</td>
               <td>Rock falls from above.<br>Deals 16~20 damage.</td>
               <td>Rock falls from above.</td>
@@ -79,7 +79,7 @@
               <td>Rock can't be avoided<br>using a Dodger Pot.</td>
             </tr>
             <tr>
-              <th>Metal Block Trap</th>
+              <th id="metal-block-trap">Metal Block Trap</th>
               <td>Metal falls from above.<br>Deals 32~38 damage.</td>
               <td>Metal falls from above.<br>Deals 32~38 damage.</td>
               <td>Metal falls from above.</td>
@@ -87,39 +87,39 @@
               <td>Metal can't be avoided<br>using a Dodger Pot.</td>
             </tr>
             <tr>
-              <th>Explosion Trap</th>
-              <td>Halves current HP.<br>[Anti-Blast] rune reduces<br>damage to 25%.<br>[Anti-Blast※] rune makes<br>you immune to damage.<br><br>Onigiri not in pots will<br>be grilled unless you<br>have [Anti-Blast※].<br><br>Any monsters and items<br>caught in the blast vanish.<br><br>Instantly collapse if you<br>step on it while you're<br>an <a href="">Onigiri</a>.</td>
-              <td>Trapper:<br>Halves current HP.<br>Become a Grilled Onigiri<br>if they step on it while<br>they're an <a href="">Onigiri</a>.<br><br>Non-Trapper:<br>The monster vanishes.<br>(No experience points)</td>
+              <th id="explosion-trap">Explosion Trap</th>
+              <td>Halves current HP.<br>[Anti-Blast] rune reduces<br>damage to 25%.<br>[Anti-Blast※] rune makes<br>you immune to damage.<br><br>Onigiri not in pots will<br>be grilled unless you<br>have [Anti-Blast※].<br><br>Any monsters and items<br>caught in the blast vanish.<br><br>Instantly collapse if you<br>step on it while you're<br>an <a href="/shiren5/system/status-conditions#onigiri">Onigiri</a>.</td>
+              <td>Trapper:<br>Halves current HP.<br>Become a Grilled Onigiri<br>if they step on it while<br>they're an <a href="/shiren5/system/status-conditions#onigiri">Onigiri</a>.<br><br>Non-Trapper:<br>The monster vanishes.<br>(No experience points)</td>
               <td>The item vanishes.</td>
               <td>Use with Onigiri and<br>Decay Trap to make<br>Grilled Onigiri.</td>
               <td>Items in a 1 tile radius<br>around the trap vanish,<br>even with Zen effect.<br>Zen can't prevent onigiri<br>from being grilled.</td>
             </tr>
             <tr>
-              <th>Big Explosion Trap</th>
-              <td>Sets current HP to 1.<br>[Anti-Blast] rune reduces<br>damage to 50%.<br>[Anti-Blast※] rune makes<br>you immune to damage.<br><br>Onigiri not in pots will<br>be grilled unless you<br>have [Anti-Blast※].<br><br>Any monsters and items<br>caught in the blast vanish.<br><br>Instantly collapse if you<br>step on it while you're<br>an <a href="">Onigiri</a>.</td>
-              <td>Trapper:<br>Sets current HP to 1.<br>Become a Grilled Onigiri<br>if they step on it while<br>they're an <a href="">Onigiri</a>.<br><br>Non-Trapper:<br>The monster vanishes.<br>(No experience points)</td>
+              <th id="big-explosion-trap">Big Explosion Trap</th>
+              <td>Sets current HP to 1.<br>[Anti-Blast] rune reduces<br>damage to 50%.<br>[Anti-Blast※] rune makes<br>you immune to damage.<br><br>Onigiri not in pots will<br>be grilled unless you<br>have [Anti-Blast※].<br><br>Any monsters and items<br>caught in the blast vanish.<br><br>Instantly collapse if you<br>step on it while you're<br>an <a href="/shiren5/system/status-conditions#onigiri">Onigiri</a>.</td>
+              <td>Trapper:<br>Sets current HP to 1.<br>Become a Grilled Onigiri<br>if they step on it while<br>they're an <a href="/shiren5/system/status-conditions#onigiri">Onigiri</a>.<br><br>Non-Trapper:<br>The monster vanishes.<br>(No experience points)</td>
               <td>The item vanishes.</td>
               <td>Use with Onigiri and<br>Decay Trap to make<br>Grilled Onigiri.</td>
               <td>Items in a 1 tile radius<br>around the trap vanish,<br>even with Zen effect.<br>Zen can't prevent onigiri<br>from being grilled.</td>
             </tr>
             <tr>
-              <th>Rust Trap</th>
+              <th id="rust-trap">Rust Trap</th>
               <td>Decreases equipped<br>weapon and shield<br>upgrade values by 1.<br>[Rustproof] rune protects<br>against this effect.<br><br>Extinguishes torches.<br><br>Chance for tag to come<br>off when equipment rusts.</td>
-              <td>Inflicts <a href="">Wizened</a>.<br><br>Monsters susceptible to<br><a href="">Water Pot</a> will have the<br>same effect as getting<br>splashed by water.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#wizened">Wizened</a>.<br><br>Monsters susceptible to<br><a href="/shiren5/item/pots#water-pot">Water Pot</a> will have the<br>same effect as getting<br>splashed by water.</td>
               <td>Trap activates.</td>
               <td>Attacking,<br>Set before fighting,<br>Set in hallways.</td>
-              <td>See <a href="">Water Pot</a>.<br>However, scrolls won't<br>get wet and peaches<br>won't ripen.</td>
+              <td>See <a href="/shiren5/item/pots#water-pot">Water Pot</a>.<br>However, scrolls won't<br>get wet and peaches<br>won't ripen.</td>
             </tr>
             <tr>
-              <th>Strip Trap</th>
+              <th id="strip-trap">Strip Trap</th>
               <td>Unequips equipped<br>weapon, shield, and<br>bracelets even if cursed.</td>
-              <td>Inflicts <a href="">Weakened</a> and<br><a href="">Wizened</a> statuses.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#weakened">Weakened</a> and<br><a href="/shiren5/system/status-conditions#wizened">Wizened</a> statuses.</td>
               <td>Trap activates.</td>
               <td>Set before fighting,<br>Set in hallways.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Trip Trap</th>
+              <th id="trip-trap">Trip Trap</th>
               <td>Deals 2~3 damage and<br>makes you drop items.<br>Dropped pots can shatter.<br><br>Balance Staff protects<br>you from this effect.</td>
               <td>Deals 2~3 damage.<br><br>Zaloklefts, Mixers, and<br>Froggos will drop the<br>item they're carrying.</td>
               <td>Trap activates.</td>
@@ -127,23 +127,23 @@
               <td>Each activation while<br>carrying Balance Staff<br>lowers use count by 1.</td>
             </tr>
             <tr>
-              <th>Decay Trap</th>
-              <td>Onigiri and peaches not<br>inside pots instantly rot.<br><br>Instantly collapse if you<br>step on it while you're<br>an <a href="">Onigiri</a>.</td>
-              <td>Become a Rotten Onigiri.<br>(No experience points)<br><br><a href="">Gyazas</a> are immune.<br>(Receives 2 damage)</td>
+              <th id="decay-trap">Decay Trap</th>
+              <td>Onigiri and peaches not<br>inside pots instantly rot.<br><br>Instantly collapse if you<br>step on it while you're<br>an <a href="/shiren5/system/status-conditions#onigiri">Onigiri</a>.</td>
+              <td>Become a Rotten Onigiri.<br>(No experience points)<br><br><a href="/shiren5/system/monsters#gyaza">Gyazas</a> are immune.<br>(Receives 2 damage)</td>
               <td>Onigiri and peaches<br>become rotten.</td>
               <td>Collect Rotten Onigiri<br>to grill with Explosion<br>Traps, etc.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Curse Trap</th>
+              <th id="curse-trap">Curse Trap</th>
               <td>1 item not inside a pot<br>gets cursed or sealed.<br><br>If the selected item is<br>already cursed, it will<br>change to being sealed,<br>and vice versa.</td>
-              <td>Inflicts <a href="">Sealed</a>.<br><br><a href="">Curse Girls</a> will be<br><a href="">Buffed</a> instead.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#sealed">Sealed</a>.<br><br><a href="/shiren5/system/monsters#curse-girl">Curse Girls</a> will be<br><a href="/shiren5/system/status-conditions#buffed">Buffed</a> instead.</td>
               <td>Item becomes cursed<br>or sealed.</td>
               <td>Intentionally seal items<br>for Mojo Bracelet,<br>Change equipped item<br>from cursed to sealed<br>to unequip the item.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Spring Trap</th>
+              <th id="spring-trap">Spring Trap</th>
               <td>Warps you to a different<br>location on the current<br>floor.</td>
               <td>Warps the monster to a<br>different location on the<br>current floor.</td>
               <td>Warps the item to a<br>different location on<br>the current floor.</td>
@@ -151,71 +151,71 @@
               <td>If you land on a trap,<br>the trap will activate.</td>
             </tr>
             <tr>
-              <th>Sleep Trap</th>
-              <td>Inflicts <a href="">Asleep</a>.</td>
-              <td>Inflicts <a href="">Asleep</a>.</td>
+              <th id="sleep-trap">Sleep Trap</th>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#asleep">Asleep</a>.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#asleep">Asleep</a>.</td>
               <td>Trap activates.</td>
               <td>Escaping enemies,<br>Set before fighting.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Blind Trap</th>
-              <td>Inflicts <a href="">Blind</a>.</td>
-              <td>Inflicts <a href="">Blind</a>.</td>
+              <th id="blind-trap">Blind Trap</th>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#blind">Blind</a>.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#blind">Blind</a>.</td>
               <td>Trap activates.</td>
               <td>Escaping enemies,<br>Set before fighting,<br>Level up monsters.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Shadow Bind Trap</th>
-              <td>Inflicts <a href="">Shadow Bound</a>.</td>
-              <td>Inflicts <a href="">Shadow Bound</a>.</td>
+              <th id="shadow-bind-trap">Shadow Bind Trap</th>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#shadow-bound">Shadow Bound</a>.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#shadow-bound">Shadow Bound</a>.</td>
               <td>Trap activates.</td>
               <td>Escaping enemies,<br>Stop Sweet Nuts or<br>others from moving.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Spin Trap</th>
-              <td>Inflicts <a href="">Confused</a>.</td>
-              <td>Inflicts <a href="">Confused</a>.</td>
+              <th id="spin-trap">Spin Trap</th>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#confused">Confused</a>.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#confused">Confused</a>.</td>
               <td>Trap activates.</td>
               <td>Escaping enemies,<br>Set before fighting.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Gauge Blind. Trap</th>
-              <td>Inflicts <a href="">Gauge Blind</a>.</td>
-              <td>Inflicts <a href="">Apathetic</a>.</td>
+              <th id="gauge-blind-trap">Gauge Blind. Trap</th>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#gauge-blind">Gauge Blind</a>.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#apathetic">Apathetic</a>.</td>
               <td>Trap activates.</td>
               <td>Escaping enemies,<br>Set before fighting.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Onigiri Trap</th>
-              <td>Inflicts <a href="">Onigiri</a>.</td>
-              <td>Inflicts <a href="">Onigiri</a>.<br><br>Nigiri Baby monsters<br>will be <a href="">Buffed</a> instead.</td>
+              <th id="onigiri-trap">Onigiri Trap</th>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#onigiri">Onigiri</a>.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#onigiri">Onigiri</a>.<br><br>Nigiri Baby monsters<br>will be <a href="/shiren5/system/status-conditions#buffed">Buffed</a> instead.</td>
               <td>Trap activates.</td>
               <td>One-shot monsters<br>walking on water tiles,<br>Grill onigiri using<br>Explosion Traps, etc.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Slow Trap</th>
+              <th id="slow-trap">Slow Trap</th>
               <td>Slows speed by 1 stage.</td>
               <td>Slows speed by 1 stage.</td>
               <td>Trap activates.</td>
               <td>Escaping enemies,<br>Set before fighting,<br>Set in hallways.</td>
-              <td>See <a href="">Slow</a> status.</td>
+              <td>See <a href="/shiren5/system/status-conditions#slow">Slow</a> status.</td>
             </tr>
             <tr>
-              <th>Hunger Trap</th>
+              <th id="hunger-trap">Hunger Trap</th>
               <td>Decreases fullness by 10.</td>
-              <td>Inflicts <a href="">Weakened</a>.<br><br><a href="">Polygon Spinnas</a> will be<br><a href="">Buffed</a> instead.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#weakened">Weakened</a>.<br><br><a href="/shiren5/system/monsters#polygon-spinna">Polygon Spinnas</a> will be<br><a href="/shiren5/system/status-conditions#buffed">Buffed</a> instead.</td>
               <td>Trap activates.</td>
               <td>Set before fighting,<br>Set in hallways.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Summon Trap</th>
+              <th id="summon-trap">Summon Trap</th>
               <td>Summons 4 monsters<br>within a 1 tile radius.</td>
               <td>Summons 4 monsters<br>within a 1 tile radius.</td>
               <td>Summons 4 monsters<br>within a 1 tile radius.</td>
@@ -223,7 +223,7 @@
               <td>Trap breaks after 1 use.<br>Monsters won't appear<br>if entity limit is reached.</td>
             </tr>
             <tr>
-              <th>Monster Trap</th>
+              <th id="monster-trap">Monster Trap</th>
               <td>Items in the room turn<br>into monsters, including<br>merchandise in stores.</td>
               <td>Items in the room turn<br>into monsters, including<br>merchandise in stores.</td>
               <td>Items in the room turn<br>into monsters, including<br>merchandise in stores.</td>
@@ -231,15 +231,15 @@
               <td>Trap breaks after 1 use.<br>Monsters won't appear<br>if entity limit is reached.</td>
             </tr>
             <tr>
-              <th>Rage Trap</th>
-              <td>Inflicts <a href="">Enraged</a> to all<br>monsters in the room.</td>
-              <td>Inflicts <a href="">Enraged</a> to all<br>monsters in the room.</td>
+              <th id="rage-trap">Rage Trap</th>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#enraged">Enraged</a> to all<br>monsters in the room.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#enraged">Enraged</a> to all<br>monsters in the room.</td>
               <td>Trap activates.</td>
               <td>Power up ally<br>monsters.</td>
               <td>-</td>
             </tr>
             <tr>
-              <th>Cure Monster Trap</th>
+              <th id="cure-monster-trap">Cure Monster Trap</th>
               <td>Cures ailments of all<br>monsters on the floor.</td>
               <td>Cures ailments of all<br>monsters on the floor.</td>
               <td>Cures ailments of all<br>monsters on the floor.</td>
@@ -247,7 +247,7 @@
               <td>-</td>
             </tr>
             <tr>
-              <th>Multiplication Trap</th>
+              <th id="multiplication-trap">Multiplication Trap</th>
               <td>Creates lots of traps<br>on the current floor.</td>
               <td>Creates lots of traps<br>on the current floor.</td>
               <td>Creates lots of traps<br>on the current floor.</td>
@@ -255,15 +255,15 @@
               <td>Trap breaks after 1 use.</td>
             </tr>
             <tr>
-              <th>Time Switch Trap</th>
+              <th id="time-switch-trap">Time Switch Trap</th>
               <td>Switches day to night,<br>or night to day.</td>
               <td>Switches day to night,<br>or night to day.</td>
               <td>Switches day to night,<br>or night to day.</td>
               <td>Change time of day</td>
-              <td>Trap breaks after 1 use.<br>Exclusive to <a href="">Old Road</a>.</td>
+              <td>Trap breaks after 1 use.<br>Exclusive to <a href="/shiren5/dungeon/old-road">Old Road</a>.</td>
             </tr>
             <tr>
-              <th>Pit Trap</th>
+              <th id="pit-trap">Pit Trap</th>
               <td>Fall to the next floor<br>if the dungeon has<br>descending stairs.<br>Deals 6~8 damage.</td>
               <td>The monster vanishes.<br>(No experience points)</td>
               <td>The item vanishes.</td>
@@ -271,7 +271,7 @@
               <td>-</td>
             </tr>
             <tr>
-              <th>Floor Warp Trap</th>
+              <th id="floor-warp-trap">Floor Warp Trap</th>
               <td>Warps you somewhere<br>between 3~5 floors.</td>
               <td>The monster vanishes.<br>(No experience points)</td>
               <td>The item vanishes.</td>
@@ -279,7 +279,7 @@
               <td>-</td>
             </tr>
             <tr>
-              <th>Stairs? Trap</th>
+              <th id="stairs-trap">Stairs? Trap</th>
               <td>Turns into a different<br>trap and activates when<br>stepped on.</td>
               <td>Doesn't activate.</td>
               <td>Doesn't activate.<br>(Item lands next to it)</td>
@@ -287,16 +287,16 @@
               <td>-</td>
             </tr>
             <tr>
-              <th>Duelist Trap</th>
+              <th id="duelist-trap">Duelist Trap</th>
               <td>Nothing happens.</td>
-              <td>Inflicts <a href="">Dueling</a>.</td>
+              <td>Inflicts <a href="/shiren5/system/status-conditions#dueling">Dueling</a>.</td>
               <td>Trap activates.</td>
               <td>Collect monster<br>licenses.</td>
               <td>Duelist traps set by<br>Shiren will break after<br>a single use.</td>
             </tr>
             <tr>
-              <th>Point Switch</th>
-              <td>Adds points to your<br><a href="">Point Card</a> if it's in your<br>inventory when you step<br>on the trap.</td>
+              <th id="point-switch">Point Switch</th>
+              <td>Adds points to your<br><a href="/shiren5/item/other-items#point-card">Point Card</a> if it's in your<br>inventory when you step<br>on the trap.</td>
               <td>No effect.</td>
               <td>Trap activates.</td>
               <td>Collect points.</td>
