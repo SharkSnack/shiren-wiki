@@ -1363,7 +1363,7 @@
               <h3 id="heal-bracelet">Heal Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Significantly speeds up hunger rate and HP regeneration rate while it's equipped.<br>Hunger rate is multiplied by 4.8, making it tricky to use even with the <a href="/shiren5/system/runes#cr-diet">CR Diet</a> rune,<br>but the ability to quickly recover from high damage encounters is worth the cost.<br>Remains in effect while <a href="/shiren5/system/status-conditions#satiated">Satiated</a>, but no effect while <a href="/shiren5/system/status-conditions#starving">Starving</a>.<br><br>Incredible HP recovery item in <a href="/shiren5/dungeon/old-road">Old Road</a>, where fullness depletes in real time.<br></p>
+                  <p class="item_desc">Significantly speeds up hunger rate and HP regeneration rate while it's equipped.<br>Hunger rate is multiplied by 4.8, making it tricky to use even with the <a href="/shiren5/system/runes#cr-diet">CR Diet</a> rune,<br>but the ability to quickly recover from high damage encounters is worth the cost.<br>Remains in effect while <a href="/shiren5/system/status-conditions#satiated">Satiated</a>, but no effect while <a href="/shiren5/system/status-conditions#starving">Starving</a>.<br><br>Fantastic in <a href="/shiren5/dungeon/old-road">Old Road</a>, where fullness depletes in real time instead of being turn based.<br>Synthesize a weapon with this bracelet and a <a href="/shiren5/item/pots#heal-pot">Heal Pot</a> to create the <a href="/shiren5/system/runes#healing">Healing</a> rune.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -1439,7 +1439,7 @@
               <h3 id="monster-detector">Monster Detector</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Reveals the positions of enemies, including enemies in the dark at night.<br>Excellent to use with arrows and Can. Arm Bracelet, or when you want to avoid encounters.<br>Red enemy dots will still be visible on the map while <a href="/shiren5/system/status-conditions#blind">Blind</a> if this is equipped.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -1515,7 +1515,7 @@
               <h3 id="item-detector">Item Detector</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Reveals the positions of items, including items in the dark at night.<br>Lets you make an informed decision on which rooms to visit first on a floor,<br>and allows you to identify shops, item islands, and buried items at a glance.<br>Blue item dots will still be visible on the map while <a href="/shiren5/system/status-conditions#blind">Blind</a> if this is equipped.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -1591,7 +1591,7 @@
               <h3 id="alleyway-bracelet">Alleyway Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Hidden hallways and rooms will be revealed when you move next to them.<br>It sees some use in <a href="/shiren5/dungeon/statue-cave">Statue Cave</a>, but otherwise it basically exists just to be sold.<br>Remembering which dungeons it appears in helps with identification.<br>Note that walls created by <a href="/shiren5/item/staves#fort-staff">Fort. Staff</a> will collapse as well.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -1667,7 +1667,7 @@
               <h3 id="blink-bracelet">Blink Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Randomly warps you to a different location on the current floor.<br>The number of turns that elapse before activating varies, and isn't tied to specific actions.<br>Remembering which dungeons it appears in helps avoid accidents in shops.<br>Excellent for avoiding game over situations in <a href="/shiren5/dungeon/onigiri-hollow">Onigiri Hollow</a>.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -1743,7 +1743,16 @@
               <h3 id="explosion-bracelet">Explosion Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Randomly makes you explode, halving your current HP like an <a href="/shiren5/system/traps#explosion-trap">Explosion Trap</a>.<br>The number of turns that elapse before activating varies, and isn't tied to specific actions.<br>Explosion damage can be nullified by a <a href="/shiren5/item/pots#zen-pot">Zen Pot</a> or the <a href="/shiren5/system/runes#anti-blast-2">Anti-Blast※</a> shield rune.<br>Useful for grilling onigiri, or for creating a safe space inside walls to cycle day and night.<br>Remembering which dungeons it appears in helps avoid accidents in shops.<br><br>Enemies tend to walk straight, so an inescapable space can be created in a hallway.</p>
+                  <pre class="diagram">
+                    S = Shiren　　M = Monster
+                    ■ ■ □ ■ ■　　 ■ ■ □ ■ ■　　 ■ ■ M ■ ■　　 ■ ■ □ ■ ■
+                    ■ ■ □ ■ ■　　 ■ □ □ □ ■　　 ■ □ ↓ □ ■　　 ■ ← ← ← ■
+                    □ □ S ■ ■　→　□ □ S □ ■　→　□ □ ↓ □ ■　→　□ ↓ □ ↑ ■
+                    ■ ■ ■ ■ ■　　 ■ □ □ □ ■　　 ■ □ ↓ □ ■　　 ■ → M → ■
+                    ■ ■ ■ ■ ■　　 ■ ■ ■ ■ ■　　 ■ ■ ■ ■ ■　　 ■ ■ ■ ■ ■
+                  </pre>
+                  <p class="item_desc">Synthesize a sword with this + <a href="/shiren5/item/scrolls#oil-scroll">Oil Scroll</a> + <a href="/shiren5/item/grass#upgrade-seed">Upgrade Seed</a> to create the <a href="/shiren5/system/runes#blue-flame">Blue Flame</a> rune.<br>Synthesize a shield with this + <a href="/shiren5/item/scrolls#immunity-scroll">Immunity Scroll</a> + <a href="/shiren5/item/staves#fort-staff">Fort. Staff</a> to create the <a href="/shiren5/system/runes#anti-blast-2">Anti-Blast※</a> rune.<br><br>Point Shop: 3,000 points.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -1811,7 +1820,7 @@
                       <th>Stack</th>
                       <td class="stacks">○</td>
                       <th>Rune</th>
-                      <td>Blue Flame<br>Anti-Blast</td>
+                      <td>Blue Flame<br>Anti-Blast※</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1819,7 +1828,7 @@
               <h3 id="waterwalk-bracelet">Waterwalk Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Lets you walk on water tiles.<br>Peaches can ripen, and scrolls can turn into <a href="/shiren5/item/scrolls#wet-scroll">Wet Scrolls</a> while walking on water.<br>Unequip while on a water tile to warp to a random location on the current floor.<br>Excellent for cycling day and night if you manage to obtain it in <a href="/shiren5/dungeon/destinys-descent">Destiny's Descent</a>.<br>Rare shop-exclusive item in the base game.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -1895,7 +1904,7 @@
               <h3 id="wall-clip-bracelet">Wall Clip Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Lets you move through walls, but receive 10 damage per turn inside walls.<br>You're able to attack through corners while it's equipped, similar to <a href="/shiren5/item/weapons#breeze-blade">Breeze Blade</a>.<br>Unlike earlier games, unequipping the bracelet inside a wall won't make you warp.<br>Pickaxes can be used to dig while inside walls, and you can hit <a href="/shiren5/system/monsters#pumphantasm">Pumphantasm</a> monsters.<br>Also lets you pass through special doors.<br><br>Its rarity was significantly increased, and it's only found in elite stores in the base game<br>except for <a href="/shiren5/dungeon/pitfall-of-life">Pitfall of Life</a>, where it can be found in regular stores.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -1971,7 +1980,7 @@
               <h3 id="nonary-bracelet">Nonary Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Makes you explode like stepping on a <a href="/shiren5/system/traps#big-explosion-trap">Big Explosion Trap</a> when you pass through a door.<br>Can be utilized to some degree if you have the <a href="/shiren5/system/runes#anti-blast-2">Anti-Blast※</a> shield rune.<br>This bracelet is always found cursed.<br><br>Tanuki Password: <span class="green_text">Nonary Game</span><br><br>The name is a reference to <a href="https://en.wikipedia.org/wiki/Nine_Hours,_Nine_Persons,_Nine_Doors" target="_blank">Nine Hours, Nine Persons, Nine Doors</a>.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2047,7 +2056,7 @@
               <h3 id="monsterphobic">Monsterphobic</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Reveals enemy poisitions, but receive 10 damage per turn when an enemy is within view.<br>The drawback is mostly a non-issue at night, but becomes a problem if you equip a <a href="/shiren5/item/weapons#torch">Torch</a>.<br>It's best to equip or unequip the bracelet in hallways instead of rooms.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2123,7 +2132,7 @@
               <h3 id="itemphobic">Itemphobic</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Reveals the positions of items, but receive 10 damage when you pick up an item.<br>You can avoid taking damage by stepping on the item and inserting it directly into a pot.<br>This bracelet is often found cursed.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2199,7 +2208,7 @@
               <h3 id="anti-parry-brce">Anti-Parry Brce.</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Protects items from being knocked away by <a href="/shiren5/system/monsters#swordsman">Swordsman</a> and <a href="/shiren5/system/monsters#field-knave">Field Knave</a> special attacks.<br>Resonates with <a href="/shiren5/item/weapons#true-knife">True Knife</a>. (projectiles and thrown items always hit)</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2275,7 +2284,7 @@
               <h3 id="growth-bracelet">Growth Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Gain 1 experience point per turn while it's equipped.<br>Easy to identify and useful early on, but its effectiveness decreases as you level up.<br>It's worth a lot of Gitan, so keep it on hand to sell later even if you don't plan on using it.<br>Resonates with <a href="/shiren5/item/shields#student-shield">Student Shield</a>. (doubles experience point gain)</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2351,7 +2360,7 @@
               <h3 id="time-stop-bracelet">Time Stop Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Stops the time of day from changing while it's equipped.<br>Excellent for locking in nighttime to rush stairs using the Stairlight <a href="/shiren5/system/abilities">ability</a>,<br>or to have night monsters defeat each other in hopes of them dropping blessed items.<br>Note that <a href="/shiren5/system/gameplay-basics#wind-of-kron">Wind of Kron</a> will still blow while this bracelet is equipped.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2427,7 +2436,7 @@
               <h3 id="floating-bracelet">Floating Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Lets you walk on water and void tiles, and traps won't activate except for Point Switches.<br>You'll still get hit by the trap's effect if you manually step on it, or if an item falls on it.<br>Since you're floating, inventory items won't get wet while walking on water tiles.<br><br>Obtained in the base game by choosing "I wish for the ability to fly" in <a href="/shiren5/dungeon/inori-cave">Inori Cave</a>.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2503,7 +2512,7 @@
               <h3 id="identify-bracelet">Identify Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Lets you identify items by picking them up, or by inserting them into pots.<br>Useful for finding out an item's name, whether or not an item is cursed or sealed,<br>how many uses a staff has, and whether or not an item is a disguised <a href="/shiren5/system/monsters#ndubba">N'dubba</a> monster.<br><br>One method to obtain it is to deposit 500,000 Gitan with the bank inside Hotel Nekomaneki.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2579,7 +2588,7 @@
               <h3 id="scout-bracelet">Scout Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Reveals the positions of enemies and items, including those in the dark at night.<br>Combines the use cases of <a href="#monster-detector">Monster Detector</a> and <a href="#item-detector">Item Detector</a>.<br>Only found in elite stores or Pick-A-Choice shops inside dungeons in the base game.<br><br>Point Shop: 10,000 points.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2655,7 +2664,7 @@
               <h3 id="trapper-bracelet">Trapper Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Grants <a href="/shiren5/system/gameplay-basics#trapper-status">Trapper Status</a>, letting you trap monsters and pick up traps as items.<br>Unlike previous games, you'll earn experience points like normal under Trapper Status.<br>Traps in your inventory vanish when you enter a village or overworld area.<br>Shiren's clothes turn purple while it's equipped.<br><br>Can be synthesized with a shield to create the <a href="/shiren5/system/runes#anti-trap">Anti-Trap</a> rune.<br><br>Obtained when you clear <a href="/shiren5/dungeon/gens-turf">Gen's Turf</a> for the first time.<br>Also obtainable in Gen's Turf (shops 36F+) and <a href="/shiren5/dungeon/trappers-sandbox">Trapper's Sandbox</a> (floor)</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2731,7 +2740,7 @@
               <h3 id="night-ward">Night Ward</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Increases direct attack damage against night monsters to 25 damage,<br>which can increased further by type effective runes and <a href="/shiren5/system/resonance">resonance</a> effects.<br><br>It can't compete with abilities, but being able to deal more damage to night monsters is nice.<br>However, unless you can defeat them in one hit, it's generally a bad idea use direct attacks.<br><br>Obtained by choosing "I don't wish for anything" in <a href="/shiren5/dungeon/inori-cave">Inori Cave</a>.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
@@ -2807,7 +2816,7 @@
               <h3 id="vip-bracelet">VIP Bracelet</h3>
               <div class="detail-entry">
                 <div class="detail-section1">
-                  <p class="item_desc">Text</p>
+                  <p class="item_desc">Lets you enter elite stores without a <a href="/shiren5/item/scrolls#recommend-letter">Recommend. Letter</a>.<br>Useful for conserving Recommend. Letters and <a href="/shiren5/item/scrolls#blank-scroll">Blank Scrolls</a>, but that's about it.<br>Only found in elite stores in the base game, and is the most expensive bracelet.<br>It's safe to unequip it once you've been granted entry.</p>
                   <dl>
                     <dt>Locations</dt>
                     <dd></dd>
