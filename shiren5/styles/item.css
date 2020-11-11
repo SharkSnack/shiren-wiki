@@ -87,6 +87,10 @@ li {
   padding: 6px;
 }
 
+.detail-table td {
+  text-align: left;
+}
+
 .detail-section1 {
   flex: 1 0;
 }
@@ -283,6 +287,10 @@ table th {
 
 .red_text {
   color: #f66;
+}
+
+.red_text_2 {
+  color: #ff0000;
 }
 
 .purple_text {
