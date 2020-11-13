@@ -162,7 +162,7 @@
                   <td rowspan="9">105</td>
                   <td>-</td>
                   <td>-</td>
-                  <td class="text_left">Applies <a href="/shiren5/system/status-conditions#buffed">Buffed</a> status if eaten or thrown.</td>
+                  <td class="text_left">Applies <a href="/shiren5/system/status-conditions#buffed">Buffed</a> status for 20 turns if eaten or thrown.</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#upgrade-seed">Upgrade Seed</a></td>
@@ -230,7 +230,7 @@
                   <td scope="row" class="highlight_yellow_2"><a href="#dragon-grass">Dragon Grass</a></td>
                   <td>Anti-Dragon</td>
                   <td>Anti-Fire</td>
-                  <td class="text_left">Breathe a traveling flame that deals ~70 damage.<br>Deals ~35 damage if thrown at a creature.</td>
+                  <td class="text_left">Breathe a traveling flame that deals 67~77 damage.<br>Deals 35~44 damage if thrown at a creature.</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#sleepy-grass">Sleepy Grass</a></td>
@@ -248,7 +248,7 @@
                   <td scope="row" class="highlight_yellow_2"><a href="#dracon-grass">Dracon Grass</a></td>
                   <td>-</td>
                   <td>-</td>
-                  <td class="text_left">Applies the <a href="/shiren5/system/status-conditions#cannon-arm">Cannon Arm</a> status for the duration of the floor.<br>Deals 2 damage if thrown at a creature.</td>
+                  <td class="text_left">Applies <a href="/shiren5/system/status-conditions#cannon-arm">Cannon Arm</a> status for the duration of the floor.<br>Deals 2 damage if thrown at a creature.</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#revival-grass">Revival Grass</a></td>
@@ -316,7 +316,7 @@
                   <td rowspan="2">1750</td>
                   <td>Augmenting</td>
                   <td>Augmenting</td>
-                  <td class="text_left">Increase level by 3.</td>
+                  <td class="text_left">Increases level by 3.</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#superunlucky-seed">SuperUnlucky Seed</a></td>
@@ -1687,7 +1687,31 @@
             <h3 id="nymph-grass">Nymph Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Unequips all equipment when used, or deals 2 damage if thrown.<br>Useful for unequipping cursed items. No effect on characters other than Shiren.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>300</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Using this will unequip<br>everything you have. Using this will<br>also replenish some fullness.<br>(The effect only applies to wanderers.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>105</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -1714,7 +1738,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
+                    <td>FPZM</td>
                     <td>-</td>
                   </tr>
                   <tr>
@@ -1730,49 +1754,51 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>FSPZ</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
+                    <td>F</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>300</td>
-                    <th>Sell</th>
-                    <td>105</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="life-grass">Life Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Increases max HP by 4.<br>Synthesize with a weapon or shield to create the <a href="/shiren5/system/runes#energizing">Energizing</a> rune.<br>The +20 max HP from Energizing is fantastic for <a href="/shiren5/dungeon/pitfall-of-life">Pitfall of Life</a> in particular,<br>but is also a strong option when you have a shield with <a href="/shiren5/system/runes#bit">Bit</a>.<br><br>However, it can lead to disappointment if you synthesized thinking it was<br><a href="#dragon-grass">Dragon Grass</a> or <a href="#sleepy-grass">Sleepy Grass</a>, and didn't have many open rune slots.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>500</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Use this to increase your max<br>HP. Using this will replenish some<br>fullness.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>175</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>Energizing</td>
+                      <th>Blessed</th>
+                      <td>Max HP+8</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
-                  <dd></dd>
+                  <dd>Dropped by <a href="/shiren5/system/monsters#fo-ub">FO-Uβ / εFO-Uβ</a></dd>
                 </dl>
                 <table class="table_location">
                   <tr>
@@ -1788,16 +1814,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>FSPE</td>
+                    <td>FSPE</td>
+                    <td>FSPE</td>
+                    <td>FSPZE</td>
+                    <td>FSPZE</td>
+                    <td>FSP</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -1812,49 +1838,51 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>E</td>
+                    <td>FSP</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>500</td>
-                    <th>Sell</th>
-                    <td>175</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">Energizing</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Max HP +8</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="strength-grass">Strength Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Restores 1 strength, or increases max strength by 1 if already at max.<br>Increasing strength raises the power of not only direct attacks, but also ranged attacks,<br>so always wait until your strength is at max before using this grass.<br><br>Restores 2 strength if blessed, but max strength won't increase even<br>if you've only lost 1 strength.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>500</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Use this to restore a little strength.<br>You are at full power when your strength<br>is at maximum. Using this will<br>replenish some fullness.<br>(When your strength increases, you'll<br>deal more damage.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>175</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Strength+2</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
-                  <dd></dd>
+                  <dd>Dropped by <a href="/shiren5/system/monsters#fo-ub">FO-UZ / εFO-UZ</a></dd>
                 </dl>
                 <table class="table_location">
                   <tr>
@@ -1870,16 +1898,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>FSPE</td>
+                    <td>FSPE</td>
+                    <td>FSPE</td>
+                    <td>FSPZE</td>
+                    <td>FSPZE</td>
+                    <td>FSP</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -1894,46 +1922,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>E</td>
+                    <td>FSP</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>500</td>
-                    <th>Sell</th>
-                    <td>175</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Strength +2</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="dragon-grass">Dragon Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Makes you breathe a flame that travels in a straight line ahead of you.<br>Deals 67~77 damage when used, or 35~44 damage if thrown. (x2 if blessed)<br>It's best to save this for the Anti-Fire rune, rather than using it as an attack.<br><br>Synthesize with a weapon to create the <a href="/shiren5/system/runes#anti-dragon">Anti-Dragon</a> rune.<br>Synthesize with a shield to create the <a href="/shiren5/system/runes#anti-fire">Anti-Fire</a> rune.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>500</td>
+                      <th>Range</th>
+                      <td>Straight line ∞</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Use this to spew a fire breath attack in<br>a straight line ahead of you.<br>Alternately, hurl it at someone to<br>inflict fire damage. Using this will<br>replenish some fullness.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>175</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>Anti-Dragon<br>Anti-Fire</td>
+                      <th>Blessed</th>
+                      <td>x2 damage</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -1952,16 +1982,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>P</td>
+                    <td>FP</td>
+                    <td>FP</td>
+                    <td>FPZ</td>
+                    <td>FPZ</td>
+                    <td>FP</td>
+                    <td>Veteran, Expert</td>
+                    <td>PZM</td>
+                    <td>S</td>
+                    <td>FPZM</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -1977,45 +2007,47 @@
                   </tr>
                   <tr>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SPZM</td>
+                    <td>FSPZM</td>
+                    <td>FP</td>
+                    <td>SP</td>
+                    <td>PZM</td>
+                    <td>PZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>500</td>
-                    <th>Sell</th>
-                    <td>175</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">Anti-Dragon<br>Anti-Fire</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">x2 damage</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="sleepy-grass">Sleepy Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Inflicts <a href="/shiren5/system/status-conditions#asleep">Asleep</a> status for 6 turns when used or thrown. (12 turns if blessed)<br>The <a href="/shiren5/system/runes#sedating">Sedating</a> rune is tied with <a href="/shiren5/system/runes#apathetic">Apathetic</a> for being the best status inflicting rune,<br>so this grass should be saved for synthesis.<br>Occasionally dropped by <a href="/shiren5/system/monsters#mutaikon">Dozikon</a>.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>500</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Use to afflict yourself with<br><span class="green_text">Asleep</span> status. Using this will<br>replenish some fullness.<br>(<span class="green_text">Asleep</span> status will render you unable to<br>act.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>175</td>
+                      <th>Duration</th>
+                      <td>6 Turns</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>Sedating</td>
+                      <th>Blessed</th>
+                      <td>12 Turns</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -2040,9 +2072,9 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>Veteran, Expert</td>
+                    <td>FPZM</td>
+                    <td>PZ</td>
                     <td>-</td>
                   </tr>
                   <tr>
@@ -2058,46 +2090,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
+                    <td>FP</td>
+                    <td>FSP</td>
+                    <td>FPZM</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>500</td>
-                    <th>Sell</th>
-                    <td>175</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">6</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">Sedating</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Lasts 12 turns</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="rage-grass">Rage Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Inflicts <a href="/shiren5/system/status-conditions#berserk">Berserk</a> status for 30 turns when used or thrown. (60 turns if blessed)<br>This grass is the main reason why you shouldn't use unidentified 500G grass items,<br>especially at night or when a shop is present on the floor.<br><a href="/shiren5/system/monsters#grass-boy">Grass Boy</a> monsters in <a href="/shiren5/dungeon/lost-well">Lost Well</a> have a higher chance of carrying this grass.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>500</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Use this to apply <span class="green_text">Berserk</span> status<br>to yourself. Using this will replenish<br>some fullness.<br>(While in <span class="green_text">Berserk</span> status, you'll attack<br>everything in sight, friend or foe.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>175</td>
+                      <th>Duration</th>
+                      <td>30 Turns</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>60 Turns</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -2123,7 +2157,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
+                    <td>FPZM</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
@@ -2140,46 +2174,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
+                    <td>FP</td>
+                    <td>FSP</td>
+                    <td>FPZM</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>500</td>
-                    <th>Sell</th>
-                    <td>175</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">30</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Lasts 60 turns</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="dracon-grass">Dracon Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Grants <a href="/shiren5/system/status-conditions#cannon-arm">Cannon Arm</a> status for the duration of the floor when used or thrown.<br>Can potentially be useful, but it's easy to forget about it and lose important items.<br>Be careful around <a href="/shiren5/system/monsters#swordsman">Swordsman</a> family monsters when you have Cannon Arm status,<br>since any items they disarm will be lost.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>500</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Use this to be able to throw any item<br>to wherever you want in a straight line.<br>Using this will replenish some<br>fullness.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>175</td>
+                      <th>Duration</th>
+                      <td>Lasts all floor</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -2206,7 +2242,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
+                    <td>FPZM</td>
                     <td>-</td>
                   </tr>
                   <tr>
@@ -2222,49 +2258,51 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>FSPZ</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
+                    <td>S</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>500</td>
-                    <th>Sell</th>
-                    <td>175</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">Lasts all floor</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="revival-grass">Revival Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Automatically revives you if it's in your inventory, and then turns into <a href="#weeds">Weeds</a>.<br>Reviving fully restores HP, strength, fullness, and removes ailments.<br>Unlike previous games, it activates even if the item is inside a pot.<br>Revival Grass gets automatically identified after an unidentified one activates.<br>Blessed Revival Grass can be reused 1 time.<br><br>Don't assume that a 1000G grass is Revival Grass, since it could be <a href="#gut-grass">Gut Grass</a>.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">If you collapse while you have this<br>item in your possession, you can<br>automatically revive. After it's been<br>used, it becomes <span class="red_text_2">Weeds</span>.<br>Using this will replenish some<br>fullness.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
-                  <dd></dd>
+                  <dd>Dropped by <a href="/shiren5/system/monsters#fo-ub">FO-UZZ / εFO-UZZ</a></dd>
                 </dl>
                 <table class="table_location">
                   <tr>
@@ -2280,16 +2318,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSE</td>
+                    <td>FSE</td>
+                    <td>FSE</td>
+                    <td>FSZE</td>
+                    <td>FSZE</td>
+                    <td>FS</td>
+                    <td>Novice, Veteran, Expert</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
+                    <td>FSME</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -2304,46 +2342,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
+                    <td>FSPZME</td>
+                    <td>FSME</td>
+                    <td>E</td>
+                    <td>FSE</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
+                    <td>FSME</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable (1 time)</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="gut-grass">Gut Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Automatically revives you if it's in your inventory, but then you collapse again.<br>This silly demise gets recorded in your <a href="/shiren5/system/adventure-footprints">Adventure Footprints</a>.<br>If you're rescued after it activates, you'll see that it turned into <a href="#weeds">Weeds</a>.<br><br>It must be quite potent, considering Shiren is fine eating rotten onigiri and peaches.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">If you fall with this in possession, you<br>will revive automatically, but you'll just<br>collapse again. Using it once will make<br>it become <span class="red_text_2">Weeds</span>.<br>Using this will replenish some<br>fullness.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -2386,46 +2426,48 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>FSPZ</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
+                    <td>-</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="undo-grass">Undo Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Select to either revive or escape with your items if you collapse while carrying it,<br>and turns into <a href="#weeds">Weeds</a> afterward. (Blessed Undo Grass can be reused 1 time)<br>Reviving fully restores HP, strength, fullness, and removes ailments.<br>Activates even if it's inside a pot, and has higher priority than <a href="#revival-grass">Revival Grass</a>.<br><br>Eating it gives you the option to escape from the dungeon with your items,<br>so it's basically a combination of Revival Grass and <a href="/shiren5/item/scrolls#escape-scroll">Escape Scroll</a>.<br></p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1500</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">If you collapse while you have this<br>item in your possession, you'll choose<br>whether to revive on the spot or leave<br>the dungeon with your belongings.<br>Once used, it will become <span class="red_text_2">Weeds</span>.<br>You can also use it to exit the<br>dungeon with all your belongings.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>525</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -2444,12 +2486,12 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>S</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
@@ -2468,9 +2510,9 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>E</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSE</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
@@ -2481,33 +2523,35 @@
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1500</td>
-                    <th>Sell</th>
-                    <td>525</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable (1 time)</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="repeat-grass">Repeat Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Select to either revive or escape with your items if you collapse while carrying it,<br>but neither option actually works, so your adventure ends.<br>This silly demise gets recorded in your <a href="/shiren5/system/adventure-footprints">Adventure Footprints</a>.<br>If you're rescued after it activates, you'll see that it turned into <a href="#weeds">Weeds</a>.<br>Has higher priority than <a href="#gut-grass">Gut Grass</a>.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1500</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">If you collapse while holding this, you<br>might revive on the spot or think you can<br>exit the dungeon with your stuff. If you<br>use it once, it'll become <span class="red_text_2">Weeds</span>.<br>Use this to make it feel like you can<br>escape the dungeon.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>525</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -2551,45 +2595,47 @@
                   </tr>
                   <tr>
                     <td>-</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
+                    <td>-</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1500</td>
-                    <th>Sell</th>
-                    <td>525</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable (1 time)</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="invincible-grass">Invincible Grass</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Grants <a href="/shiren5/system/status-conditions#invincible">Invincible</a> status for 20 turns. (40 turns if blessed)<br>Fantastic if you're surrounded or when you're facing high power monsters.<br>However, you're not immune to ailments, and it can be absorbed by <a href="/shiren5/system/monsters#absorbiphant">Absorbiphants</a>.<br>Can be used to safely have <a href="/shiren5/system/monsters#floaty">Floaty</a> monsters perform their floor warp special attack.<br><br>It's obtainable in <a href="/shiren5/dungeon/explosion-rocks">Explosion Rocks</a>, so it's possible to stock up on Invincible Grass<br>for the main story bosses if you're struggling to defeat them.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>2000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Use this to apply <span class="green_text">Invincible</span> status<br>to yourself. Using this will replenish<br>some fullness.<br>(While in <span class="green_text">Invincible</span> status, you won't<br>take any more damage, but you'll still<br>be vulnerable to other effects.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>700</td>
+                      <th>Duration</th>
+                      <td>20 Turns</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>40 Turns</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -2608,16 +2654,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>S</td>
+                    <td>Novice, Veteran, Expert</td>
+                    <td>SZE</td>
+                    <td>SE</td>
+                    <td>SE</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -2632,41 +2678,19 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>FSZE</td>
+                    <td>S</td>
+                    <td>FSE</td>
+                    <td>SZE</td>
+                    <td>SZE</td>
+                    <td>FSZE</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>2000</td>
-                    <th>Sell</th>
-                    <td>700</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">20</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Lasts 40 turns</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="cheery-grass">Cheery Grass</h3>
             <div class="detail-entry">
@@ -2674,7 +2698,7 @@
                 <p class="item_desc">Text</p>
                 <dl>
                   <dt>Locations</dt>
-                  <dd></dd>
+                  <dd>Dropped by <a href="/shiren5/system/monsters#fo-ub">FO-U / εFI-U</a></dd>
                 </dl>
                 <table class="table_location">
                   <tr>
