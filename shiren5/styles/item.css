@@ -293,6 +293,10 @@ table th {
   color: #ff0000;
 }
 
+.blue_text {
+  color: blue;
+}
+
 .purple_text {
   color: purple;
 }
