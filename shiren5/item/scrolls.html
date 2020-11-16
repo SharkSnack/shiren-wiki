@@ -148,7 +148,7 @@
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#oil-scroll">Oil Scroll</a></td>
                   <td>Blue Flame</td>
-                  <td class="text_left">No effect if read, and sticks to the ground when placed.<br>Inflicts <a href="/shiren5/system/status-conditions#tottering">Tottering</a> status to the enemy who walks on it.<br>Flames up and deals 50 damage if the enemy is a Floating type.</td>
+                  <td class="text_left">No effect if read, and sticks to the ground when placed.<br>Inflicts <a href="/shiren5/system/status-conditions#tottering">Tottering</a> status to the enemy who walks on it. (6 turns)<br>Flames up and deals 50 damage if the enemy is a Floating type.</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#light-scroll">Light Scroll</a></td>
@@ -271,7 +271,7 @@
                   <td rowspan="7">800</td>
                   <td rowspan="7">280</td>
                   <td>-</td>
-                  <td class="text_left">Inflicts <a href="/shiren5/system/status-conditions#afraid">Afraid</a> status on monsters within a 1 tile radius.</td>
+                  <td class="text_left">Inflicts <a href="/shiren5/system/status-conditions#afraid">Afraid</a> status on monsters within a 1 tile radius. (15 turns)</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#trap-deletion-scrl">Trap Deletion Scrl</a></td>
@@ -308,17 +308,17 @@
                   <td rowspan="13">1000</td>
                   <td rowspan="13">350</td>
                   <td>-</td>
-                  <td class="text_left">Inflicts <a href="/shiren5/system/status-conditions#confused">Confused</a> status on monsters in the room.</td>
+                  <td class="text_left">Inflicts <a href="/shiren5/system/status-conditions#confused">Confused</a> status on monsters in the room. (20 turns)</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#slumber-scroll">Slumber Scroll</a></td>
                   <td>-</td>
-                  <td class="text_left">Inflicts <a href="/shiren5/system/status-conditions#sound-asleep">Sound Asleep</a> status on monsters in the room.</td>
+                  <td class="text_left">Inflicts <a href="/shiren5/system/status-conditions#sound-asleep">Sound Asleep</a> status on monsters in the room. (12 turns)</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#vacuum-slash-scrl">Vacuum Slash Scrl</a></td>
                   <td>-</td>
-                  <td class="text_left">Deals an average of 40~45 damage to monsters in the room.</td>
+                  <td class="text_left">Deals 40~44 damage to monsters in the room.</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#dispel-aura-scroll">Dispel Aura Scroll</a></td>
@@ -333,7 +333,7 @@
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#swift-foe-scroll">Swift Foe Scroll</a></td>
                   <td>-</td>
-                  <td class="text_left">Increases the movement speed of monsters in the room by 1 stage.</td>
+                  <td class="text_left">Increases the speed of monsters in the room by 1 stage.</td>
                 </tr>
                 <tr>
                   <td scope="row" class="highlight_yellow_2"><a href="#mnster-house-scrl">Mnster House Scrl</a></td>
@@ -3223,7 +3223,31 @@
             <h3 id="attraction-scroll">Attraction Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Attracts <a href="/shiren5/system/allies">allies</a> to you if present, or either monsters or items if there are no allies.<br>Basically used as a risky <a href="#collection-scroll">Collection Scroll</a> when you don't have allies.<br>It's best to use Crawling Confusion → Electrocute (<a href="/shiren5/system/abilities">abilites</a>) before reading it.<br>Nothing happens if there are no targets on the current floor.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>800</td>
+                      <th>Range</th>
+                      <td>Floor</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">If you read this on the floor where you<br>have an ally, you'll attract the ally to<br>your location. If you have no allies,<br>you'll attract a dropped item or a<br>monster.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>280</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3243,15 +3267,15 @@
                   </tr>
                   <tr>
                     <td>-</td>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FPZM</td>
+                    <td>PZ</td>
+                    <td>FPZM</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -3266,50 +3290,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>S</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
+                    <td>FPZM</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>800</td>
-                    <th>Sell</th>
-                    <td>280</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Floor</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="confusion-scroll">Confusion Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Inflicts <a href="/shiren5/system/status-conditions#confused">Confused</a> status on all monsters in the room. (adjacent monsters in hallways)<br>Important item to keep on hand to counter sudden <a href="/shiren5/system/monster-house">Monster Houses</a>.<br>Can be risky in small rooms, but otherwise it's a dependable item.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Room</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to give all monsters in the room<br><span class="green_text">Confused</span> status. In passageways,<br>monsters around you will be given<br><span class="green_text">Confused</span> status.<br>(Monsters afflicted with <span class="green_text">Confused</span> status<br>will have erratic movements and attacks.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>20 Turns</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3328,16 +3350,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>FSP</td>
+                    <td>FSP</td>
+                    <td>FSP</td>
+                    <td>FSPZ</td>
+                    <td>FSPZ</td>
+                    <td>FSP</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -3352,50 +3374,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Room</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">20</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="slumber-scroll">Slumber Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Inflicts <a href="/shiren5/system/status-conditions#sound-asleep">Sound Asleep</a> status on all monsters in the room. (adjacent monsters in hallways)<br>Shorter duration than <a href="#confusion-scroll">Confusion Scroll</a>, and foes act faster by 1 stage when they wake.<br>So you'll need to either defeat all monsters or run to the stairs before they wake up.<br>Can be used to increase the efficiency of <a href="/shiren5/guide/tips-and-tricks#collect-arrows">collecting arrows</a> from <a href="/shiren5/system/monsters#boy-cart">Boy Carts</a>.<br>Beware of <a href="/shiren5/system/traps#cure-monster-trap">Cure Monster Traps</a> after reading it.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Room</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to give all monsters in the<br>room <span class="green_text">Sound Asleep</span> status. In<br>passageways, monsters around you will<br>be given <span class="green_text">Sound Asleep</span> status.<br>(Monsters afflicted with <span class="green_text">Sound Asleep</span><br>status will fall Asleep and are immobile.<br>They will wake later with buffed stats,<br>so stay alert.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>12 Turns</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3414,16 +3434,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>FSP</td>
+                    <td>FSP</td>
+                    <td>FSP</td>
+                    <td>FSPZ</td>
+                    <td>FSPZ</td>
+                    <td>FSP</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -3438,50 +3458,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Room</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">12</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="vacuum-slash-scrl">Vacuum Slash Scrl</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Deals 40~44 damage to all monsters in the room. (adjacent monsters in hallways)<br>It can wipe out a <a href="/shiren5/system/monster-house">Monster House</a> early on, but it's common to waste the first scroll<br>on identification in post-game dungeons, so it often doesn't get a chance to shine.<br>Becomes more reliable mid~late game if you can bless it to use it 2 times.<br>It's not a status condition, so it's effective against <a href="/shiren5/system/monsters#absorbiphant">Absorbiphants</a>. (But not <a href="/shiren5/system/monsters#gyaza">Gyazas</a>)</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Room</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to deal damage to all monsters<br>in the same room. When read in a<br>passageway, you will deal damage to<br>monsters around you.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3500,16 +3518,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>FSP</td>
+                    <td>FSP</td>
+                    <td>FSP</td>
+                    <td>FSPZ</td>
+                    <td>FSPZ</td>
+                    <td>FSP</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSPZM</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -3524,50 +3542,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Room</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="dispel-aura-scroll">Dispel Aura Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Removes auras from all monsters on the floor, and they will no longer spawn with auras.<br>Keep in mind that <a href="/shiren5/system/status-conditions#napping">Napping</a> monsters will wake up if they had an aura.<br>It's best to read it at the beginning of a floor to get the most out of it.<br>Shiren's <a href="/shiren5/system/status-conditions#super">Super</a> status looks like an aura, but won't be removed.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Floor</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to remove all creatures who<br>have an aura (<span class="green_text">Red Aura</span> status,<br><span class="green_text">Blue Aura</span> status, <span class="green_text">Yellow Aura</span> status)<br>from the floor. Additionally, this floor<br>will not spawn any more monsters with<br>auras.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>Lasts all floor</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3587,15 +3603,15 @@
                   </tr>
                   <tr>
                     <td>-</td>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>F</td>
+                    <td>FS</td>
+                    <td>FS</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -3610,50 +3626,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Floor</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">Lasts all floor</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="night-day-scroll">Night-Day Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Instantly changes day to night, or night to day.<br>Skip having to <a href="/shiren5/guide/tips-and-tricks#cycling-day-night">cycle time of day</a>, and synthesize using <a href="/shiren5/system/monsters#mixer">Mixers</a> without risk in <a href="/shiren5/dungeon/heavenly-lake">Heavenly Lake</a>.<br>Can be used like an <a href="#expulsion-scroll">Expulsion Scroll</a> that wipes out monsters on the current floor,<br>but the newly generated monsters will be able to act on the turn you read it,<br>so it's best to read it inside of a hallway.<br><br>If it's read in a daytime-only dungeon using a <a href="#blank-scroll">Blank Scroll</a>, night will only last 5 turns or so.<br>Note that it can't be read without light at night.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this during the daytime to make it<br>become night. Read this at night to make<br>it become daytime.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3699,47 +3713,45 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FPZME</td>
+                    <td>FP</td>
+                    <td>FPZ</td>
+                    <td>FPZ</td>
                     <td>-</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Floor</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="swift-foe-scroll">Swift Foe Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Hastens action speed of monsters in the room by 1 stage. (adjacent monsters in hallways)<br>Unlike <a href="/shiren5/item/talismans#swift-talisman">Swift Talisman</a> or <a href="/shiren5/item/staves#swift-staff">Swift Staff</a>, it can't be used to give yourself <a href="/shiren5/system/status-conditions#swift">Swift</a> status,<br>and it's not an ingredient for the <a href="/shiren5/system/runes#quick-hitting">Quick Hitting</a> rune, so it's a completely negative item.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Room</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to boost the action speed of<br>monsters in the room by <span class="blue_text">1</span> level.<br>When read in a passageway, it'll raise<br>the action speed of monsters around you<br>by <span class="blue_text">1</span> level.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3782,50 +3794,48 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>FPZ</td>
+                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Room</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="mnster-house-scrl">Mnster House Scrl</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Creates a <a href="/shiren5/system/monster-house">Monster House</a> in the current room. (Warps you to a room first if in a hallway)<br>If the current floor already has a Monster House, the next floor will be a single room<br>Monster House unless its map type is <a href="/shiren5/system/gameplay-basics#map-type">Shuffle Dungeon</a>.<br>This occurs even if there was an unactivated sudden Monster House.<br>Up to 16 items can be generated, but there will be fewer items in smaller rooms.<br><br>If the "It seems that a monster house has already appeared." message is displayed,<br>it means there's a sudden Monster House hidden somewhere on the current floor.<br>No effect if read in a hallway or shop while equipped with a shield that has the<br><a href="/shiren5/system/runes#unmoving">Unmoving</a> rune, or if read inside a storage building.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to make a monster house appear.<br>When read in a passageway, you'll warp to<br>a room and then the monster house will<br>appear.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3852,7 +3862,7 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
+                    <td>FSZE</td>
                     <td>-</td>
                   </tr>
                   <tr>
@@ -3868,50 +3878,48 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>FPZ</td>
+                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="immunity-scroll">Immunity Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Cures negative status conditions and grants <a href="/shiren5/system/status-conditions#immune">Immune</a> status to Shiren and his allies.<br>Defends against monsters like <a href="/shiren5/system/monsters#dj-mage">MC Sorceror</a>, <a href="/shiren5/system/monsters#mutaikon">Mesmerikon</a>, <a href="/shiren5/system/monsters#gazer">Ultra Gazer</a>, etc.<br>Also prevents being afflicted with status conditions from stepping on traps.<br>Be careful near <a href="/shiren5/system/monsters#absorbiphant">Absorbiphants</a>, because they can absorb Immune status.<br><br>Synthesize this + <a href="/shiren5/item/staves#fort-staff">Fort. Staff</a> + <a href="/shiren5/item/bracelets#explosion-bracelet">Explosion Bracelet</a> with a shield for the <a href="/shiren5/system/runes#anti-blast">Anti-Blast※</a> rune.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Self and allies</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Reading this will remove status effects<br>ailing you and your allies. You and your<br>allies will also get <span class="green_text">Immune</span> status.<br><br>(<span class="green_text">Immune</span> status will prevent you<br>from getting status ailments.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>Lasts all floor</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>Anti-Blast※</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -3934,12 +3942,12 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
+                    <td>FS</td>
+                    <td>FS</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>E</td>
+                    <td>FSPZM</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -3954,50 +3962,48 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>S</td>
+                    <td>FSP</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Self and allies</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">Lasts all floor</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">Anti-Blast※</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="replenish-scroll">Replenish Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Replenishes all used abilities, making them usable on the current floor again.<br>Thanks to peaches, it's not as valuable in this game compared to Shiren 4.<br>Unfortunately, it can't be found in <a href="/shiren5/dungeon/destinys-descent">Destiny's Descent</a>.<br><br>Synthesize with a shield to create the <a href="/shiren5/system/runes#ability-regen">Ability Regen</a> rune.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Self</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Reading this will allow you to reuse<br><span class="green_text">techniques</span> you have used on this<br>floor.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>Ability Regen</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -4043,9 +4049,9 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FPZ</td>
+                    <td>FSP</td>
+                    <td>FSPZM</td>
                     <td>-</td>
                     <td>-</td>
                     <td></td>
@@ -4053,32 +4059,6 @@
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Self</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">Ability Regen</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="fixer-scroll">Fixer Scroll</h3>
             <div class="detail-entry">
