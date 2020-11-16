@@ -509,7 +509,7 @@
             <h3 id="piece-of-paper">Piece of Paper</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">No effect when read.<br>Created when higher level <a href="/shiren5/system/monsters#gyadon">Gyadon</a> monsters peck scrolls or talismans,<br>or when the <a href="/shiren5/system/npcs#calligrapher">Calligrapher</a> NPC fails to write on a Blank Scroll.</p>
+                <p class="item_desc">No effect when read.<br>Created when higher level <a href="/shiren5/system/monsters#gyadon">Gyadon</a> monsters peck scrolls or talismans,<br>or when the <a href="/shiren5/system/npcs#calligrapher">Calligrapher</a> fails to write on a Blank Scroll.</p>
                 <table class="detail-table">
                   <tbody>
                     <tr>
@@ -4527,7 +4527,31 @@
             <h3 id="sanctuary-scroll">Sanctuary Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Place it on the ground and stand on it to avoid being directly attacked by monsters.<br>Shuts down close range power type enemies, excluding <a href="/shiren5/system/monsters#maneater">Maneaters</a> and <a href="/shiren5/system/monsters#shopkeep">Shopkeeps</a>.<br>Unlike Shiren 4, it won't vanish if you step off and then step back on.<br>Blessed Sanctuary Scrolls can be picked up and reused 1 time.<br>If you place a second scroll down, the first one will vanish.<br>The scroll won't stick to the ground inside shops.<br><br>Monsters that step on the scroll will vanish.<br><a href="/shiren5/system/status-conditions#confused">Confused</a> or <a href="/shiren5/system/status-conditions#blind">Blind</a> monsters ignore the scroll, and can step on it on their own.<br><a href="/shiren5/item/staves#swap-staff">Swap Staff</a> can force monsters onto the scroll, and throwing a Sanctuary Scroll<br>while equipped with an <a href="/shiren5/item/bracelets#inacc-bracelet">Inacc. Bracelet</a> will make the scroll fall underfoot.<br><a href="/shiren5/system/monsters#hopodile">Hopodiles</a> won't move like chess knights if you're standing on the scroll.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>3000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">If you drop this, it will stick to the<br>ground. While you are on top of it you<br>won't be directly attacked by monsters.<br>If you place <span class="blue_text">2</span> of these on the<br>same floor, the first one you placed<br>will disappear.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>1050</td>
+                      <th>Duration</th>
+                      <td>Placed on ground</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>Bored</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -4546,16 +4570,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>S</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -4570,53 +4594,51 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>SE</td>
+                    <td>FSPME</td>
+                    <td>FSPME</td>
+                    <td>FSPM</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>FSPME</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>3000</td>
-                    <th>Sell</th>
-                    <td>1050</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">Placed on ground</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="expulsion-scroll">Expulsion Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Makes all enemies in the room vanish. (adjacent enemies in hallways)<br>It's the ultimate scroll to escape tricky situations, and works on hostile <a href="/shiren5/system/monsters#shopkeep">Shopkeeps</a>.<br>The only way to use it in dungeons without carry-in items is to write on a <a href="#blank-scroll">Blank Scroll</a>.<br>You won't gain any experience points from reading this scroll.<br>Items that Mixers swallowed will vanish with the monster.<br><br>Obtained by giving a Blank Scroll to the <a href="/shiren5/system/npcs#calligrapher">Calligrapher</a> after reading all other scrolls.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>3000</td>
+                      <th>Range</th>
+                      <td>Room</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to make monsters in the same<br>room vanish. When read in a passageway,<br>you will make the monsters around you<br>vanish.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>1050</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
-                  <dd></dd>
+                  <dd>Give the Calligrapher a Blank Scroll after reading all other scrolls.</dd>
                 </dl>
                 <table class="table_location">
                   <tr>
@@ -4669,37 +4691,35 @@
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>3000</td>
-                    <th>Sell</th>
-                    <td>1050</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Room</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="bankruptcy-scroll">Bankruptcy Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Makes you lose all of your Gitan.<br>Devastating when you're using <a href="/shiren5/item/weapons#dirk-of-debts">Dirk of Debts</a>, <a href="/shiren5/item/shields#paupers-plank">Pauper's Plank</a>, or the <a href="/shiren5/system/runes#costly">Costly</a> rune,<br>and can cause problems in shops if you don't have anything to sell.<br>It's best to avoid reading unidentified 3000G scrolls.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>3000</td>
+                      <th>Range</th>
+                      <td>Self</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to make all the Gitan you have<br>vanish into thin air.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>1050</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -4742,53 +4762,51 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>FPZ</td>
+                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>3000</td>
-                    <th>Sell</th>
-                    <td>1050</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Self</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="blank-scroll">Blank Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Write the name of a scroll you've read before, and use this as that scroll.<br>No effect when read before writing the name of a scroll, and can't go in <a href="/shiren5/item/new-items">Secret Pots</a>.<br>Unidentified scrolls of the same name will be automatically identified after writing.<br>You can't write on Blank Scrolls that have price tags, and you also can't write on<br>sealed Blank Scrolls - but attempting to do so reveals disguised <a href="/shiren5/system/monsters#ndubba">N'dubbas</a>.<br>Writing on the scroll doesn't end your turn.<br><br><a href="/shiren5/item/other-items#friendship-license">Friendship Licenses</a> can change into Blank Scrolls when you change floors.<br>Found with <a href="/shiren5/item/grass#angel-seed">Angel Seeds</a> when you receive a Super Good <a href="/shiren5/system/npcs#madam-ateska">Madam Ateska</a> fortune.<br>Can be given to the <a href="/shiren5/system/npcs#calligrapher">Calligrapher</a> to obtain a scroll you haven't read before,<br>or an <a href="#expulsion-scroll">Expulsion Scroll</a> if you've read every scroll in the game.<br>Available in Nekomaneki Village's Point Shop for 200 points.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>5000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Write the name of a scroll you've read<br>before, and you can use this scroll just<br>like you used the original.<br>Once you write to this scroll, it cannot<br>be written on again.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>1750</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
-                  <dd></dd>
+                  <dd>Point Shop: 200 points<br>Tanuki Password: <span class="green_text">Carte Blanche</span><br>Madam Ateska: Super Good fortune<br>Change floors while carrying Friendship Licenses</dd>
                 </dl>
                 <table class="table_location">
                   <tr>
@@ -4804,14 +4822,14 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>S</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
                     <td>-</td>
                     <td>-</td>
                   </tr>
@@ -4829,49 +4847,47 @@
                   </tr>
                   <tr>
                     <td>-</td>
+                    <td>E</td>
+                    <td>FPE</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>E</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>E</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>5000</td>
-                    <th>Sell</th>
-                    <td>1750</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Varies by scroll</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="extinction-scroll">Extinction Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Throw at a monster to make that monster family vanish and stop spawning.<br>If a second scroll is thrown, the first monster family will begin to appear again.<br>The effect lasts for the duration of the current adventure.<br>Shiren will collapse if he gets hit by the scroll.<br><br>Maneaters and Shopkeeps will vanish from the floor, but won't stop spawning.<br>Unlike Shiren 4, the scroll doesn't have piercing properties when thrown.<br>No effect when read, but it's highly recommended to read the first one<br>you obtain so that you can write it on a Blank Scroll.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>10000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">When thrown at a monster, all types of<br>that particular monster are exterminated<br>and will not appear for the rest of the<br>adventure. If you try to exterminate<br>another type of monster, the one that you<br>previously exterminated will begin<br>appearing again.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>3500</td>
+                      <th>Duration</th>
+                      <td>Current adventure</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>-</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -4890,16 +4906,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>E</td>
+                    <td>E</td>
+                    <td>E</td>
+                    <td>E</td>
+                    <td>E</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>E</td>
+                    <td>SE</td>
+                    <td>E</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -4914,45 +4930,19 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>E</td>
+                    <td>SE</td>
+                    <td>SE</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
+                    <td>E</td>
+                    <td>E</td>
+                    <td>SE</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>10000</td>
-                    <th>Sell</th>
-                    <td>3500</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">Current adventure</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
           </div>
         </div>
