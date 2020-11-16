@@ -49,6 +49,12 @@ li {
   padding-top: 0px;
 }
 
+.item_desc_less_padding {
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .detail {
   display: flex;
   flex-wrap: wrap;

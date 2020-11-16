@@ -4063,7 +4063,65 @@
             <h3 id="fixer-scroll">Fixer Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Fully restores HP, and grants an additional effect based on your current situation.<br>One of the best recovery items, since it can be read at night without light.<br>The exorcism effect will remove a curse from the staff you've set as well.</p>
+                <table class="detail-table">
+                  <tr>
+                    <th>Situation</th>
+                    <th>Effect</th>
+                  </tr>
+                  <tr>
+                    <td>Starving</td>
+                    <td>Fully restores fullness.</td>
+                  </tr>
+                  <tr>
+                    <td>0 Gitan</td>
+                    <td>Obtain 3000~4999 Gitan.</td>
+                  </tr>
+                  <tr>
+                    <td>2 or more adjacent enemies</td>
+                    <td>Inflicts <a href="/shiren5/system/status-conditions#paralyzed">Paralyzed</a> status in a 1 tile radius.</td>
+                  </tr>
+                  <tr>
+                    <td>Equipped items are cursed</td>
+                    <td>Exorcism effect. (equipped items and set staff only)</td>
+                  </tr>
+                  <tr>
+                    <td>Negative status condition</td>
+                    <td>Cures ailments, including <a href="/shiren5/system/status-conditions#grounded">Grounded</a> status.</td>
+                  </tr>
+                  <tr>
+                    <td>Significantly lost strength</td>
+                    <td>Restores strength to max strength value</td>
+                  </tr>
+                  <tr>
+                    <td>No light at night</td>
+                    <td><a href="#navigation-scroll">Navigation Scroll</a> effect.</td>
+                  </tr>
+                </table>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Varies</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to restore your HP to max<br>value. Also, if you're surrounded by<br>monsters, hungry, your equipment is<br>Cursed, and it's night there's no<br>light anywhere, it will help you with<br>one of those things.<br>(May be read at night without light.)</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -4082,16 +4140,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>FE</td>
+                    <td>FE</td>
+                    <td>FE</td>
+                    <td>FZE</td>
+                    <td>FZE</td>
+                    <td>F</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZME</td>
+                    <td>FPZME</td>
+                    <td>FPZME</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -4106,53 +4164,61 @@
                     <th></th>
                   </tr>
                   <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZ</td>
+                    <td>FSPZM</td>
+                    <td>FSPZM</td>
+                    <td>FPZME</td>
+                    <td>FSP</td>
+                    <td>FSPZME</td>
+                    <td>FSPZME</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Varies by effect</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="gamblers-scroll">Gambler's Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc_less_padding">Randomly causes one of the following effects to occur:</p>
+                <ul>
+                  <li>Big explosion.</li>
+                  <li>Lose all of your Gitan.</li>
+                  <li>Gain 10 levels.</li>
+                  <li>Increase level of all equipment you're carrying by 1. (excludes items in pots)</li>
+                  <li>Floor warp. (5 floors)</li>
+                  <li>Speed up all monsters on the current floor.</li>
+                  <li><a href="#extinction-scroll">Extinction Scroll</a> effect to a random monster on the current floor.</li>
+                </ul>
+                <p class="item_desc">The floor warp effect works inside shops and while in <a href="/shiren5/system/shops#thief-mode">Thief Mode</a>,<br>but doesn't work if the next floor isn't a dungeon. (example: <a href="/shiren5/dungeon/destiny-trail">Destiny Trail</a> 5F)<br>It's best to read it on floors where a monster you want to exterminate appears.<br>Can be used to <a href="/shiren5/guide/tips-and-tricks#equipment-level">quickly fill out weapons and shields in the Item Book</a>.<br><br>Always found identified, even in dungeons where scrolls are unidentified.<br>No effect inside storage buildings.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>Varies</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">What happens when you read this?<br>You won't know until you read it.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
-                  <dd></dd>
+                  <dd>Tanuki Password: <span class="green_text">Gambler</span></dd>
                 </dl>
                 <table class="table_location">
                   <tr>
@@ -4168,16 +4234,16 @@
                     <th>Manor</th>
                   </tr>
                   <tr>
+                    <td>E</td>
+                    <td>E</td>
+                    <td>E</td>
+                    <td>E</td>
+                    <td>E</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>SE</td>
+                    <td>FSPZME</td>
+                    <td>E</td>
                   </tr>
                   <tr>
                     <th>Bizarre</th>
@@ -4193,49 +4259,47 @@
                   </tr>
                   <tr>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZME</td>
+                    <td>FSPZM</td>
+                    <td>FPZME</td>
+                    <td>FSPE</td>
+                    <td>SE</td>
+                    <td>SE</td>
+                    <td>FSPZME</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Varies by effect</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="arbor-scroll">Arbor Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">No effect when read.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>-</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to heal a damaged branch<br>somewhere in the world.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -4281,8 +4345,8 @@
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FPZM</td>
+                    <td>FP</td>
                     <td>-</td>
                     <td>-</td>
                     <td>-</td>
@@ -4291,37 +4355,35 @@
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="nixer-scroll">Nixer Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">50% chance to change an adjacent monster into a <a href="/shiren5/item/other-items#friendship-license">Friendship License</a>.<br>Shiren will automatically face an adjacent monster when the scroll is read.<br>Can be used through corners, and the monster vanishes regardless of success.<br>No effect on monsters afflicted with a negative status condition.<br>Works on <a href="/shiren5/system/monsters#gyaza">Gyazas</a>, and the license can be found sealed.<br>If it fails, Shiren's current HP is halved.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>1000</td>
+                      <th>Range</th>
+                      <td>1 Radius<br>(Single-target)</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to confess your love to<br>monsters. If your confession works,<br>you'll get a token of their affection,<br>but if it is rebuffed, you'll take<br>damage. Rumor says that yelling your<br>declaration into a mic helps your odds.<br>This rumor was debunked.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>350</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>-</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -4364,50 +4426,48 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>FSPZ</td>
+                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>1000</td>
-                    <th>Sell</th>
-                    <td>350</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">1 adjacent monster</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="lost-scroll">Lost Scroll</h3>
             <div class="detail-entry">
               <div class="detail-section1">
-                <p class="item_desc">Text</p>
+                <p class="item_desc">Makes you forget the layout of the current floor.<br>It's pretty low risk if you have a <a href="/shiren5/item/bracelets#scout_bracelet">Scout Bracelet</a>, <a href="/shiren5/item/bracelets#monster-detector">Monster Detector</a>, or <a href="/shiren5/item/bracelets#monsterphobic">Monsterphobic</a>.<br>If you're worried, make a habit to read unidentified scrolls after checking rooms.<br>Bored and <a href="/shiren5/system/runes#sedating">Sedating</a> runes are similar, but Bored also works on <a href="/shiren5/system/monsters#naptapir">Naptapirs</a>.<br><br>Synthesize with a weapon to create the <a href="/shiren5/system/runes#bored">Bored</a> rune.</p>
+                <table class="detail-table">
+                  <tbody>
+                    <tr>
+                      <th>Buy</th>
+                      <td>3000</td>
+                      <th>Range</th>
+                      <td>Floor</td>
+                      <th rowspan="3">Item<br>Book</th>
+                      <td rowspan="3">Read this to forget the terrain of the<br>floor.</td>
+                    </tr>
+                    <tr>
+                      <th>Sell</th>
+                      <td>1050</td>
+                      <th>Duration</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Rune</th>
+                      <td>Bored</td>
+                      <th>Blessed</th>
+                      <td>Reusable</td>
+                    </tr>
+                  </tbody>
+                </table>
                 <dl>
                   <dt>Locations</dt>
                   <dd></dd>
@@ -4450,45 +4510,19 @@
                     <th></th>
                   </tr>
                   <tr>
+                    <td>FPZ</td>
+                    <td>-</td>
+                    <td>FSPZM</td>
+                    <td>FPZM</td>
+                    <td>FSP</td>
                     <td>-</td>
                     <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>FSPZM</td>
                     <td></td>
                     <td></td>
                   </tr>
                 </table>
               </div>
-              <table class="detail-table">
-                <tbody>
-                  <tr>
-                    <th>Buy</th>
-                    <td>3000</td>
-                    <th>Sell</th>
-                    <td>1050</td>
-                  </tr>
-                  <tr>
-                    <th>Range</th>
-                    <td colspan="3">Floor</td>
-                  </tr>
-                  <tr>
-                    <th>Turns</th>
-                    <td colspan="3">-</td>
-                  </tr>
-                  <tr>
-                    <th>Rune</th>
-                    <td colspan="3">Bored</td>
-                  </tr>
-                  <tr>
-                    <th>Bless</th>
-                    <td colspan="3">Reusable</td>
-                  </tr>
-                </tbody>
-              </table>
             </div>
             <h3 id="sanctuary-scroll">Sanctuary Scroll</h3>
             <div class="detail-entry">
