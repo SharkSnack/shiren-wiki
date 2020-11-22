@@ -1,3 +1,5 @@
-English strategy / wiki site for Shiren the Wanderer: The Tower of Fortune and the Dice of Fate.
+Gameplay Resources for the Shiren the Wanderer Mystery Dungeon series.
 
-Link: https://shirenthewanderer.com/shiren5/
+Tower of Fortune Wiki: https://shirenthewanderer.com/shiren5/
+
+Shiren 2 Wiki: https://sharksnack.github.io/shiren2/html/index.html
