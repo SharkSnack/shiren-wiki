@@ -7,4 +7,8 @@ $(document).ready(function() {
   } catch(e) {
     console.log('error: ' + e);
   }
+  // Toggle boss content on dungeon pages
+  $("#boss_button").click(function() { 
+      $("#boss_content").toggle();
+  });
 });
