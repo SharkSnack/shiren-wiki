@@ -520,6 +520,10 @@ td.stat_table_center {
   text-align: center;
 }
 
+.h4_icon {
+  vertical-align: text-top;
+}
+
 /* button styling from bestcssgenerator.com */
 .boss_button {
   box-shadow:inset 0px 39px 0px -24px #cd8ee8;
@@ -540,6 +544,30 @@ td.stat_table_center {
   background-color:#c26bed;
 }
 .boss_button:active {
+  position:relative;
+  top:1px;
+}
+
+.spoiler_button {
+  box-shadow:inset 0px 39px 0px -24px #cd8ee8;
+  background-color:#bf79ed;
+  border-radius:4px;
+  border:1px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:14px;
+  padding:6px 14px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #cc84f0;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.spoiler_button:hover {
+  background-color:#c26bed;
+}
+.spoiler_button:active {
   position:relative;
   top:1px;
 }
