@@ -520,6 +520,10 @@ td.stat_table_center {
   text-align: center;
 }
 
+.overworld_map {
+  padding-left: 10px;
+}
+
 .h4_icon {
   vertical-align: text-top;
 }
