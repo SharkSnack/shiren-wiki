@@ -279,6 +279,10 @@ table th {
   background-color: #fafad2;
 }
 
+.highlight_purple {
+  background-color: #ddddff;
+}
+
 .warning_text {
   color: red;
 }
