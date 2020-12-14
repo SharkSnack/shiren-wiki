@@ -532,6 +532,10 @@ td.stat_table_center {
   vertical-align: text-top;
 }
 
+.header_image {
+  padding-top: 15px;
+}
+
 /* button styling from bestcssgenerator.com */
 .boss_button {
   box-shadow:inset 0px 39px 0px -24px #cd8ee8;
