@@ -12,6 +12,8 @@
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/price_chart.css">
+    <link rel="stylesheet" href="../styles/item.css">
+    <link rel="stylesheet" href="../styles/runes.css">
     <script type="text/javascript" src="../scripts/common.js"></script>
   </head>
   <body>
@@ -35,15 +37,16 @@
               <li><a href="#shield">Lv1 Shields</a></li>
             </ul>
           </div>
-          <div>
-            <h3 id="price-calculation">Price Calculation</h3>
-            <div class="explanation">
-              <p>Text</p>
-            </div>
+          <h3 id="price-calculation">Price Calculation</h3>
+          <div class="explanation_2">
+            <p><span class="emphasis">Buying / Selling Price</span><br>・Selling price is 35% of the buying price. (decimals are truncated)<br>・Multiply the selling price by 3 to get the approximate buying price inside a shop.</p>
+            <p><span class="emphasis">Blessed, cursed, sealed</span><br>・Blessed = regular price x1.1<br>・Cursed or sealed = regular price x0.8</p>
+            <p><span class="emphasis">Upgrade value, staff uses, pot capacity</span><br>・Add 5% of the regular price per +1 upgrade value, use, or capacity.<br>・Subtract 5% of the regular price per -1 upgrade value.</p>
+            <p><span class="emphasis">Price formula</span><br><span class="highlight_green">[1, 1.1(blessed), or 0.8(cursed/sealed)]</span> x <span class="highlight_pink">INT(truncate decimals)[{</span><span class="highlight_blue_3">base price</span><span class="highlight_pink"> x</span><span class="highlight_yellow"> (1 + upgrade value/uses/capacity x 0.05) </span><span class="highlight_pink">}]</span></p>
           </div>
           <div>
             <h3 id="scroll-grass-bracelet-talisman">Scrolls / Grasses / Bracelets / Talismans</h3>
-            <table>
+            <table class="trap_table">
               <tr>
                 <th colspan="3" class="category">Scroll</th>
                 <th colspan="3" class="category">Grass</th>
@@ -371,7 +374,7 @@
           </div>
           <div>
             <h3 id="staff">Staves</h3>
-            <table>
+            <table class="trap_table">
               <tr>
                 <td class="category_subrow"></td>
                 <td colspan="9" class="category_subrow">Buy</td>
@@ -571,7 +574,7 @@
           </div>
           <div>
             <h3 id="pot">Pots</h3>
-            <table>
+            <table class="trap_table">
               <tr>
                 <td class="category_subrow"></td>
                 <td colspan="7" class="category_subrow">Buy</td>
@@ -840,7 +843,7 @@
           </div>
           <div>
             <h3 id="weapon">Lv1 Weapons</h3>
-            <table>
+            <table class="trap_table">
               <tr>
                 <td class="category_subrow">Name</td>
                 <td class="category_subrow">Buy</td>
@@ -1008,7 +1011,7 @@
           </div>
           <div>
             <h3 id="shield">Lv1 Shields</h3>
-            <table>
+            <table class="trap_table">
               <tr>
                 <td class="category_subrow">Name</td>
                 <td class="category_subrow">Buy</td>

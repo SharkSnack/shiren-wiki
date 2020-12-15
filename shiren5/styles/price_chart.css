@@ -26,25 +26,6 @@ h4 {
   padding: 0.3em;
 }
 
-.page_heading {
-  margin: 0;
-}
-
-.item_category_links a {
-  text-decoration: none;
-  padding-right: 10px;
-  font-size: 80%;
-  color: #084cc3;
-}
-
-.item_category_links a:hover {
-  text-decoration: underline;
-}
-
-.item_category_links a:visited {
-  color: #609;
-}
-
 table {
   border: 1px solid #999;
   border-collapse: collapse;
@@ -85,10 +66,6 @@ table a:hover {
 
 table a:visited {
   color: #609;
-}
-
-p {
-  font-size: 80%;
 }
 
 .category {
