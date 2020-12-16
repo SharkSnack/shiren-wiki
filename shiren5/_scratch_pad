@@ -1,21 +1,19 @@
-weapon 35
-shield 32
-bracelet 24
-- 91 + 6 = 97
-
-scroll 43
-grass 32
-projectile 14
-- 89 + 6 = 95
-
-staff 24
-pot 32
-talisman 13
-food 10
+weapon 32
+shield 30
 other 11
-- 90 + 10 = 100
+74 + 6 = 79
 
-91
+bracelet 30
+scroll 31
+projectile 14
+75 + 6 = 81
+
+grass 21
+staff 16
+pot 17
+talisman 8
+food 7
+69 + 10 = 79
 
 Connoisseur
 
