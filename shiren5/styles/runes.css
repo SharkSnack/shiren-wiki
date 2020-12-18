@@ -229,6 +229,10 @@ td.text_left {
   font-weight: bold;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .desc {
   padding-left: 20px;
 }
