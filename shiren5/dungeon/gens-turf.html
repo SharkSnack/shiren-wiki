@@ -26,8 +26,11 @@
       <main id="content" class="box content">
         <div>
           <h2 class="page_heading">Gen's Turf</h2>
-          <div class="explanation">
-            <p>Text</p>
+          <div class="explanation_2">
+            <img class="header_image" src="../images/overworld/gens_turf.jpg" height="200">
+            <p>Dungeon where you use a combination of <a href="/shiren5/system/traps">traps</a> and <a href="/shiren5/item/other-items#friendship-license">Friendship Licenses</a> to progress.</p>
+            <p>Shiren has Trapper Status in this dungeon, which lets him pick up and place traps on the ground,<br>and monsters are the ones who trigger traps instead of Shiren.</p>
+            <p>It's among the easiest dungeons that don't allow carry-in items, but requires unique strategies.<br>Once you become familiar with them, even a 99F run is nearly guaranteed to be cleared.</p>
           </div>
           <ul id="quick_links">
             <li><a href="#overview">Dungeon Overview</a>
@@ -107,20 +110,33 @@
               <td>Trapper Bracelet (First time)</td>
             </tr>
           </table>
+          <h3 id="trapper-status">Trapper Status</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>Shiren has Trapper Status at all times in this dungeon, which has the following characteristics:</p>
           </div>
-          <h4 id="trapper-status">Trapper Status</h4>
+          <ul class="desc_list">
+            <li>Traps don't trigger when Shiren walks on them, and he can pick them up instead. (Can manually step on them to trigger them)</li>
+            <li>Picked up traps are added to your inventory, and are placed using the Drop and DropFwd commands. (Doesn't end turn)</li>
+            <li>Placed traps have a red mark in the lower right corner, and can't be picked up again.</li>
+            <li>Enemies that step on traps will trigger them, and monsters hit by thrown traps will receive the effect of the trap.
+              <ul>
+                <li>Floating type monsters will also receive the effect of a trap if one is thrown at them.</li>
+              </ul>
+            </li>
+          </ul>
+          <h3 id="duelist-trap">Duelist Trap</h3>
           <div class="explanation_2">
-            <p>Text</p>
+            <p>A special trap called "Duelist Trap" appears in this dungeon.<br>Monsters that step on this trap gain <a href="/shiren5/system/status-conditions#dueling">Dueling</a> status for a limited amount of time, including Floating type monsters.</p>
+            <p>Dueling status grants a chance for the dueling monster to drop a Monster License when defeated,<br>and this status can't be absorbed by Absorbiphant family monsters.</p>
+            <p>Duelist Traps won't break if they haven't been picked up, but placed Duelist Traps will always break after a single use.<br>If you want to collect Monster Licenses, always lure monsters onto a Duelist Trap that hasn't been picked up.</p>
           </div>
-          <h4 id="duelist-trap">Duelist Trap</h4>
+          <h3 id="monster-license">Monster License</h3>
           <div class="explanation_2">
-            <p>Text</p>
-          </div>
-          <h4 id="monster-license">Monster License</h4>
-          <div class="explanation_2">
-            <p>Text</p>
+            <p>Monster Licenses (Monster-specific Friendship Licenses) cause that monster family to act as allies and attack enemy monsters.<br>(example: "Mamel Lic." in your inventory causes Mamel, Pit Mamel, Cave Mamel, and Gitan Mamel to act as allies)</p>
+            <p>Ally monsters won't be attacked by enemies, and won't level up when they defeat other monsters. (Shiren won't gain exp)<br>If Shiren deals damage to an ally monster, all Monster Licenses for that family are destroyed, including those in pots.<br>Licenses that are inside pots won't be active, and licenses on the ground won't be active either.</p>
+            <p>When you're carrying a Monster License for a monster that appears on the current floor, and advance to the next floor,<br>a "Blank Scroll check" occurs, which causes a license to transform into a Blank Scroll if it succeeds. (Including licenses in pots)<br>For example, if you're carrying a Mamel Lic., a check is performed when you advance from:<br>"1F to 2F", "2F to 3F", "3F to 4F", "4F to 5F", "5F to 6F", "6F to 7F", and "7F to 8F".</p>
+            <p>Maneater Lic. will only have a Blank Scroll check when you change floors after they start spawning on the current floor.</p>
+            <p>The chance for a Monster License to turn into a Blank Scroll seems to be somewhere between 10~20%.</p>
           </div>
           <h2 id="strategy">Strategy</h2>
           <h3 id="general">General</h3>
