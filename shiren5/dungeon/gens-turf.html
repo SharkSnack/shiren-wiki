@@ -227,6 +227,9 @@
             <dt>Magi-Twister</dt>
             <dd>Binary Shield isn't in this dungeon's item table, so you can't add Magi-Twister by leveling up a shield,<br>and Swap Shield is exclusive to elite shops, so it's difficult to obtain this rune.</dd>
           </dl>
+          <div class="explanation_2">
+            <p>※ Keep in mind that Mixers you see walking around might have stepped on arrow traps,<br>　so it's safer to synthesize using Mixers that were napping.</p>
+          </div>
           <h4>Bracelets</h4>
           <div class="explanation_2">
             <p>There are few options, and Monster Detector (Monsterphobic) and Item Detector (Itemphobic) aren't in the item table.<br>Immunity Scroll is an option, so prioritize bracelets that block special attacks that can't be blocked by Immune status,<br>or that let you conserve Blessing Scrolls that get used for the purpose of blessing Immunity Scrolls.</p>
@@ -260,6 +263,7 @@
             <p>This dungeon makes use of traps, but as mentioned earlier, you can clear it by using Blank Scrolls and licenses.<br>The only traps worth carrying are Decay and Explosion traps to secure food early game, and the rest are a waste of space.<br>...But perhaps you want to use traps instead, so this section covers traps while assuming Blank Scrolls aren't being used.</p>
             <p>Traps generated on the ground from the start of the floor won't break when enemies step on them.<br>Once a trap is picked up and placed on the ground, you can't pick it up again, and it has a chance to break after it triggers.<br>It seems traps vary in how likely they are to break. For example, a placed Duelist Trap always breaks after a single use.</p>
             <p>Traps can't be blessed, cursed, or sealed, and can't be turned into Gitan using a Sale Scroll, but can be turned into an onigiri.<br>They'll turn into a different trap when inserted into a Presto Pot, and will activate fragrance pots when inserted into them.<br>It's best to place stat lowering traps on room entrance tiles, and status inflicting traps near Duelist Traps.</p>
+            <p>See <a href="/shiren5/system/traps">Traps</a> for details about traps that aren't listed below.</p>
           </div>
           <dl>
             <dt>Pit</dt>
@@ -271,13 +275,13 @@
             <dt>Explosion, Big Explosion</dt>
             <dd>Halves the HP of the creature that stepped on it, along with all creatures in a 1 tile radius. (Big Explosion reduces HP to 1)<br>Often used to soften enemies so that they can be defeated with a single direct attack, and works on Gyazas.<br>Can also be used to grill onigiri or destroy wall tiles.</dd>
             <dt>Onigiri</dt>
-            <dd>Text</dd>
+            <dd>Useful for hunting Maneaters, and neutralizing high level enemies for experience points early on.<br>Can be used alongside a Log Trap on floors with water tiles to create Rotten Onigiri.<br>Breaks easily when placed, so make use of traps that were already on the ground.<br>Nigiri Baby family monsters will gain <a href="/shiren5/system/status-conditions#buffed">Buffed</a> status if they step on it.<br>If you don't need it, throw it at an enemy standing on a water tile.</dd>
             <dt>Slow</dt>
-            <dd>Text</dd>
+            <dd>Lets you safely defeat enemies using hit-and-away tactics.<br>Unlike previous games, action speed changes last the entire duration of the current floor for monsters.</dd>
             <dt>Wood Arrow, Iron Arrow, Poison Arrow</dt>
-            <dd>Text</dd>
+            <dd>Place it next to a wall and throw an item onto the trap to collect arrows.<br>On floors where Sweet Nuts appear, step on it yourself so that the Sweet Nut eats arrows<br>to increase experience points / change Rotten Onigiri into Grilled Onigiri.<br>Wood and Iron arrow traps only appear until 30F, and projectiles can't be found on the ground in this dungeon.</dd>
             <dt>Duelist</dt>
-            <dd>Text</dd>
+            <dd>Used to obtain Monster Licenses.<br>Breaks after 1 activation when placed, but will never break if it was already on the ground.<br>Works on all monsters, including Floating types and Absorbiphant, Gyaza, Sproutant families.<br>Its chance to be generated decreases as you progress through the dungeon, and stops appearing from 70F.</dd>
           </dl>
           <h2 id="monsters">Monsters</h2>
           <table class="monsters_table">
@@ -4232,11 +4236,11 @@
           </table>
           <h2 id="items">Items</h2>
           <div class="explanation_2">
-            <p>The values like "1-11" in columns represent the floor range where the item can appear.</p>
+            <p>The values like "1-5" and "3+" in columns represent the floor range where the item can appear.<br>(example: "3+" means the item can appear on any floor in the range of 3-99F)</p>
           </div>
           <ul>
             <li>F = Floor, Daytime monster drop</li>
-            <li>S = Shop, Shiny Object (yellow), Peddler, Maneater drop, Night monster drop</li>
+            <li>S = Shop, Shiny Object (yellow), Maneater drop, Night monster drop</li>
             <li>P = Presto Pot</li>
             <li>Z = Zalokleft drop</li>
             <li>M = Mealy drop</li>
@@ -4244,36 +4248,1414 @@
           </ul>
           <table class="item_table">
             <tr>
-              <th colspan="4" class="purple">Weapon</th>
-              <th rowspan="61"></th>
-              <th colspan="4" class="purple">Bracelet</th>
-              <th rowspan="61"></th>
-              <th colspan="4" class="purple">Staff</th>
+              <th colspan="7" class="purple">Weapon</th>
+              <th rowspan="66"></th>
+              <th colspan="7" class="purple">Bracelet</th>
+              <th rowspan="66"></th>
+              <th colspan="7" class="purple">Grass</th>
             </tr>
             <tr>
               <th>Name</th>
               <th>F</th>
               <th>S</th>
               <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
               <th>Name</th>
               <th>F</th>
               <th>S</th>
               <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
               <th>Name</th>
               <th>F</th>
               <th>S</th>
               <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
             </tr>
             <tr>
-              <td class="text_left">item_name</td>
+              <td class="text_left">Ordinary Stick</td>
+              <td>1-5</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Cleansing Bracelet</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Herb</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Tin Blade</td>
+              <td>1-17</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Anti-Cnf. Bracelet</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Otogiriso</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Katana</td>
+              <td>X</td>
+              <td>1-17</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Alert Bracelet</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Heal Grass</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Beast Fang</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>3+</td>
+              <td class="text_left">Anti-Crs. Bracelet</td>
+              <td></td>
+              <td>X</td>
               <td></td>
               <td></td>
               <td></td>
-              <td class="text_left">item_name</td>
+              <td>X</td>
+              <td class="text_left">Life Grass</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Dotanuki</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Anti-Parry Brce.</td>
               <td></td>
               <td></td>
               <td></td>
-              <td class="text_left">item_name</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Strength Grass</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Bladite</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Staunch Bracelet</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Antidote Grass</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Red Blade</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Can. Arm Bracelet</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Poison Grass</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Kabura Katana</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Strength Bracelet</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Power Up Grass</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Dull Gold Edge</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Growth Bracelet</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Upgrade Seed</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Bright Blade</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Heal Bracelet</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Perception Grass</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Rusty Pickaxe</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Bunch Bracelet</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Invincible Grass</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Old Mallet</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Mojo Bracelet</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Swift Grass</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Sky Splitter</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">VIP Bracelet</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Warp Grass</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Water Cutter</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Trapper Bracelet</td>
+              <td></td>
+              <td>36+</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>36+</td>
+              <td class="text_left">Dragon Grass</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Scythe</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <th colspan="7" class="purple">Scroll</th>
+              <td class="text_left">Stomach Expander</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Myopic Masher</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <th>Name</th>
+              <th>F</th>
+              <th>S</th>
+              <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
+              <td class="text_left">Revival Grass</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Magic Masher</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Confusion Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Confusion Grass</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Drain Dagger</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Slumber Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Blinding Grass</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Copper Cleaver</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Vacuum Slash Scrl</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Sleepy Grass</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Crescent Katana</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Fear Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Rage Grass</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Lizard Lasher</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Escape Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Cheery Grass</td>
+              <td>12+</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Hatchet</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Navigation Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Angel Seed</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Shoddy Dirk</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Dispel Aura Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <th colspan="7" class="purple">Staff</th>
+            </tr>
+            <tr>
+              <td class="text_left">Glass Dirk</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Trap Deletion Scrl</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <th>Name</th>
+              <th>F</th>
+              <th>S</th>
+              <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
+            </tr>
+            <tr>
+              <td class="text_left">Dirk of Debts</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Desert Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Swap Staff</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Breeze Blade</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Exorcism Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Knockback Staff</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Burning Blade</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Fate Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td class="text_left">Pinning Staff</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th colspan="7" class="purple">Shield</th>
+              <td class="text_left">Earth Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td class="text_left">Transient Staff</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <th>F</th>
+              <th>S</th>
+              <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
+              <td class="text_left">Plating Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Seal Staff</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Plain Targe</td>
+              <td>1-5</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Sale Scroll</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Clone Staff</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Tin Shield</td>
+              <td>1-17</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Pot God Scroll</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Paralysis Staff</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Iron Targe</td>
+              <td>X</td>
+              <td>1-17</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Extraction Scroll</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Empathy Staff</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Wolfshead</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>3+</td>
+              <td class="text_left">Blessing Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td class="text_left">Slow Staff</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Beast Shield</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>3+</td>
+              <td class="text_left">Immunity Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Swift Staff</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Targite</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Attraction Scroll</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Unlucky Staff</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Red Shield</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Gathering Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Mage Staff</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Fuuma Shield</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Collection Scroll</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Electric Staff</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Gold Shield</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Oil Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Trap Del. Staff</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Diet Shield</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Sanctuary Scroll</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Boring Staff</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Heavy Shield</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Recommend. Letter</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Fort. Staff</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Counter Shield</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Fixer Scroll</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <th colspan="7" class="purple">Talisman</th>
+            </tr>
+            <tr>
+              <td class="text_left">Spry Shield</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Gambler's Scroll</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <th>Name</th>
+              <th>F</th>
+              <th>S</th>
+              <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
+            </tr>
+            <tr>
+              <td class="text_left">Blast Shield</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Extinction Scroll</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Shadow Bind Tal.</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Lock Shield</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Blank Scroll</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Conf. Talisman</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Safe Shield</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <th colspan="7" class="purple">Pot</th>
+              <td class="text_left">Seal Talisman</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Gyadon Blocker</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <th>Name</th>
+              <th>F</th>
+              <th>S</th>
+              <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
+              <td class="text_left">Fear Talisman</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Snake Shield</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Preservation Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Berserker Tal.</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Steady Shield</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Ordinary Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Inacc. Talisman</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Anti-Gaze Trge</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Synthesis Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td class="text_left">Sleep Talisman</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Swap Shield</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Sale Pot</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Slumber Talisman</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Shoddy Plank</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Presto Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Slow Talisman</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Glass Buckler</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Exorcism Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Swift Talisman</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text_left">Pauper's Plank</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Blessing Pot</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Enraged Talisman</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th colspan="7" class="purple">Food</th>
+              <td class="text_left">Fever Pot</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Furious Talisman</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <th>F</th>
+              <th>S</th>
+              <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
+              <td class="text_left">Hide Pot</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <th colspan="7" class="purple">Other</th>
+            </tr>
+            <tr>
+              <td class="text_left">Hard Peach</td>
+              <td>3+</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Heal Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <th>Name</th>
+              <th>F</th>
+              <th>S</th>
+              <th>P</th>
+              <th>Z</th>
+              <th>M</th>
+              <th>E</th>
+            </tr>
+            <tr>
+              <td class="text_left">Peach</td>
+              <td>3+</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Hilarious Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Red Cat</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Juicy Peach</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="text_left">Zalokleft Pot</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Orange Cat</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <th rowspan="6" colspan="7">
+              <td class="text_left">Klein Pot</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td class="text_left">Yellow Cat</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Zen Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Green Cat</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Dodger Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Blue Cat</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Perceptive Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Indigo Cat</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td class="text_left">Reflection Pot</td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td></td>
+              <td class="text_left">Purple Cat</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <th colspan="7"></th>
+              <td class="text_left">Gitan</td>
+              <td>X</td>
+              <td></td>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>
