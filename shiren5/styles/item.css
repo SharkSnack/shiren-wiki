@@ -466,6 +466,10 @@ td.table_divider {
   background-color: #fff
 }
 
+.hide {
+  display: none;
+}
+
 .stat_table_monsters td {
   text-align: left;
 }
