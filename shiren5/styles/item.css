@@ -319,8 +319,20 @@ table th {
   color: blue;
 }
 
+.grey_text {
+  color: lightgrey;
+}
+
 .purple_text {
   color: purple;
+}
+
+.gold_text {
+  color: #e6c200;
+}
+
+.silver_text {
+  color: #acacac;
 }
 
 .orange_text {
