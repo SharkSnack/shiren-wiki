@@ -449,6 +449,20 @@ dt {
   padding-top: 1em;
 }
 
+.monster_image {
+  max-height: 60px;
+  max-width: 60px;
+}
+
+.boss_image {
+  max-height: 70px;
+  max-width: 100px;
+}
+
+.spacer {
+  height: 10px;
+}
+
 .table_text_right td {
   text-align: right;
 }
