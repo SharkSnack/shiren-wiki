@@ -22,331 +22,623 @@
       <main id="content" class="box content">
         <div>
           <h2 class="page_heading">Gameplay Basics</h2>
-          <div class="explanation">
+          <div class="explanation_2">
             <p>
-              This page offers introductory information for Shiren 5's main gameplay mechanics.<br>
-              Additional details as they apply to specific dungeons or techniques can be found on other pages.
+              This page offers introductory information for Shiren 5's main gameplay mechanics.
             </p>
           </div>
           <ul id="quick_links">
-            <li><a href="#turns">Turns</a></li>
-            <li><a href="#wind-of-kron">Wind of Kron</a></li>
-            <li><a href="#day-night">Day / Night</a></li>
-            <li><a href="#auras">Auras</a></li>
-            <li><a href="#super-shiren">Super Shiren</a></li>
-            <li><a href="#equipment-growth">Equipment Growth</a></li>
-            <li><a href="#synthesis">Synthesis</a></li>
-            <li><a href="#tags">Tags</a></li>
-            <li><a href="#blessing-curse-seal">Blessing / Curse / Seal</a></li>
-            <li><a href="#resonance">Resonance</a></li>
-            <li><a href="#other-mechanics">Other Mechanics</a></li>
-          </ul>
-          <h2 id="#mechanics">Mechanics</h2>
-          <h3 id="#turns">Turns</h3>
-          <div class="explanation">
-            <h4>Turns and Turn-Ending Actions</h4>
-            <p>
-              Being a turn-based roguelike, Shiren and monsters take turns when performing actions.<br>
-              Generally, turn-ending actions include movement, attacks, using an item, and stepping in place.<br>
-              Your turn <span class="blue_text_2">does not</span> end from idling, checking item details, or otherwise navigating menus.<br><br>
-              The following actions are easy to forget / mistake:
-            </p>
-            <ul class="desc_list">
-              <li>Equipping a weapon, shield, or bracelet <span class="red_text">does</span> end the turn, but equipping a projectile or staff <span class="blue_text_2">does not</span>.</li>
-              <li>Talking to an ally character or NPC <span class="red_text">does</span> end the turn.</li>
-              <li>Setting a trap on the ground <span class="blue_text_2">does not</span> end the turn.</li>
-            </ul>
-            <h4>Turns Elapsing</h4>
-            <p>
-              Various effects and events occur based on the number of turns that have elapsed.<br>
-              Do your best to avoid wasting turns with meaningless actions.
-            </p>
-            <ul class="desc_list">
-              <li>Fullness decreases by 1 every 10 turns.</li>
-              <li>Items that apply status conditions generally last a set number of turns.</li>
-              <li>A new monster is generated every N turns. (N depends on the dungeon)</li>
-              <li>A new enemy Shopkeeper is generated every 5 turns when stealing from shops.</li>
-              <li>Time of day changes between day and night. (Some dungeons are daytime-only)</li>
-              <li>The Wind of Kron blows you out of the dungeon if you remain on one floor too long. (See next section)</li>
-              <li>HP regenerates every turn at a rate dependent on your max HP.<br>Examples:<br>15~50 = 1, 2, 1, 2...<br>51~66 = 1, 1, 1, 2...<br>96~101 = 1, 1, 1, 1...<br>124 = 1, 1, 1, 0...<br>200+ = 1, 0, 1, 0...</li>
-            </ul>
-          </div>
-          <h3 id="wind-of-kron">Wind of Kron</h3>
-          <div class="explanation">
-            <p>
-              If you remain on the same floor of a dungeon for a long time, a strong wind begins to blow.<br>
-              The number of turns depends on the dungeon, but you'll have 3 warnings before being blown away.<br>
-              You'll automatically fail the adventure and lose all items and Gitan if that happens.<br>
-              If you can't make it to the exit in time, read an <a href="/shiren5/item/scrolls#escape-scroll">Escape Scroll</a> or eat <a href="/shiren5/item/grass#undo-grass">Undo Grass</a>.<br><br>
-              In-game messages:
-            </p>
-            <ol class="desc_list">
-              <li>You feel the wind picking up.</li>
-              <li>The wind blows harder.</li>
-              <li>The wind gusts vigorously!</li>
-              <li>(Player) was blown away by a gust!</li>
-            </ol>
-          </div>
-          <h3 id="day-night">Day / Night</h3>
-          <div class="explanation">
-            <p>
-              Many dungeons switch between day and night based on the number of elapsed turns.<br>
-              Day and night have their own monster tables, and all previous time of day monsters vanish<br>
-              and the floor is populated with new monsters when time of day changes.<br>
-              The background music changes based on time of day as well.
-            </p>
-            <p>Day</p>
-            <ul class="desc_list">
-              <li>Direct attacks deal damage to monsters normally.</li>
-              <li>Can't use <a href="/shiren5/system/abilities">abilities</a> during the day.</li>
-              <li>
-                Monsters will level up to their next rank when applicable.<br>
-                (example: Mamel → Pit Mamel)
-              </li>
-            </ul>
-            <p>Night</p>
-            <ul class="desc_list">
-              <li>Direct attacks only deal 1 damage to night monsters.</li>
-              <li>
-                Fixed damage attacks like <a href="/shiren5/item/grass#dragon-grass">Dragon Grass</a> also only deal 1 damage.<br>
-                (However, special effects from staves, scrolls, etc. still work)
-              </li>
-              <li>Primarily use <a href="/shiren5/system/abilities">abilities</a> to deal damage.</li>
-              <li>
-                Field of View changes to 1-tile radius without a <a href="/shiren5/item/weapons#torch">torch</a> equipped.<br>
-                (You also can't read scrolls and take more damage from night monsters without light)
-              </li>
-              <li>Night monsters have unpredictable movement, and will attack any adjacent creature.</li>
-              <li>
-                Night monsters will limit break when they level up instead of moving to their next rank.
-                <br>(example: Dark Mamel → Dark Mamel2)
-              </li>
-              <li>Can't use the Scout command unless you read a <a href="/shiren5/item/scrolls#navigation-scroll">Navigation Scroll</a> or <a href="/shiren5/item/scrolls#fixer-scroll">Fixer Scroll</a>.</li>
-              <li>Items dropped by night monsters are always <a href="#blessing-curse-seal">blessed</a>, and are selected from the dungeon's shop table.</li>
-            </ul>
-          </div>
-          <h3 id="auras">Auras</h3>
-          <div class="explanation">
-            <p>
-              Monsters sometimes have auras when they're generated naturally, including initial floor population.<br>
-              They'll never have auras if they weren't generated in a natural manner, such as being summoned.<br>
-              Whether or not monsters can generate with auras depends on the dungeon and specific floor.<br><br>
-              Defeating monsters with auras grants double experience points, so take advantage of that when possible.<br>
-              Auras can be removed by reading a <a href="/shiren5/item/scrolls#dispel-aura-scroll">Dispel Aura Scroll</a>, swinging a <a href="/shiren5/item/staves#seal-staff">Seal Staff</a>, or throwing <a href="/shiren5/item/talismans">Talismans</a>.<br>
-              There are three types of auras: <span class="highlight_pink">Red</span>, <span class="highlight_blue_3">Blue</span>, and <span class="highlight_yellow">Yellow</span>.
-            </p>
-            <ul class="desc_list">
-              <li><span class="highlight_pink">Red</span>: Doubles attack power.</li>
-              <li><span class="highlight_blue_3">Blue</span>: Doubles defense.</li>
-              <li><span class="highlight_yellow">Yellow</span>: Increases action speed by 2 stages.</li>
-            </ul>
-          </div>
-          <h3 id="super-shiren">Super Shiren</h3>
-          <div class="explanation">
-            <p>There's a chance for one of the following to occur when you defeat enemies based on Shiren's status:</p>
-            <p>Normal</p>
-            <ul class="desc_list">
-              <li>Chance to gain <span class="blue_text_2">Awakened-ish</span> status.</li>
-            </ul>
-            <p>Awakened-ish</p>
-            <ul class="desc_list">
-              <li>Chance to gain <span class="blue_text_2">Super</span> status.</li>
-            </ul>
-            <p>Super (gain a bonus every 10 enemies you defeat)</p>
-            <ul class="desc_list">
-              <li>Gain <span class="blue_text_2">Overwhelming</span> status - Increases attack power. (3 floors)</li>
-              <li>Gain <span class="blue_text_2">Indomitable</span> status - Increases defense. (3 floors)</li>
-              <li>Gain <span class="blue_text_2">Super Swift</span> status - Increases action speed. (50 turns / 100 turns from Shiren's perspective)</li>
-              <li>Gain <span class="blue_text_2">Modder</span> status - Earn x4.0 equipment exp from defeating monsters. (2 floors)</li>
-              <li>Gain <span class="blue_text_2">Fast Striking</span> status - Attack twice per turn. (50 turns)</li>
-              <li>Gain <span class="blue_text_2">Precise</span> status - All attacks become critical hits. (50 turns)</li>
-              <li class="list_style_none">※ Overwhelming and Indomitable can be repeated to boost attack or defense multiple times.</li>
-            </ul>
-            <p>
-              In addition, your direct attacks can randomly inflict Asleep, Confused, Blind, Paralyzed, Sealed,<br>
-              Berserk, or Shadow Bound status while you have <span class="blue_text_2">Super</span> status. (See <a href="/shiren5/system/status-conditions">Status Conditions</a> for details)
-            </p>
-            <p>Shiren's <span class="blue_text_2">Awakened-ish</span> and <span class="blue_text_2">Super</span> statuses can be lost by the following events:</p>
-            <ul class="desc_list">
-              <li>Become afflicted by a negative status condition.</li>
-              <li>Step on a trap.</li>
-              <li>When a remaining fullness warning message gets displayed.<br>(1st: 20 fullness, 2nd: 10 fullness)</li>
-              <li>Fullness reaches 0.</li>
-              <li>Your HP falls below 30% of your max HP.<br>(Indicated by Danger status and a red UI)</li>
-              <li class="list_style_none">※ The 0 fullness and less than 30% HP checks occur every turn, so try to recover from them right away.</li>
-            </ul>
-          </div>
-          <h3 id="equipment-growth">Equipment Growth</h3>
-          <div class="explanation">
-            <p>Defeating monsters with direct attacks gradually upgrades your equipped weapon and shield.</p>
-            <ul class="desc_list">
-              <li>Each monster has a set number of equipment experience points (skill points), separate from visible exp.<br>(example: <a href="/shiren5/system/monsters#mamel">Pit Mamel</a> is worth 2 skill points)</li>
-              <li>Equipment will level up once you pass the assigned skill point threshold for that weapon or shield.<br>(example: <a href="/shiren5/item/weapons#ordinary-stick">Ordinary Stick</a> levels up after you earn 50 skill points)</li>
-              <li>Generally, higher level monsters offer more skill points.</li>
-            </ul>
-            <p>See the <a href="/shiren5/guide/tips-and-tricks#equipment-level">Tips and Tricks</a> page for efficient equipment leveling tips.</p>
-          </div>
-          <h3 id="synthesis">Synthesis</h3>
-          <div class="explanation">
-            <p>Mechanic where you combine items to merge abilities, upgrade value, and use counts.</p>
-            <h4>Synthesis Pot</h4>
-            <ul class="desc_list">
-              <li>Lets you combine weapons with weapons, shields with shields, and staves with staves.</li>
-              <li>The first weapon or shield acts as a base, and upgrade value and <a href="/shiren5/system/runes">runes</a> of subsequent items transfer to it.<br>(example: Plain Targe+1 followed by Counter Shield+3 → Plain Targe+4 with the <span class="green_text">Retribution</span> rune)</li>
-              <li>Staves must have the same name, and the number of uses will be added together.<br>(Useful to synthesize an identified staff with a staff that has an unknown number of uses)</li>
-            </ul>
-            <h4>Mixer Monsters</h4>
-            <ul class="desc_list">
-              <li>Same as Synthesis Pot, but also lets you synthesize different category items together.<br>(example: Dragon Grass followed by Plain Targe+1 → Plain Targe+1 with the <span class="green_text">Anti-Fire</span> rune)</li>
-              <li>Mixers won't swallow thrown items while afflicted by certain <a href="/shiren5/system/status-conditions">status conditions</a>.<br>　Won't swallow: Napping, Asleep, Sound Asleep, Sealed, Paralyzed, S-Paralyzed, Onigiri, Tottering.</li>
-              <li>Mixers will turn toward the direction the thrown item came from when it swallows an item.</li>
-              <li>Any swallowed items will be placed on the ground when time of day switches and the Mixer vanishes.</li>
-              <li>See <a href="/shiren5/system/runes">Runes</a> for a list of item combinations to synthesize runes.</li>
-            </ul>
-            <h4>Retaining Item Blessing, Curse, Seal, and Identification</h4>
-            <ul class="desc_list">
-              <li>Generally, the state of the synthesized item takes on the state of the item that was inserted or thrown last.<br>However, Mixer synthesis has priority based on item category, so you might end up with an undesired result.<br>(If a weapon ends up cursed or sealed, synthesize the weapon with an Iron Arrow to remove it)</li>
-            </ul>
-            <h4 id="mixer-priority">Mixer Synthesis Priority</h4>
-            <div class="explanation_2">
-              <p class="warning_text">Note: Item category priority is still being researched.</p>
-              <p>
-                It seems Mixers synthesize items in a set order when multiple different category items are thrown after a weapon.<br>
-                Weapons > Scrolls > Grass > Staves > Bracelets<br>
-                This is the case no matter what order you throw items, so you may end up with unexpected results.<br>
-                (Arrows, Talismans, and Pots haven't been checked yet)
-              </p>
-              <p>
-                For example, if you throw a weapon → staff (sealed) → grass, the resulting item will still be sealed<br>because grass items have a higher synthesis priority than staves.<br>
-                So in this case, you'd need to synthesize twice to remove the seal.<br>(weapon + staff, then weapon + grass)
-              </p>
-            </div>
-            <h4>Common Mixer Synthesis Mistakes</h4>
-            <ul class="desc_list">
-              <li>Throwing your main weapon or shield at a napping Mixer.<br>(Mixer mechanics changed from Shiren 4 onward, so always wake it up first)</li>
-              <li>The synthesized item was blown up by a Pop Tank monster after defeating the Mixer.<br>(Always understand the risk of synthesizing on floors where Pop Tank monsters appear)</li>
-              <li>Synthesizing staves resulted in a sealed staff.<br>(Always swing the staff you intend to synthesize last to verify that it's not sealed)</li>
-            </ul>
-          </div>
-          <h3 id="tags">Tags</h3>
-          <div class="explanation">
-            <p>
-              Shops in villages or dungeons can place a tag on equipment for a fee.<br>
-              Tagged equipment will be delivered to the Sentry in Hermit's Hermitage if you lose the item.<br>
-              ※ You can only have up to 8 items tagged at the same time.<br>※ Mudkin monster special attacks can sometimes remove tags, so be careful.
-            </p>
-          </div>
-          <h3 id="blessing-curse-seal">Blessing / Curse / Seal</h3>
-          <div class="explanation">
-          <ul class="desc_list">
-            <li>Blessed items are worth 10% more Gitan, and cursed or sealed items are worth 80% of their regular value.</li>
-            <li>
-              Blessed bracelets and pots are protected from being cursed, sealed, or turned into onigiri.<br>
-              The blessing has a chance to wear off: "But X was fine because it was blessed." - Curse Trap, Curse Scroll, Nigiri Morph<br>
-              The blessing won't wear off: "...But the Curse was ineffective." - Curse Girls
+            <li><a href="#shiren">Shiren</a>
+              <ul>
+                <li><a href="#experience-points">Experience Points</a></li>
+                <li><a href="#abilities">Abilities</a></li>
+                <li><a href="#fullness">Fullness</a></li>
+                <li><a href="#status-conditions">Status Conditions</a></li>
+                <li><a href="#super">Super Status</a></li>
+                <li><a href="#hp-regeneration">HP Regeneration</a></li>
+                <li><a href="#damage-calculation">Damage Calculation</a></li>
+                <li><a href="#attack-accuracy">Attack Accuracy</a></li>
+              </ul>
             </li>
-            <li>Other item categories don't appear to have resistance against being sealed, even when blessed.<br>(example: Blessed Revival Grass getting sealed by a Curse Girl)</li>
-            <li>The last item you throw at a Mixer when synthesizing determines the state of the resulting item.<br>(example: Throw a cursed shield, then a normal shield, result will be normal)</li>
-            <li>Scoopies and Bored Kappas can't throw dirt or items into sealed pots.<br>(Also, sealed Black Hole Pots will still create Pit Traps when shattered)</li>
+            <li><a href="#item">Item</a>
+              <ul>
+                <li><a href="#equipment-resonance">Equipment Resonance</a></li>
+                <li><a href="#equipment-growth">Equipment Growth</a></li>
+                <li><a href="#blessing-curse-seal">Blessing, Curse, Seal</a></li>
+                <li><a href="#synthesis">Synthesis</a></li>
+                <li><a href="#new-items">New Items</a></li>
+                <li><a href="#catstones">Catstones</a></li>
+              </ul>
+            </li>
+            <li><a href="#dungeon">Dungeon</a>
+              <ul>
+                <li><a href="#allies">Allies</a></li>
+                <li><a href="#wandering-npcs">Wandering NPCs</a></li>
+                <li><a href="#dungeon-gimmicks">Dungeon Gimmicks</a></li>
+                <li><a href="#shops">Shops</a></li>
+                <li><a href="#monster-house">Monster House</a></li>
+                <li><a href="#traps">Traps</a></li>
+                <li><a href="#day-and-night">Day and Night</a></li>
+                <li><a href="#monsters">Monsters</a></li>
+                <li><a href="#monster-auras">Monster Auras</a></li>
+                <li><a href="#monster-spawns">Monster Spawns</a></li>
+              </ul>
+            </li>
+            <li><a href="#facility">Facility</a>
+              <ul>
+                <li><a href="#tags">Equipment Tags</a></li>
+                <li><a href="#storehouse">Storehouse</a></li>
+                <li><a href="#tanuki-passwords">Tanuki Passwords</a></li>
+                <li><a href="#sparrows-shuttle">Sparrow's Shuttle</a></li>
+              </ul>
+            </li>
+            <li><a href="#other">Other</a>
+              <ul>
+                <li><a href="#adventure-footprints">Adventure Footprints</a></li>
+                <li><a href="#expert-badges">Expert Badges</a></li>
+                <li><a href="#version-exclusive">Version Exclusive Features</a></li>
+              </ul>
+            </li>
           </ul>
+          <h2 id="shiren">Shiren</h2>
+          <h3>Experience Points</h3>
+          <div class="explanation_2">
+            <p>→ Exp Table</p>
+          </div>
+          <h3 id="abilities">Abilities</h3>
+          <div class="explanation_2">
+            <p>Special attacks that can only be used at night.<br>→ <a href="/shiren5/system/abilities">Abilities</a></p>
+          </div>
+          <h3 id="fullness">Fullness</h3>
+          <div class="explanation_2">
+            <p>Shiren has a fullness gauge (FG), and takes 1 damage per turn once it reaches 0.<br>Fullness decreases by 1 every 10 turns, so you'll want to periodically eat food to replenish fullness.<br><img src="../images/other/onigiri.png"> <img src="../images/other/peach.png" height="32"></p>
+          </div>
+          <h3 id="status-conditions">Status Conditions</h3>
+          <div class="explanation_2">
+            <p>→ <a href="/shiren5/system/status-conditions">Status Conditions</a></p>
+            <p><img src="../images/other/shiren_confused.png"></p>
+          </div>
+          <h3 id="super">Super Status</h3>
+          <div class="explanation_2">
+            <p>Shiren's status will change as you defeat enemies during an adventure.</p>
+          </div>
+          <ul class="desc_list">
+            <li>Regular → Awakened-ish → Super</li>
+          </ul>
+          <div class="explanation_2">
+            <p><img src="../images/other/shiren_super.gif"></p>
+            <p>■ Super Status ■</p>
+          </div>
+          <ul class="desc_list">
+            <li>Direct attacks can randomly inflict Asleep, Confused, Blind, Paralyzed, Sealed, Berserk, or Shadow Bound status.</li>
+            <li>An additional bonus occurs every time you defeat 10 enemies:
+              <ul>
+                <li>Boost attack (3 floors)</li>
+                <li>Boost defense (3 floors)</li>
+                <li>Gain Swift status (50 turns / 100 turns from Shiren's perspective)</li>
+                <li>Gain Tinkerer status (2 floors)</li>
+                <li>Gain Fast Striking status (50 turns)</li>
+                <li>Gain Precise status (50 turns)</li>
+              </ul>
+            </li>
+            <li>Of these effects, attack and defense boosts stack up to 8 stages.</li>
+          </ul>
+          <div class="explanation_2">
+            <p>■ Deactivation ■<br>Super status can deactivate due to the following:</p>
+          </div>
+          <ul class="desc_list">
+            <li>Become afflicted by an ailment.</li>
+            <li>Step on a trap.</li>
+            <li>Hunger message is displayed. (20 and 10 remaining fullness)</li>
+            <li>0 fullness.</li>
+            <li>HP display is red. (Current HP is less than 30% of max)</li>
+          </ul>
+          <div class="explanation_2">
+            <p>※ The "0 fullness" and "HP display is red" conditions perform a check every turn.</p>
+          </div>
+          <h3 id="hp-regeneration">HP Regeneration</h3>
+          <div class="explanation_2">
+            <p>Shiren's HP regenerates as he walks or steps in place (A+B). (HP won't regenerate when any other action is performed)<br><img src="../images/other/turn_clock.png"></p>
+            <p>HP regeneration speed is linked to max HP in Shiren 5, and slows down as your max HP increases.<br>Turns that restore 0 HP are introduced from 102 HP, and increase in frequency until you finally only restore 1 HP every 2 turns.</p>
           </div>
           <table class="trap_table">
             <tr>
-              <th>Item Category</th>
-              <th>Blessing</th>
-              <th>Curse</th>
-              <th>Seal</th>
+              <th>Max HP</th>
+              <th>HP Restored</th>
+              <th>Interval</th>
+              <th>Per Turn</th>
             </tr>
             <tr>
-              <td>Weapon</td>
-              <td>Increased attack.<br>Set chance to wear off per direct attack.</td>
-              <td>Can't unequip.</td>
-              <td>Upgrade value and runes are nullified.</td>
+              <td>15 ~ 50</td>
+              <td>1,2</td>
+              <td>2T</td>
+              <td>1.50</td>
             </tr>
             <tr>
-              <td>Shield</td>
-              <td>Increased defense.<br>Set chance to wear off per hit received.</td>
-              <td>Can't unequip.</td>
-              <td>Upgrade value and runes are nullified.</td>
+              <td>51 ~ 66</td>
+              <td>1,1,1,2</td>
+              <td>4T</td>
+              <td>1.25</td>
             </tr>
             <tr>
-              <td>Bracelet</td>
-              <td>Item is protected against curses, seals,<br>and being turned into an onigiri.</td>
-              <td>Can't unequip.</td>
-              <td>Bracelet effect is nullified.</td>
+              <td>96 ~ 101</td>
+              <td>1</td>
+              <td>1T</td>
+              <td>1.00</td>
             </tr>
             <tr>
-              <td>Arrow, Rock</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+              <td>102</td>
+              <td>1,1,1... 0</td>
+              <td>50T</td>
+              <td>0.98</td>
             </tr>
             <tr>
-              <td>Staff</td>
-              <td>Doubled effectiveness.<br>(example: Transient Staff inflicts <a href="/shiren5/system/status-conditions#s-paralysis">S-Paralysis</a>)</td>
-              <td>-</td>
-              <td>Staff can't be used.<br>No effect when thrown.</td>
+              <td>104</td>
+              <td>1,1,1... 0</td>
+              <td>23T</td>
+              <td>0.96</td>
             </tr>
             <tr>
-              <td>Talisman</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+              <td>124</td>
+              <td>1,1,1,0</td>
+              <td>4T</td>
+              <td>0.75</td>
             </tr>
             <tr>
-              <td>Scroll</td>
-              <td>Scroll doesn't vanish when you read it.<br>If it sticks to the ground, you can pick it up again.<br>(Blessing wears off afterward for either case)<br>※ <a href="/shiren5/item/scrolls#extraction-scroll">Extraction Scroll</a> still vanishes when blessed.</td>
-              <td>-</td>
-              <td>Scroll can't be read.</td>
-            </tr>
-            <tr>
-              <td>Grass</td>
-              <td>Doubled effectiveness.<br>(example: Herb restores 50 HP and 10 fullness)</td>
-              <td>-</td>
-              <td>Grass can't be eaten.<br>No effect when thrown.</td>
-            </tr>
-            <tr>
-              <td>Pot</td>
-              <td>Item is protected against curses, seals,<br>and being turned into an onigiri.</td>
-              <td>-</td>
-              <td>Can't use Insert or Open commands.<br>Scoopies and Bored Kappas can't throw<br>dirt or items into sealed pots, and sealed<br>Black Hole Pots still create Pit Traps.</td>
-            </tr>
-            <tr>
-              <td>Food</td>
-              <td>Doubled effectiveness.<br>Peaches also have additional effects.<br>(See <a href="/shiren5/item/food">Food</a> for details)</td>
-              <td>-</td>
-              <td>Item can't be eaten.</td>
-            </tr>
-            <tr>
-              <td>Torch</td>
-              <td>Torches last twice as long.</td>
-              <td>-</td>
-              <td>Torch can't be equipped.</td>
-            </tr>
-            <tr>
-              <td>Gitan</td>
-              <td>Deals damage equal to value when thrown.<br>(example: 2000G = 2000 damage)</td>
-              <td>-</td>
-              <td>Deals 2 damage when thrown.</td>
-            </tr>
-            <tr>
-              <td>Point Card</td>
-              <td>Double points from the next Point Switch.<br>(Blessing wears off afterward)</td>
-              <td>-</td>
-              <td>Can't collect points.</td>
+              <td>200 ~</td>
+              <td>1,0</td>
+              <td>2T</td>
+              <td>0.50</td>
             </tr>
           </table>
-          <h3 id="resonance">Resonance</h3>
-          <div class="explanation">
-            <p>
-              Equipment can grant additional effects when certain items are equipped at the same time.<br>
-              (example: equipping <a href="/shiren5/item/weapons#ordinary-stick">Ordinary Stick</a> and <a href="/shiren5/item/shields#plain-targe">Plain Targe</a> at the same time lets you equip up to 2 bracelets)<br><br>
-              See <a href="/shiren5/system/resonance">Resonance</a> for a list of equipment combinations and effects.
-            </p>
+          <div class="explanation_2">
+            <p>Source: <a href="http://shiren2424.blog.fc2.com/blog-entry-127.html">シレン4、シレン5　自然回復量　【データ】 - 24番目の風来日記</a></p>
           </div>
-          <h3 id="other-mechanics">Other Mechanics</h3>
-          <div class="explanation">
+          <h3 id="damage-calculation">Damage Calculation</h3>
+          <div class="explanation_2">
+            <p>[ Attack * Variance / 100 - Defense ] * Type Multiplier</p>
+            <p>Source: <a href="https://web.archive.org/web/20111228071625/http://kumicyou.sakura.ne.jp/shiren-ds-5/system-damage.html">ダメージ計算 - 組長式(アーカイブ)</a></p>
+          </div>
+          <h3 id="attack-accuracy">Attack Accuracy</h3>
+          <div class="explanation_2">
+            <p>■ Direct Attacks ■<br>92% without a weapon.</p>
+            <p>Accuracy increases while equipped with a leveled up weapon.<br>The <span class="green_text">Redeeming</span> rune raises accuracy to 100% for 1 hit after 2 misses.</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th>Weapon Level</th>
+              <th>Lv1~3</th>
+              <th>Lv4~5</th>
+              <th>Lv6~7</th>
+              <th>Lv8</th>
+            </tr>
+            <tr>
+              <th>Accuracy</th>
+              <td>92%</td>
+              <td>93%</td>
+              <td>94%</td>
+              <td>95%</td>
+            </tr>
+          </table>
+          <div class="explanation_2">
+            <p>■ Projectiles ■<br>84%</p>
+            <p>■ Monster Direct Attacks ■<br>88% under normal circumstances.</p>
+            <p>Accuracy decreases if a Spry Shield is equipped. (Shiren's evasion increases)<br>The <span class="green_text">Agile</span> rune is equivalent to Spry Shield Lv1, so it's 78%.</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th>Spry Shield Level</th>
+              <th>Lv1</th>
+              <th>Lv2</th>
+              <th>Lv3</th>
+              <th>Lv4</th>
+              <th>Lv5</th>
+              <th>Lv6</th>
+              <th>Lv7</th>
+              <th>Lv8</th>
+            </tr>
+            <tr>
+              <th>Accuracy</th>
+              <td>78%</td>
+              <td>75%</td>
+              <td>72%</td>
+              <td>69%</td>
+              <td>66%</td>
+              <td>63%</td>
+              <td>60%</td>
+              <td>57%</td>
+            </tr>
+          </table>
+          <div class="explanation_2">
+            <p>Source: <a href="http://web.archive.org/web/20141231031541/http://kumicyou.sakura.ne.jp/shiren-ds-5/system-hit.html">攻撃の命中率 - 組長式(アーカイブ)</a></p>
+          </div>
+          <h2 id="item">Item</h2>
+          <h3>Equipment Resonance</h3>
+          <div class="explanation_2">
+            <p>Certain weapons and shields activate special effects when equipped at the same time.<br>→ <a href="/shiren5/system/resonance">Resonance</a><br><img src="../images/other/resonance.png" width="280"></p>
+          </div>
+          <h3 id="equipment-growth">Equipment Growth</h3>
+          <div class="explanation_2">
+            <div class="spacer"></div>
+            <img src="../images/other/weapon_level.png">
+          </div>
+          <ul class="desc_list">
+            <li>Weapons and shields earn equipment experience points when you defeat an enemy using a direct attack.<br>※ You don't earn equipment experience points if you defeat enemies using projectiles, abilities, magic bullets, etc.
+              <ul>
+                <li>The item's name changes, and strength, upgrade limit, and rune count increase.<br>Weapons or shields can also gain runes through leveling up, and have a maximum level of 8.</li>
+                <li>Equipment experience points can't be seen, and each monster grants a predetermined amount.<br>Generally, stronger / higher level monsters offer more equipment experience points.</li>
+                <li>Equipment levels up once the equipment experience points total reaches the item's assigned threshold.</li>
+              </ul>
+            </li>
+          </ul>
+          <h3 id="blessing-curse-seal">Blessing, Curse, Seal</h3>
+          <div class="explanation_2">
+            <p>Items can be blessed, cursed, or sealed. (excluding arrows, rocks, and talismans)<br>They can occasionally be found on the ground with these statuses,<br>and you won't be able to determine an unidentified items's status until you use it.<br>Once an item is identified, it's current status will be shown through an icon.</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th>Icon</th>
+              <th>Type</th>
+              <th>Basic Effect</th>
+            </tr>
+            <tr>
+              <td><img src="../images/other/blessed.png"></td>
+              <td>Blessing</td>
+              <td>Boosted effect.</td>
+            </tr>
+            <tr>
+              <td><img src="../images/other/cursed.png"></td>
+              <td>Curse</td>
+              <td>Can't unequip.</td>
+            </tr>
+            <tr>
+              <td><img src="../images/other/sealed.png"></td>
+              <td>Seal</td>
+              <td>Unable to be used.</td>
+            </tr>
+          </table>
+          <div class="explanation_2">
+            <p>The effects of these statuses differ based on item category. (see the table below)</p>
+          </div>
+          <ul class="desc_list">
+            <li>Gaining a status
+              <ul>
+                <li>Blessing: Blessing Scroll, Blessing Pot, night monster drop.</li>
+                <li>Curse: Curse Trap, Curse Girl's special attack, Imabikiso, Curse Scroll, Curse Pot.</li>
+                <li>Seal: Curse Trap, item is stolen by a Bad Zalokleft (Lv1~3), Imabikiso, Curse Scroll, Curse Pot.</li>
+              </ul>
+            </li>
+            <li>Removing a status
+              <ul>
+                <li>Curse, Seal: Exorcism Scroll, Exorcism Pot, Curse Breaker, Fate Scroll, Earth Scroll, Plating Scroll, bless the item.</li>
+                <li>Anti-Crs. Bracelet protects an item from getting cursed or sealed.</li>
+              </ul>
+          </ul>
+          <div class="explanation_2">
+            <p>Effect details by item category:</p>
+          </div>
+          <table class="trap_table">
+            <tr>
+              <th>Item</th>
+              <th>Blessed</th>
+              <th>Cursed</th>
+              <th>Sealed</th>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Weapon</td>
+              <td>Increased attack<br>(chance to wear off)</td>
+              <td>Can't unequip</td>
+              <td>Upgrade value and runes are nullified,<br>doesn't gain equipment exp</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Shield</td>
+              <td>Increased defense<br>(chance to wear off)</td>
+              <td>Can't unequip</td>
+              <td>Upgrade value and runes are nullified,<br>doesn't gain equipment exp</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Bracelet</td>
+              <td>Can't be cursed / sealed<br>(chance to wear off)</td>
+              <td>Can't unequip</td>
+              <td>Bracelet's effect is nullified</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Arrow, Rock</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Staff</td>
+              <td>Doubled effect<br>(chance to wear off)</td>
+              <td>-</td>
+              <td>Unable to be used,<br>no effect when thrown</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Talisman</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Scroll</td>
+              <td>Reusable<br>(some exceptions<span class="warning_text">*1</span>)</td>
+              <td>-</td>
+              <td>Unable to be used</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Grass</td>
+              <td>Doubled effect<br>(some exceptions<span class="warning_text">*1</span>)</td>
+              <td>-</td>
+              <td>Unable to be used,<br>no effect when thrown</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Pot</td>
+              <td>Can't be cursed, sealed,<br>or turned into an onigiri<br>(chance to wear off)</td>
+              <td>-</td>
+              <td>Can't use [Insert] or [Open] commands,<br>can't be filled by Bored Kappas or Scoopies</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Food</td>
+              <td>Doubled effect,<br>peaches gain a bonus</td>
+              <td>-</td>
+              <td>Unable to be used</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Torch</td>
+              <td>Doubled duration</td>
+              <td>-</td>
+              <td>Can't be equipped</td>
+            </tr>
+            <tr>
+              <td class="highlight_yellow">Point Card</td>
+              <td>Gain double points<br>(wears off after 1 use)</td>
+              <td>-</td>
+              <td>Unable to be used</td>
+            </tr>
+          </table>
+          <div class="explanation_2">
+            <p><span class="warning_text">*1</span> exceptions:</p>
+          </div>
+          <ul class="desc_list">
+            <li>Scroll
+              <ul>
+                <li>Extraction Scroll - Blesses all extracted items, but can't be reused.</li>
+              </ul>
+            </li>
+            <li>Grass
+              <ul>
+                <li>Upgrade Seed - Effect is active for the duration of the current floor. (normally 100 turns)</li>
+                <li>Revival Grass, Undo Grass, Repeat Grass - Reusable.</li>
+              </ul>
+            </li>
+          </ul>
+          <h3 id="synthesis">Synthesis</h3>
+          <div class="explanation_2">
+            <p>Synthesize weapons and shields to merge special abilities, and combine staves to add use counts together.</p>
+            <p><img src="../images/other/runes.png" width="280"></p>
+          </div>
+          <ul class="desc_list">
+            <li>Synthesis Effects
+              <ul>
+                <li>Weapon, shield: The first item acts as the base, and <a href="/shiren5/system/runes">runes</a> and upgrade value of subsequent items are added to it.
+                  <ul>
+                    <li>Each piece of equipment has a "rune count", and no more runes can be added once you reach the limit.</li>
+                    <li>Innate runes get stronger as the piece of equipment levels up, but runes are always equal to the Lv1 effect.<br>→ <a href="/shiren5/system/runes#multipliers">Rune Multipliers</a></li>
+                  </ul>
+                </li>
+                <li>Staves: Add use counts together. Can only combine same name staves.</li>
+              </ul>
+            </li>
+            <li>Different Category Synthesis
+              <ul>
+                <li>Normally you can only synthesize weapons with weapons, or shields with shields.<br>However, certain different category items can be synthesized using Mixers to add runes as well.
+                  <ul>
+                    <li>Example: Weapon + Dragon Grass = <span class="green_text">Anti-Dragon</span> rune.</li>
+                    <li>See <a href="/shiren5/system/runes#list">Runes List</a> for all possible combinations.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Method 1: Synthesis Pots<br><img src="../images/other/pot.png" height="20">
+              <ul>
+                <li>Insert same category items to synthesize them. (Weapons with weapons, shields with shields, staves with staves)</li>
+                <li>Weapon, shield: The first item acts as the base, and runes and upgrade value of subsequent items are added to it</li>
+                <li>Staves: Remaining uses are added together. Can only combine same name staves.<br>Throw an identified staff last to result in an identified staff.</li>
+              </ul>
+            </li>
+            <li>Method 2: Mixers<br><img src="../images/monsters/mixer.png" class="monster_image">
+              <ul>
+                <li>Throw items at a Mixer family monster to synthesize them. (Different category items can be synthesized)</li>
+                <li>Mixers won't swallow items when they're afflicted by certain <a href="/shiren5/system/status-conditions">status conditions</a>.
+                  <ul>
+                    <li>Will swallow items: Any status conditions besides the ones listed below.</li>
+                    <li>Won't swallow items: Napping, Asleep, Sound Asleep, Sealed, Paralyzed, S-Paralyzed, Onigiri, Tottering.</li>
+                  </ul>
+                </li>
+                <li>Mixers turn toward the direction the item came from when they swallow an item.</li>
+              </ul>
+            </li>
+            <li>Blessed, Cursed, Sealed Status
+              <ul>
+                <li>Synthesized items generally take on the status of the item that was inserted or thrown last.
+                  <ul>
+                    <li>However, Mixer synthesis has varied priority based on item category, so you may get unexpected results.</li>
+                    <li>You can remove a seal or curse from a weapon by synthesizing the weapon with an Iron Arrow.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Mixer Synthesis Priority
+              <ul>
+                <li>The synthesis priority after throwing a weapon is weapon > grass > scroll > staff > talisman or arrow > pot > bracelet.<br>(This remains true even if items were thrown in a different order)</li>
+                <li>Example: If you throw a weapon → sealed staff → grass, the resulting weapon will be sealed,<br>since grass has a higher priority than staves.</li>
+                <li>It's fine to throw non-equipment category item(s) before the weapon or shield.</li>
+              </ul>
+            </li>
+            <li>Pushing Out Runes
+              <ul>
+                <li>→ Pushing Out Runes</li>
+              </ul>
+            </li>
+            <li>Common Mistakes
+              <ul>
+                <li>Threw a Synthesis Pot while a Can. Arm Bracelet was equipped / Dracon Grass effect was active.
+                  <ul>
+                    <li>Check equipped bracelets and current status beforehand.</li>
+                  </ul>
+                </li>
+                <li>Main weapon vanished after being thrown at a Napping Mixer.
+                  <ul>
+                    <li>Mixers function differently in Shiren 4 and 5, so always wake them up first.</li>
+                  </ul>
+                </li>
+                <li>Stepped on an Explosion Trap / Pit Trap while walking over to the synthesized item after defeating the Mixer.
+                  <ul>
+                    <li>Perform direct attacks over tiles to check for traps while approaching the item.</li>
+                  </ul>
+                </li>
+                <li>Threw a weapon → Angel Seed → shield → Angel Seed at a Mixergon, but only the weapon gained a rune.
+                  <ul>
+                    <li>Items that can be used to add runes to both weapons and shields always get synthesized to the first weapon or shield,<br>so use 2 different Mixer family monsters.</li>
+                  </ul>
+                </li>
+                <li>A Pop Tank family monster destroyed the item after synthesizing using a Mixer.
+                  <ul>
+                    <li>Use the Scout command to check for Pop Tank monsters on floors where they appear alongside Mixers.</li>
+                  </ul>
+                </li>
+                <li>The resulting staff became sealed after combining same name staves.
+                  <ul>
+                    <li>Always swing the staff you to intend to synthesize last to check if it's sealed.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h3 id="new-items">New Items</h3>
+          <div class="explanation_2">
+            <p>Use Secret Pots located in the basement of Hotel Nekomaneki to add new abilities to existing items.<br>→ <a href="/shiren5/item/new-items">New Items</a></p>
+            <p><img src="../images/other/secret_pot.png"></p>
+          </div>
+          <h3 id="catstones">Catstones</h3>
+          <div class="explanation_2">
+            <p>Collect all 7 colors and clear <a href="/shiren5/dungeon/inori-cave">Inori Cave</a> to have a wish granted. (See <a href="/shiren5/dungeon/inori-cave#overview">Dungeon Overview</a> for the list of wishes)<br><img src="../images/other/cat.png" height="36"><br>There are a number of different methods to obtain Catstones.<br>The list below is in the order of how easy it is to obtain all 7 colors.</p>
+          </div>
+          <ul class="desc_list">
+            <li>Tanuki Passwords
+              <ul>
+                <li>Simply talk to the Tanuki near the stairs to the basemenet of Hotel Nekomaneki and input <a href="/shiren5/system/tanuki-passwords">Tanuki Passwords</a>.<br>※ Passwords can only be used once per save file.</li>
+              </ul>
+            </li>
+            <li>Rescue Passwords
+              <ul>
+                <li>Use Lost Well Pick-A-Choice <a href="/shiren5/guide/rescue-passwords#lost-well">Rescue Passwords</a>.<br>(See <a href="/shiren5/dungeon/lost-well#catstones">Collecting Catstones</a> for details)</li>
+              </ul>
+            </li>
+            <li>Pick-A-Choice Shops
+              <ul>
+                <li>Same as above, but search for a Pick-A-Choice shop on your own instead of using a Rescue Password.</li>
+              </ul>
+            </li>
+            <li>Purchase From Poo
+              <ul>
+                <li>Text</li>
+              </ul>
+            </li>
+            <li>Clear <a href="/shiren5/dungeon/destinys-descent">Destiny's Descent</a>
+              <ul>
+                <li>Text</li>
+                <li>Text</li>
+              </ul>
+            </li>
+            <li>Elite Stores
+              <ul>
+                <li>Text</li>
+              </ul>
+            </li>
+          </ul>
+          <h2 id="dungeon">Dungeon</h2>
+          <h3 id="allies">Allies</h3>
+          <div class="explanation_2">
+            <p>→ <a href="/shiren5/system/allies">Allies</a><br><img src="../images/other/jirokichi.png"><img src="../images/other/tao.png"></p>
+          </div>
+          <h3 id="wandering-npcs">Wandering NPCs</h3>
+          <div class="explanation_2">
+            <p>→ <a href="/shiren5/system/npcs">Wandering NPCs</a><br><img src="../images/other/npc.png"></p>
+          </div>
+          <h3 id="dungeon-gimmicks">Dungeon Gimmicks</h3>
+          <div class="explanation_2">
+            <p>→ Dungeon Gimmicks</p>
+          </div>
+          <h3 id="shops">Shops</h3>
+          <div class="explanation_2">
+            <p>→ Shops</p>
+          </div>
+          <h3 id="monster-house">Monster House</h3>
+          <div class="explanation_2">
+            <p>→ Monster House</p>
+          </div>
+          <h3 id="traps">Traps</h3>
+          <div class="explanation_2">
+            <p>→ <a href="/shiren5/system/traps">Traps</a></p>
+          </div>
+          <h3 id="day-and-night">Day and Night</h3>
+          <div class="explanation_2">
             <p>Text</p>
+          </div>
+          <h3 id="monsters">Monsters</h3>
+          <div class="explanation_2">
+            <p>→ <a href="/shiren5/system/monsters">Monsters</a></p>
+            <p><img src="../images/monsters/mamel.png" class="monster_image"> <img src="../images/monsters/sproutant.png" class="monster_image"> <img src="../images/monsters/seedie.png" class="monster_image"></p>
+          </div>
+          <h3 id="monster-auras">Monster Auras</h3>
+          <div class="explanation_2">
+            <p><img src="../images/other/monster_aura.png"></p>
+            <p>Text</p>
+          </div>
+          <h3 id="monster-spawns">Monster Spawns</h3>
+          <div class="explanation_2">
+            <p>Text</p>
+          </div>
+          <h2 id="facility">Facility</h2>
+          <div class="explanation_2">
+            <p>See <a href="/shiren5/system/villages">Villages</a> for an overview of available facilities.</p>
+          </div>
+          <h3 id="tags">Equipment Tags</h3>
+          <div class="explanation_2">
+            <p><img src="../images/other/weapon_tag.png"></p>
+            <p>Text</p>
+          </div>
+          <h3 id="storehouse">Storehouse</h3>
+          <div class="explanation_2">
+            <p>Text</p>
+          </div>
+          <h3 id="tanuki-passwords">Tanuki Passwords</h3>
+          <div class="explanation_2">
+            <p>Input passwords to receive items.<br>→ <a href="/shiren5/system/tanuki-passwords">Tanuki Passwords</a></p>
+            <p><img src="../images/other/tanuki_password.png"></p>
+          </div>
+          <h3 id="sparrows-shuttle">Sparrow's Shuttle</h3>
+          <div class="explanation_2">
+            <p>Lets you instantly travel to places you've been to before.<br>→ <a href="/shiren5/system/villages#sparrows-shuttle">Sparrow's Shuttle</a></p>
+            <p><img src="../images/other/sparrows_shuttle.png"></p>
+          </div>
+          <h2 id="other">Other</h2>
+          <h3 id="adventure-footprints">Adventure Footprints</h3>
+          <div class="explanation_2">
+            <p>→ <a href="/shiren5/system/adventure-footprints">Adventure Footprints</a></p>
+          </div>
+          <h3 id="expert-badges">Expert Badges</h3>
+          <div class="explanation_2">
+            <p>→ <a href="/shiren5/system/expert-badges">Expert Badges</a></p>
+          </div>
+          <h3 id="version-exclusive">Version Exclusive Features</h3>
+          <div class="explanation_2">
+            <p>DS<br>→ Streetpass<br>→ Wanderer Erasers</p>
+            <p>Vita, Steam<br>→ <a href="/shiren5/system/trophies">Trophies</a></p>
+            <p>Steam<br>→ Trading Cards<br>→ Point Shop</p>
+            <p>Switch, Steam<br>→ <a href="/shiren5/system/music-collection">Music Collection</a></p>
           </div>
           <div class="page_bottom_padding"></div>
         </div>
