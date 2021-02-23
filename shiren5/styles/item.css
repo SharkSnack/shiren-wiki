@@ -454,6 +454,11 @@ dt {
   max-width: 60px;
 }
 
+.character_image {
+  max-height: 75px;
+  max-width: 75px;
+}
+
 .boss_image {
   max-height: 70px;
   max-width: 100px;
