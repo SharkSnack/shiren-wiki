@@ -23,6 +23,9 @@
       <main id="content" class="box content">
         <div>
           <h2 class="page_heading">Price Chart</h2>
+          <div class="explanation_2">
+            <p>Related Links:<br>1. <a href="/shiren5/guide/identifying">Identifying</a><br>2. <a href="https://minotalen.github.io/shiren/">Price Identification Tool (external)</a></p>
+          </div>
           <div id="item_category_links" class="item_category_links">
             <ul>
               <li><a href="#price-calculation">Price Calculation</a></li>
@@ -38,7 +41,7 @@
             <p><span class="emphasis">Buying / Selling Price</span><br>・Selling price is 35% of the buying price. (decimals are truncated)<br>・Multiply the selling price by 3 to get the approximate buying price inside a shop.</p>
             <p><span class="emphasis">Blessed, cursed, sealed</span><br>・Blessed = regular price x1.1<br>・Cursed or sealed = regular price x0.8</p>
             <p><span class="emphasis">Upgrade value, staff uses, pot capacity</span><br>・Add 5% of the regular price per +1 upgrade value, use, or capacity.<br>・Subtract 5% of the regular price per -1 upgrade value.</p>
-            <p><span class="emphasis">Price formula</span><br><span class="highlight_green">[1, 1.1(blessed), or 0.8(cursed/sealed)]</span> x <span class="highlight_pink">INT(truncate decimals)[{</span><span class="highlight_blue_3">base price</span><span class="highlight_pink"> x</span><span class="highlight_yellow"> (1 + upgrade value/uses/capacity x 0.05) </span><span class="highlight_pink">}]</span></p>
+            <p><span class="emphasis">Price formula</span><br>floor[ <span class="highlight_green">[1, 1.1(blessed), or 0.8(cursed/sealed)]</span> x <span class="highlight_pink">floor[{</span><span class="highlight_blue_3">base price</span><span class="highlight_pink"> x</span><span class="highlight_yellow"> (1 + upgrade value/uses/capacity x 0.05) </span><span class="highlight_pink">}]</span> ]<br>floor: Truncate decimals. (example: 5.54 → 5)</p>
           </div>
           <div>
             <h3 id="scroll-grass-bracelet-talisman">Scrolls / Grasses / Bracelets / Talismans</h3>
